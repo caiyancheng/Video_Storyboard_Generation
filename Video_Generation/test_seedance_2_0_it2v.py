@@ -20,7 +20,8 @@ if __name__ == "__main__":
     task_input=json.dumps({
         "binary_data": [
             {
-                "data": "https://tosv.byted.org/obj/dm-stickers-rec-sg/yc.jpeg",
+                # "data": "https://tosv.byted.org/obj/dm-stickers-rec-sg/yc.jpeg",
+                "data": "https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_1_first_frame.jpg",
                 "type": "image"
             }
         ],
@@ -29,7 +30,7 @@ if __name__ == "__main__":
             # 两张图连续叙事：男主神情郑重地提出近乎苛刻的要求，语气认真又略带夸张地说道：“要十担白雪，团作雪人，不要见半点泥沙在上面；再要十担坚冰，凿作冰人，不要见些雪屑在上面，也要打磨光亮；再要十担细沙，塑作沙人，也要细细地拍实，不要见些雪冰在上面。” 画面富有戏剧张力和节奏感，整体风格略带幽默夸张，人物表情生动，电影感构图。
             #         """,
             "prompt": """
-            男主在海边自拍然后开始尝试滑翔伞，转场后潜水，人物表情生动，电影感构图。
+            女主在草坪上畅谈自己的理想，人物表情生动，电影感构图。
                     """,
             "language": "zh", 
             "duration": 3,

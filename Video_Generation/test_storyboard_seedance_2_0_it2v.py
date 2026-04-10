@@ -10,6 +10,13 @@ from euler import base_compat_middleware
 from cairo_v2.idls.thrift import GetTaskReportRequestThrift
 from cairo_v2.idls import CairoService, SubmitAsyncTaskRequest, Task
 
+# ── Prompt verbosity level ────────────────────────────────────────────────────
+# 1  minimal  (~80  words): caption + character names/actions + location name
+# 2  standard (~200 words): + dense_caption + camera mood + appearances + props + audio transcript
+# 3  detailed (~400 words): + full camera + rationales + location env + audio content + scene beat
+# 4  full     (no limit)  : + interaction tracking + continuity transitions + information_gain
+PROMPT_LEVEL = 3
+
 STORYBOARD_PHASE0_PATH = "Video_Generation/Sample_Prompts/sample_storyboard_phase0_v15_result.json"
 STORYBOARD_PHASE1_PATH = "Video_Generation/Sample_Prompts/sample_storyboard_phase1_v15_result.json"
 STORYBOARD_PHASE1_5_PATH = "Video_Generation/Sample_Prompts/sample_storyboard_phase1_5_v15_result.json"
@@ -29,167 +36,170 @@ def parse_time_range(time_range):
 
 
 def build_shot_prompt(shot, phase1_shot, phase1_5_info,
-                      audio_map, subject_map, prop_map, location_map):
+                      audio_map, subject_map, prop_map, location_map,
+                      level=PROMPT_LEVEL):
     """
-    Build a comprehensive generation prompt for a single shot by combining
-    all available fields from phase0 registries, phase1 visual/audio tracking,
-    and phase1_5 scene-role analysis.
+    Build a generation prompt for a single shot at the requested verbosity level.
+
+    Level 1  minimal  (~80  words): caption + character names/actions + location name
+    Level 2  standard (~200 words): + dense_caption + camera mood + appearances
+                                      + prop descriptions + audio transcript
+    Level 3  detailed (~400 words): + full camera + rationales + location env
+                                      + audio content/rationale + scene beat + emotion
+    Level 4  full     (no limit)  : + interaction_tracking + continuity transitions
+                                      + information_gain
     """
+    lv = level
     parts = []
 
-    # ── 1. Shot overview ──────────────────────────────────────────────────────
+    # ── Pre-compute shared data ───────────────────────────────────────────────
+    visual = phase1_shot.get('visual', {})
+    p1_subject_map  = {t['id']: t for t in visual.get('subject_tracking',  [])}
+    p1_prop_list    = visual.get('prop_tracking', [])
+    p1_interact     = visual.get('interaction_tracking', [])
+    p1_loc_map      = {t['id']: t for t in visual.get('location_tracking', [])}
+    camera          = visual.get('camera', {})
+
+    subject_ids  = shot.get('subject_id',  [])
+    location_ids = shot.get('location_id', [])
+    audio_ids    = shot.get('audio_id',    [])
+
+    # Speech transcripts from phase1
+    all_transcripts = [
+        f'"{ev.get("transcript", "").strip()}"'
+        for sp in phase1_shot.get('audio', {}).get('speech', [])
+        for ev in sp.get('speech_events', [])
+        if ev.get('transcript', '').strip()
+    ]
+
+    # ── 1. Shot overview (all levels) ────────────────────────────────────────
     parts.append(
-        f"Shot: {shot['id']}  |  Time range: {shot['time_range']}\n"
+        f"Shot: {shot['id']}  |  Time: {shot['time_range']}\n"
         f"Summary: {shot.get('caption', '')}"
     )
 
-    # ── 2. Detailed visual description (phase1 dense_caption) ─────────────────
-    dense_caption = phase1_shot.get('dense_caption', '')
-    if dense_caption:
-        parts.append(f"Detailed visual description:\n{dense_caption}")
+    # ── 2. Dense caption (level ≥ 2) ─────────────────────────────────────────
+    if lv >= 2:
+        dense = phase1_shot.get('dense_caption', '')
+        if dense:
+            parts.append(f"Detailed visual description:\n{dense}")
 
-    # ── 3. Camera & atmosphere (phase1 visual.camera) ─────────────────────────
-    camera = phase1_shot.get('visual', {}).get('camera', {})
-    if camera:
+    # ── 3. Camera & atmosphere ────────────────────────────────────────────────
+    if lv >= 2 and camera:
         cam_lines = ["Camera & atmosphere:"]
+        # level 2: mood + scale only; level 3+: all fields
         if camera.get('shot_scale'):
             cam_lines.append(f"  Shot scale: {camera['shot_scale']}")
-        if camera.get('camera_pose'):
-            cam_lines.append(f"  Camera pose: {camera['camera_pose']}")
-        if camera.get('lighting_style'):
-            cam_lines.append(f"  Lighting: {camera['lighting_style']}")
-        if camera.get('color_tone'):
-            cam_lines.append(f"  Color tone: {camera['color_tone']}")
         if camera.get('mood_atmosphere'):
             cam_lines.append(f"  Mood/atmosphere: {camera['mood_atmosphere']}")
+        if lv >= 3:
+            if camera.get('camera_pose'):
+                cam_lines.append(f"  Camera pose: {camera['camera_pose']}")
+            if camera.get('lighting_style'):
+                cam_lines.append(f"  Lighting: {camera['lighting_style']}")
+            if camera.get('color_tone'):
+                cam_lines.append(f"  Color tone: {camera['color_tone']}")
         parts.append('\n'.join(cam_lines))
 
     # ── 4. Characters ─────────────────────────────────────────────────────────
-    subject_ids = shot.get('subject_id', [])
-    # Build a lookup from phase1 subject_tracking for actions/appearance
-    p1_subject_tracking = {
-        t['id']: t
-        for t in phase1_shot.get('visual', {}).get('subject_tracking', [])
-    }
     if subject_ids:
-        lines = ["Characters in this shot:"]
+        lines = ["Characters:"]
         for sid in subject_ids:
             s0 = subject_map.get(sid, {})
-            s1 = p1_subject_tracking.get(sid, {})
+            s1 = p1_subject_map.get(sid, {})
             lines.append(f"  {sid} — {s0.get('name', 'Unknown')}")
-            if s0.get('visual_features'):
-                lines.append(f"    Appearance (overall): {s0['visual_features']}")
-            if s1.get('appearance_description'):
-                lines.append(f"    Appearance (this shot): {s1['appearance_description']}")
-            if s1.get('action'):
+            if lv >= 2 and s1.get('appearance_description'):
+                lines.append(f"    Appearance: {s1['appearance_description']}")
+            if s1.get('action'):                                  # all levels
                 lines.append(f"    Action: {s1['action']}")
-            if s0.get('rationale'):
+            if lv >= 3 and s0.get('visual_features'):
+                lines.append(f"    Overall appearance: {s0['visual_features']}")
+            if lv >= 3 and s0.get('rationale'):
                 lines.append(f"    Role: {s0['rationale']}")
         parts.append('\n'.join(lines))
 
     # ── 5. Props ──────────────────────────────────────────────────────────────
-    # Use phase1 prop_tracking (includes temp props not in phase0)
-    p1_prop_tracking = phase1_shot.get('visual', {}).get('prop_tracking', [])
-    if p1_prop_tracking:
-        lines = ["Props in this shot:"]
-        for pt in p1_prop_tracking:
+    if lv >= 2 and p1_prop_list:
+        lines = ["Props:"]
+        for pt in p1_prop_list:
             pid = pt['id']
-            p0 = prop_map.get(pid, {})
-            lines.append(f"  {pid} — {p0.get('name', pt.get('prop_description', 'Unknown')[:40])}")
+            p0  = prop_map.get(pid, {})
+            label = p0.get('name') or pt.get('prop_description', '')[:50]
+            lines.append(f"  {pid} — {label}")
             if pt.get('prop_description'):
                 lines.append(f"    Description: {pt['prop_description']}")
             if pt.get('interaction'):
                 lines.append(f"    Interaction: {pt['interaction']}")
-            if p0.get('rationale'):
+            if lv >= 3 and p0.get('rationale'):
                 lines.append(f"    Role: {p0['rationale']}")
         parts.append('\n'.join(lines))
 
-    # ── 6. Subject–prop interactions ──────────────────────────────────────────
-    interaction_tracking = phase1_shot.get('visual', {}).get('interaction_tracking', [])
-    if interaction_tracking:
+    # ── 6. Subject–prop interactions (level 4 only) ───────────────────────────
+    if lv >= 4 and p1_interact:
         lines = ["Subject–prop interactions:"]
-        for it in interaction_tracking:
+        for it in p1_interact:
             lines.append(f"  {it.get('interaction', '')}")
         parts.append('\n'.join(lines))
 
     # ── 7. Location ───────────────────────────────────────────────────────────
-    location_ids = shot.get('location_id', [])
-    p1_location_tracking = {
-        t['id']: t
-        for t in phase1_shot.get('visual', {}).get('location_tracking', [])
-    }
     if location_ids:
         lines = ["Location:"]
         for lid in location_ids:
             loc = location_map.get(lid, {})
-            l1 = p1_location_tracking.get(lid, {})
+            l1  = p1_loc_map.get(lid, {})
             loc_type = ' / '.join(filter(None, [loc.get('type', ''), loc.get('secondary_type', '')]))
-            lines.append(f"  {lid} — {loc.get('name', 'Unknown')}" + (f" ({loc_type})" if loc_type else ""))
-            if loc.get('visual_features'):
+            lines.append(f"  {lid} — {loc.get('name', 'Unknown')}" +
+                         (f" ({loc_type})" if lv >= 3 and loc_type else ""))
+            if lv >= 2 and loc.get('visual_features'):
                 lines.append(f"    Visual features: {loc['visual_features']}")
-            if l1.get('visual_environment'):
-                lines.append(f"    Visual environment (this shot): {l1['visual_environment']}")
-            static = loc.get('static_elements', [])
-            if static:
-                lines.append(f"    Key elements: {', '.join(static)}")
+            if lv >= 3 and l1.get('visual_environment'):
+                lines.append(f"    Environment (this shot): {l1['visual_environment']}")
+            if lv >= 3:
+                static = loc.get('static_elements', [])
+                if static:
+                    lines.append(f"    Key elements: {', '.join(static)}")
         parts.append('\n'.join(lines))
 
     # ── 8. Audio ──────────────────────────────────────────────────────────────
-    audio_ids = shot.get('audio_id', [])
-    # Build speech transcript lookup from phase1
-    speech_transcript = {}
-    for sp in phase1_shot.get('audio', {}).get('speech', []):
-        for event in sp.get('speech_events', []):
-            ts = event.get('transcript', '')
-            if ts:
-                speech_transcript.setdefault(str(sp.get('audio_id', [])), []).append(ts)
-
     if audio_ids:
-        lines = ["Audio in this shot:"]
+        lines = ["Audio:"]
         for aid in audio_ids:
             a = audio_map.get(aid, {})
             atype = ' / '.join(filter(None, [a.get('type', ''), a.get('secondary_type', '')]))
-            lines.append(f"  {aid} — {a.get('name', 'Unknown')}" + (f" [{atype}]" if atype else ""))
-            if a.get('style'):
+            lines.append(f"  {aid} — {a.get('name', 'Unknown')}" +
+                         (f" [{atype}]" if lv >= 3 and atype else ""))
+            if lv >= 2 and a.get('style'):
                 lines.append(f"    Style: {a['style']}")
-            if a.get('content') and a['content'] != 'na':
+            if lv >= 3 and a.get('content') and a['content'] != 'na':
                 lines.append(f"    Content: {a['content']}")
-            if a.get('rationale'):
+            if lv >= 3 and a.get('rationale'):
                 lines.append(f"    Rationale: {a['rationale']}")
-        # Append any speech transcripts
-        all_transcripts = []
-        for sp in phase1_shot.get('audio', {}).get('speech', []):
-            for event in sp.get('speech_events', []):
-                t = event.get('transcript', '').strip()
-                if t:
-                    all_transcripts.append(f'"{t}"')
-        if all_transcripts:
-            lines.append(f"  Spoken dialogue/VO: {' / '.join(all_transcripts)}")
+        if lv >= 2 and all_transcripts:
+            lines.append(f"  Spoken VO/dialogue: {' / '.join(all_transcripts)}")
         parts.append('\n'.join(lines))
 
     # ── 9. Scene narrative (phase1_5) ─────────────────────────────────────────
-    if phase1_5_info:
-        role = phase1_5_info.get('role_in_scene', {})
-        contrib = phase1_5_info.get('scene_contribution', {})
+    if lv >= 3 and phase1_5_info:
+        role       = phase1_5_info.get('role_in_scene', {})
+        contrib    = phase1_5_info.get('scene_contribution', {})
         continuity = phase1_5_info.get('continuity_logic', {})
-        scene_lines = [f"Scene narrative (scene {phase1_5_info.get('scene_id', '')}):"]
-        if role.get('role_type'):
-            scene_lines.append(f"  Role type: {role['role_type']}  |  Position: {role.get('position_in_scene', '')}")
+        scene_lines = [f"Scene narrative ({phase1_5_info.get('scene_id', '')}):"]
         if role.get('beat_description'):
             scene_lines.append(f"  Beat: {role['beat_description']}")
         if contrib.get('emotion_pacing'):
             scene_lines.append(f"  Emotional pacing: {contrib['emotion_pacing']}")
-        if contrib.get('information_gain'):
+        if lv >= 4 and contrib.get('information_gain'):
             scene_lines.append(f"  Information conveyed: {contrib['information_gain']}")
-        from_rel = continuity.get('from_previous_shot', {}).get('relation', '')
-        to_rel   = continuity.get('to_next_shot', {}).get('relation', '')
-        if from_rel:
-            scene_lines.append(f"  Transition in:  {from_rel}")
-        if to_rel:
-            scene_lines.append(f"  Transition out: {to_rel}")
+        if lv >= 4:
+            from_rel = continuity.get('from_previous_shot', {}).get('relation', '')
+            to_rel   = continuity.get('to_next_shot',       {}).get('relation', '')
+            if from_rel:
+                scene_lines.append(f"  Transition in:  {from_rel}")
+            if to_rel:
+                scene_lines.append(f"  Transition out: {to_rel}")
         parts.append('\n'.join(scene_lines))
 
-    # ── 10. First-frame reference ──────────────────────────────────────────────
+    # ── 10. First-frame reference (all levels) ────────────────────────────────
     parts.append(
         "Reference image: The provided image is the first frame of this shot. "
         "Use it as a precise visual reference for scene composition, "
