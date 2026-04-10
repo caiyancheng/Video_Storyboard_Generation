@@ -296,7 +296,7 @@ if __name__ == "__main__":
 
         # --- Submit task ---
         first_frame_url = (
-            f"https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng"
+            f"https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng"
             f"/{shot_id_safe}_first_frame.jpg"
         )
         logger.info(f"first_frame_url={first_frame_url}")
@@ -314,7 +314,7 @@ if __name__ == "__main__":
                 "prompt": """
             女主在草坪上畅谈自己的理想，人物表情生动，电影感构图。
                     """,
-                "language": "en",
+                "language": "zh",
                 "duration": 10, #duration_int,
                 "seed": 42,
                 "aspect_ratio": "9:16",
