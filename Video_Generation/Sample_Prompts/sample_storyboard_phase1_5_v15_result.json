@@ -1,0 +1,710 @@
+{
+  "video_id": "v15044gf0000cpmpet7og65tmqmc48k0",
+  "item_id": "7380722414042352927",
+  "tos_key": "wenzhong300M/v15044gf0000cpmpet7og65tmqmc48k0",
+  "video_url": "https://tosv-va.tiktok-row.org/obj/nebudata-us/wenzhong300M/v15044gf0000cpmpet7og65tmqmc48k0",
+  "phase0_path": "data/tt_hq_posts/sample_storyboard_phase0_v15_result.json",
+  "phase1_path": "data/tt_hq_posts/sample_storyboard_phase1_v15_result.json",
+  "shot_in_scene_registry": [
+    {
+      "shot_id": "<Shot_1>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot establishes the scene's central narrator, theme, and confessional style. It serves as the primary 'A-roll' or anchor point for the video essay, introducing the core problem: an inability to take a break.",
+      "role_in_scene": {
+        "role_type": "Establishing",
+        "position_in_scene": "opening",
+        "beat_description": "Introduces the narrator (<Subject_1>), the main narration setting (<Location_1>), and the video's central theme about not being good at taking breaks.",
+        "is_essential": true,
+        "omission_consequence": "The entire premise and context of the video essay would be lost. The viewer wouldn't know who is speaking or what the topic is.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Other",
+          "relation": ""
+        },
+        "to_next_shot": {
+          "type": "Jump Cut",
+          "relation": "Cuts to a montage of 'B-roll' clips that will illustrate and complicate the opening statement."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Introduces the narrator, her personality (reflective), the setting for her narration, and the video's main topic.",
+        "emotion_pacing": "Establishes a calm, contemplative, and personal tone for the scene.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>"
+          ],
+          "prop_id": [
+            "<Prop_1>"
+          ],
+          "location_id": [
+            "<Location_1>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:00.000-00:03.036",
+      "shot_keyframe": "00:01.518",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_2>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot begins a montage sequence that visually illustrates the narrator's life outside of work. It provides a counterpoint to her opening statement, showing a moment of apparent leisure and happiness.",
+      "role_in_scene": {
+        "role_type": "Montage",
+        "position_in_scene": "middle",
+        "beat_description": "Shows <Subject_1> in a happy, social setting (<Location_2>), which contrasts with her claim of not being good at taking breaks.",
+        "is_essential": false,
+        "omission_consequence": "The montage would be slightly less effective at establishing her social life, but the point would still be made by the following shots.",
+        "redundancy_reason": "This shot is part of a series of quick cuts (<Shot_2>, <Shot_3>, <Shot_4>) that collectively establish the carnival setting. The next shot of her companion serves a similar purpose."
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Jump Cut",
+          "relation": "Cuts from the calm park setting to a vibrant, nighttime carnival, initiating a montage."
+        },
+        "to_next_shot": {
+          "type": "Reaction Shot",
+          "relation": "Cuts to her companion (<Subject_2>) in the same location, suggesting they are together and interacting."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Establishes that the narrator engages in social activities and can appear happy and relaxed. Introduces the carnival location.",
+        "emotion_pacing": "Accelerates the pace with a quick cut and introduces a joyful, energetic mood.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>"
+          ],
+          "prop_id": [],
+          "location_id": [
+            "<Location_2>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:03.036-00:04.004",
+      "shot_keyframe": "00:03.520",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_3>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot continues the montage by introducing <Subject_2>, establishing that the narrator's social outing involves a companion. It reinforces the theme of social leisure time as the narration clarifies she is not a 'workaholic'.",
+      "role_in_scene": {
+        "role_type": "Montage",
+        "position_in_scene": "middle",
+        "beat_description": "Introduces <Subject_2> and reinforces the social context of the carnival outing.",
+        "is_essential": true,
+        "omission_consequence": "The presence of a companion, which is relevant in later shots, would not be established here. It would make the montage feel less social.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Reaction Shot",
+          "relation": "Cuts from <Subject_1> to her companion <Subject_2>, confirming they are together at the carnival."
+        },
+        "to_next_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts to a wider, atmospheric shot of a carnival ride to establish the environment more broadly."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Introduces <Subject_2> as a companion in the narrator's social life.",
+        "emotion_pacing": "Maintains the quick, social, and energetic pace of the montage.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_2>"
+          ],
+          "prop_id": [],
+          "location_id": [
+            "<Location_2>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:04.004-00:05.105",
+      "shot_keyframe": "00:04.554",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_4>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot serves as an atmospheric insert within the montage, broadening the view of the carnival beyond the close-ups of the subjects. It adds visual variety and reinforces the setting.",
+      "role_in_scene": {
+        "role_type": "Insert",
+        "position_in_scene": "middle",
+        "beat_description": "Provides an establishing shot for the carnival location, adding atmosphere and a sense of scale to the montage.",
+        "is_essential": false,
+        "omission_consequence": "The scene would lose a bit of visual flair and environmental context, but the narrative about the narrator and her companion would remain intact.",
+        "redundancy_reason": "The carnival setting is already established through the background of shots <Shot_2> and <Shot_3>."
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts from a close-up of a person to a wide shot of the environment, providing context."
+        },
+        "to_next_shot": {
+          "type": "Jump Cut",
+          "relation": "Cuts to a completely different location and time (daytime park), continuing the montage with a new set of illustrative clips."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Shows the scale and type of activity at the location (<Location_2>).",
+        "emotion_pacing": "Provides a brief, dynamic visual break from the close-ups.",
+        "focus_targets": {
+          "subject_id": [],
+          "prop_id": [],
+          "location_id": [
+            "<Location_2>"
+          ],
+          "audio_id": []
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:05.105-00:06.440",
+      "shot_keyframe": "00:05.773",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_5>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot begins a new beat in the montage, juxtaposing a happy visual with the narrator's confession of being 'good at procrastinating'. This is a key moment that reframes the 'breaks' we are seeing as a form of avoidance.",
+      "role_in_scene": {
+        "role_type": "Montage",
+        "position_in_scene": "middle",
+        "beat_description": "Visually depicts a pleasant break while the narration re-contextualizes this activity as procrastination.",
+        "is_essential": true,
+        "omission_consequence": "The crucial link between the visual of 'taking a break' and the narrator's theme of 'procrastination' would be weakened.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Jump Cut",
+          "relation": "Cuts from the carnival at night to a park during the day, starting a new visual example."
+        },
+        "to_next_shot": {
+          "type": "Match Cut",
+          "relation": "Maintains the selfie-style framing and location while widening the shot to include <Subject_2>."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Introduces the core concept of the narrator's procrastination, linking it to seemingly leisurely activities.",
+        "emotion_pacing": "Creates a moment of ironic contrast between the happy visual and the self-critical narration.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>"
+          ],
+          "prop_id": [],
+          "location_id": [
+            "<Location_1>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:06.440-00:08.008",
+      "shot_keyframe": "00:07.224",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_6>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot visually defines the narrator's concept of 'productive procrastination' by showing her with her companion. The narration explains she replaces one task with another, and this shot provides the visual for that 'other' task: socializing.",
+      "role_in_scene": {
+        "role_type": "Montage",
+        "position_in_scene": "middle",
+        "beat_description": "Visually illustrates the concept of replacing an unwanted task with a social activity, completing the thought from the previous shot.",
+        "is_essential": true,
+        "omission_consequence": "The narration's point about 'replacing it with another' would lack its direct visual illustration.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Match Cut",
+          "relation": "Continues the selfie-style shot from the previous clip, widening to include <Subject_2>."
+        },
+        "to_next_shot": {
+          "type": "Jump Cut",
+          "relation": "Cuts back to the primary narration setting (<Location_1>), concluding the montage sequence."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Confirms <Subject_2> is present with <Subject_1> in this second location, and visually completes the definition of her procrastination.",
+        "emotion_pacing": "Maintains the upbeat, social feel of the montage before returning to the main narration.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>",
+            "<Subject_2>"
+          ],
+          "prop_id": [],
+          "location_id": [
+            "<Location_1>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:08.008-00:09.510",
+      "shot_keyframe": "00:08.759",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_7>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot returns to the primary narration setting, grounding the scene after the fast-paced montage. The narrator now provides a specific, historical example (college) to illustrate the general concept of procrastination she just introduced.",
+      "role_in_scene": {
+        "role_type": "Development",
+        "position_in_scene": "middle",
+        "beat_description": "Returns to the 'A-roll' to provide a specific example of 'productive procrastination' from her college days, setting up the next visual insert.",
+        "is_essential": true,
+        "omission_consequence": "The transition from the general concept of procrastination to a specific example would be lost, making the following shot feel disconnected.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Jump Cut",
+          "relation": "Returns from the montage back to the main narration setting."
+        },
+        "to_next_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts to an illustrative insert shot that visually depicts the 'capstone video' work she is describing."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Provides a concrete example from the narrator's past to support her thesis on procrastination.",
+        "emotion_pacing": "Slows the pace down from the montage, returning to a more deliberate, narrative rhythm.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>"
+          ],
+          "prop_id": [
+            "<Prop_1>"
+          ],
+          "location_id": [
+            "<Location_1>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:09.510-00:12.613",
+      "shot_keyframe": "00:11.061",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_8>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot is a direct visual illustration of the narrator's college procrastination example. The tired, stressed expression on her face is crucial, as it shows that her 'procrastination' is not restful but simply a different form of work.",
+      "role_in_scene": {
+        "role_type": "Insert",
+        "position_in_scene": "middle",
+        "beat_description": "Visually illustrates the 'capstone video' work mentioned in the narration, emphasizing the stress and fatigue involved.",
+        "is_essential": true,
+        "omission_consequence": "The audience would not see the stressful nature of her 'productive procrastination,' a key element of her argument.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts from the narrator telling a story to a visual depiction of that story."
+        },
+        "to_next_shot": {
+          "type": "Jump Cut",
+          "relation": "Cuts back to the primary narration setting to introduce the next example."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Shows the emotional state (stress, fatigue) associated with her procrastination, clarifying it's not a true break.",
+        "emotion_pacing": "Injects a feeling of stress and weariness, contrasting with the calm narration setting.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>"
+          ],
+          "prop_id": [],
+          "location_id": [
+            "<Location_3>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:12.613-00:14.715",
+      "shot_keyframe": "00:13.664",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_9>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot returns to the A-roll to bridge from a past example to a present one. By showing that this behavior continues from college into the 'working world,' the narrator establishes it as a long-term, persistent pattern.",
+      "role_in_scene": {
+        "role_type": "Development",
+        "position_in_scene": "middle",
+        "beat_description": "Transitions the narrative from a past (college) example to a current (work) example of procrastination, setting up the next insert.",
+        "is_essential": true,
+        "omission_consequence": "The link showing the progression of her habit from past to present would be broken.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Jump Cut",
+          "relation": "Returns from the illustrative insert back to the main narration setting."
+        },
+        "to_next_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts to an illustrative insert of her creating 'assets' for work."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Establishes that the procrastination habit has continued into her professional life.",
+        "emotion_pacing": "Maintains the steady, storytelling rhythm of the A-roll shots.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>"
+          ],
+          "prop_id": [
+            "<Prop_1>"
+          ],
+          "location_id": [
+            "<Location_1>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:14.715-00:17.818",
+      "shot_keyframe": "00:16.267",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "id": "<Shot_10>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot is the visual illustration for the 'working world' example of procrastination. The close-up on the hands performing a creative task visually represents the 'assets' she mentions, showing another form of non-essential work used to avoid an essential task.",
+      "role_in_scene": {
+        "role_type": "Insert",
+        "position_in_scene": "middle",
+        "beat_description": "Visually depicts the act of creating 'assets' as a form of work-related procrastination.",
+        "is_essential": true,
+        "omission_consequence": "The second example of procrastination would be purely auditory, lacking the visual proof that reinforces the pattern of behavior.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts from the narrator describing her work procrastination to a visual of the act itself."
+        },
+        "to_next_shot": {
+          "type": "Jump Cut",
+          "relation": "Cuts back to the primary narration setting for the narrative's turning point."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Provides a second, distinct example of 'productive procrastination,' this time in a professional context.",
+        "emotion_pacing": "Creates a quiet, focused moment that contrasts with the previous stressed close-up.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>"
+          ],
+          "prop_id": [
+            "temp_prop_book_1"
+          ],
+          "location_id": [
+            "<Location_3>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_id": "<Shot_10>",
+      "shot_abs_time_range": "00:17.818-00:20.821",
+      "shot_keyframe": "00:19.320",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_11>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot functions as a narrative turn. After establishing the pattern of procrastination, the narrator explains the consequence: hitting a wall and feeling overwhelmed. This sets up the final part of the scene, which deals with her coping mechanism for burnout.",
+      "role_in_scene": {
+        "role_type": "Turn",
+        "position_in_scene": "middle",
+        "beat_description": "The narrator describes the climax of her procrastination cycle: hitting a mental wall and feeling overwhelmed, which pivots the story towards its consequences.",
+        "is_essential": true,
+        "omission_consequence": "The reason for her shift from 'productive procrastination' to passive distraction would be missing. The following shots of her on the couch would lack context.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Jump Cut",
+          "relation": "Returns from the illustrative insert to the main narration setting to deliver a key narrative turning point."
+        },
+        "to_next_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts to a shot that visually represents the feeling of 'hitting a wall': her lying exhausted on the couch."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Explains the negative consequence of her behavior (burnout).",
+        "emotion_pacing": "Builds tension and raises the emotional stakes of the narrative.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>"
+          ],
+          "prop_id": [
+            "<Prop_1>"
+          ],
+          "location_id": [
+            "<Location_1>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:20.821-00:25.158",
+      "shot_keyframe": "00:22.989",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_12>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot is the direct visual payoff for the 'hitting a wall' narration. It shows the narrator in a state of exhaustion, visually representing burnout. The accompanying narration introduces the next layer of her problem: even when exhausted, she avoids true rest like napping.",
+      "role_in_scene": {
+        "role_type": "Insert",
+        "position_in_scene": "middle",
+        "beat_description": "Visually depicts the narrator's state of burnout after 'hitting a wall,' while the narration explains her avoidance of actual rest.",
+        "is_essential": true,
+        "omission_consequence": "The abstract concept of 'hitting a wall' would not have a powerful visual representation. The viewer wouldn't see the physical toll.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts from the narrator describing burnout to a visual of her experiencing it."
+        },
+        "to_next_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts to an example of the distracting activity (playing a video game) she chooses instead of resting."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Visually confirms the narrator's state of exhaustion and introduces her avoidance of napping.",
+        "emotion_pacing": "Shifts the mood to one of quiet exhaustion and weariness.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>"
+          ],
+          "prop_id": [],
+          "location_id": [
+            "<Location_4>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:25.158-00:27.794",
+      "shot_keyframe": "00:26.476",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_13>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot provides a concrete example of the passive distraction the narrator turns to when she's burned out. The narration explicitly names the activity ('play a video game'), directly linking the audio and visual to illustrate her coping mechanism.",
+      "role_in_scene": {
+        "role_type": "Insert",
+        "position_in_scene": "middle",
+        "beat_description": "Illustrates one of the specific passive distractions (playing a video game) the narrator uses to avoid rest.",
+        "is_essential": true,
+        "omission_consequence": "The narrator's description of her distractions would remain abstract without this concrete visual example.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts from the exhausted narrator to a shot of the activity she is doing."
+        },
+        "to_next_shot": {
+          "type": "Jump Cut",
+          "relation": "Cuts back to the main narration setting to provide the psychological explanation for this behavior."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Shows a specific example of the narrator's avoidance behavior (playing video games).",
+        "emotion_pacing": "Maintains the low-energy, passive mood, emphasizing escapism.",
+        "focus_targets": {
+          "subject_id": [],
+          "prop_id": [
+            "<Prop_3>"
+          ],
+          "location_id": [
+            "<Location_4>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:27.794-00:29.596",
+      "shot_keyframe": "00:28.695",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_14>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This shot returns to the A-roll to provide the psychological reasoning behind the narrator's behavior. After showing what she does (plays games, watches TV), she now explains why: an inability to be unproductive, which leads her to 'drown out the thoughts' instead.",
+      "role_in_scene": {
+        "role_type": "Development",
+        "position_in_scene": "closing",
+        "beat_description": "The narrator explains the internal logic behind her avoidance of rest, stating her belief that she must always be productive.",
+        "is_essential": true,
+        "omission_consequence": "The psychological motivation for her self-destructive cycle of 'productive procrastination' followed by 'passive distraction' would be unclear.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Jump Cut",
+          "relation": "Returns from the illustrative insert to the main narration setting to explain the 'why'."
+        },
+        "to_next_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts to a shot that visually represents the idea of 'drowning out the thoughts'."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Reveals the core belief driving the narrator's behavior: a perceived need to always be productive.",
+        "emotion_pacing": "Provides a moment of clear, direct psychological insight, bringing the scene's argument towards its conclusion.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>"
+          ],
+          "prop_id": [
+            "<Prop_1>"
+          ],
+          "location_id": [
+            "<Location_1>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:29.596-00:32.566",
+      "shot_keyframe": "00:31.081",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_15>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This is a key climactic shot for the scene's theme. It perfectly visualizes the phrase 'drowning out the thoughts' from the narration. The narrator is shown in a passive, vacant state, physically clinging to a comfort object (<Prop_2>) while mentally escaping via an off-screen TV.",
+      "role_in_scene": {
+        "role_type": "Climax",
+        "position_in_scene": "closing",
+        "beat_description": "Provides a powerful visual metaphor for the narrator's state of mind, showing her passively 'drowning out the thoughts' with a comfort object.",
+        "is_essential": true,
+        "omission_consequence": "The scene would lose its most potent emotional and thematic image. The phrase 'drowning out the thoughts' would lack its visual anchor.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Cutaway",
+          "relation": "Cuts from the narrator explaining her mindset to a powerful visual representation of that mindset in action."
+        },
+        "to_next_shot": {
+          "type": "Eyeline Match",
+          "relation": "Cuts to a point-of-view shot showing what she is looking at (<Prop_3>), completing the action."
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Reveals the emotional state of passive escapism and the need for comfort (<Prop_2>) that accompanies her burnout.",
+        "emotion_pacing": "Brings the scene to its emotional climax, creating a strong feeling of empathy and pathos.",
+        "focus_targets": {
+          "subject_id": [
+            "<Subject_1>"
+          ],
+          "prop_id": [
+            "<Prop_2>"
+          ],
+          "location_id": [
+            "<Location_4>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:32.566-00:34.234",
+      "shot_keyframe": "00:33.400",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    },
+    {
+      "shot_id": "<Shot_16>",
+      "scene_id": "<Scene_1>",
+      "rationale": "This final shot of the scene serves as the resolution to the sequence. By adopting a first-person POV, it places the viewer directly in the narrator's position of passive media consumption. It's the ultimate illustration of her choosing any distraction possible to avoid her own thoughts.",
+      "role_in_scene": {
+        "role_type": "Resolution",
+        "position_in_scene": "closing",
+        "beat_description": "Concludes the scene by showing the narrator's POV as she distracts herself with TV, providing a final, empathetic illustration of her behavior.",
+        "is_essential": true,
+        "omission_consequence": "The scene would end on the shot of the narrator rather than resolving with a shot of her experience, which would be a less impactful conclusion.",
+        "redundancy_reason": null
+      },
+      "continuity_logic": {
+        "from_previous_shot": {
+          "type": "Eyeline Match",
+          "relation": "Cuts from the narrator looking off-screen to a POV shot of what she is looking at (the TV)."
+        },
+        "to_next_shot": {
+          "type": "Other",
+          "relation": ""
+        }
+      },
+      "scene_contribution": {
+        "information_gain": "Provides a final, specific example of distraction (watching 'Friends') and uses a POV shot to create viewer empathy.",
+        "emotion_pacing": "Resolves the scene on a note of quiet, passive escapism, leaving the viewer to contemplate the narrator's state.",
+        "focus_targets": {
+          "subject_id": [],
+          "prop_id": [
+            "<Prop_3>"
+          ],
+          "location_id": [
+            "<Location_4>"
+          ],
+          "audio_id": [
+            "<Audio_1>"
+          ]
+        }
+      },
+      "editorial_suggestion": "",
+      "shot_abs_time_range": "00:34.234-00:36.737",
+      "shot_keyframe": "00:35.486",
+      "scene_abs_time_range": "00:00.000-00:36.737"
+    }
+  ]
+}

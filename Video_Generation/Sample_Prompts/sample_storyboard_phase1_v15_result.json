@@ -1,0 +1,1913 @@
+{
+  "video_id": "v15044gf0000cpmpet7og65tmqmc48k0",
+  "item_id": "7380722414042352927",
+  "tos_key": "wenzhong300M/v15044gf0000cpmpet7og65tmqmc48k0",
+  "video_url": "https://tosv-va.tiktok-row.org/obj/nebudata-us/wenzhong300M/v15044gf0000cpmpet7og65tmqmc48k0",
+  "phase0_path": "data/tt_hq_posts/sample_storyboard_phase0_v15_result.json",
+  "shot_registry": [
+    {
+      "id": "<Shot_1>",
+      "time_range": "00:00.000-00:03.036",
+      "caption": "<Subject_1> (The Narrator) sits on a blanket in <Location_1> (Grassy park), holding <Prop_1> (Small Silver Microphone) and speaking.",
+      "segment_id": [
+        "<Segment_1>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_1>"
+      ],
+      "location_id": [
+        "<Location_1>"
+      ],
+      "dense_caption": "A medium shot captures <Subject_1>, a young woman of East Asian descent, sitting in a park. The shot is static and framed by the overhanging branches of a leafy tree, which are visible at the top and right edges. She is seated cross-legged on a large picnic blanket made of a fabric with a wavy striped pattern in shades of dark blue, light blue, white, and tan. The blanket is spread out on a lush, green lawn. <Subject_1> is wearing a fitted, short-sleeved t-shirt in a muted olive green color, loose-fitting blue denim jeans, and white sneakers with three black stripes on the side, consistent with Adidas Superstars. She also wears white, ruffled ankle socks. Her long, straight dark hair is partially tied back, and she wears small, dangly pearl earrings. In her right hand, she holds <Prop_1>, a small silver lavalier microphone with a black foam windscreen, close to her mouth as she speaks. Her left hand rests on her lap, near a smartphone in a clear, light-purple-tinted case. She looks slightly up and to her right, a smile on her face as she talks. The background is a wide expanse of green field leading to a distant tree line under a bright, slightly overcast sky. The overall lighting is soft and warm, suggesting late afternoon. An on-screen text caption in white with a black outline reads 'never been good at' near her feet.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:00.000-00:03.036",
+            "music_features": {
+              "instrumentation": "Clean electric guitar",
+              "melody_motif": "A simple, repetitive, and gentle melodic loop.",
+              "rhythm_type": "Slow, steady lo-fi rhythm.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Lo-fi, Chill-hop, Relaxed, Contemplative",
+            "rationale": "Parallel. The soft, gentle instrumental music establishes a calm and introspective mood that aligns with the visual of a person reflecting in a park and the personal nature of the narration."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "<Subject_1>"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:00.640-00:03.036",
+                "voice_fingerprint": {
+                  "timbre": "Clear, light, and conversational.",
+                  "gender_age": "Young adult female",
+                  "accent": "Standard American"
+                },
+                "role_in_scene": "The narrator introducing the video's central theme.",
+                "transcript": "I've honestly never been good at taking a break.",
+                "style": "Reflective, calm, and evenly paced."
+              }
+            ],
+            "rationale": "This voiceover, delivered by the on-screen subject, serves as the video's inciting incident, establishing the core topic of her inability to rest, which the subsequent visuals will illustrate."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "A young East Asian woman with long, straight dark hair partially tied back. She wears a green short-sleeved t-shirt, blue jeans, white ruffled socks, and white sneakers with black stripes. She has small pearl drop earrings.",
+            "action": "Sits cross-legged on a blanket in a park, holding a small microphone to her mouth with her right hand while speaking and smiling. Her left hand rests on her lap.",
+            "timestamp_presence": [
+              "00:00.000-00:03.036"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "<Prop_1>",
+            "prop_description": "A small, cylindrical, silver-colored lavalier microphone with a black foam windscreen on top.",
+            "interaction": "Held in <Subject_1>'s right hand and positioned near her mouth, indicating she is using it to record her speech.",
+            "timestamp_presence": [
+              "00:00.000-00:03.036"
+            ]
+          },
+          {
+            "id": "temp_prop_blanket_1",
+            "prop_description": "A large picnic blanket with a wavy striped pattern in blue, white, and tan.",
+            "interaction": "<Subject_1> is sitting on it. It serves as the immediate ground surface for the action.",
+            "timestamp_presence": [
+              "00:00.000-00:03.036"
+            ]
+          },
+          {
+            "id": "temp_prop_smartphone_1",
+            "prop_description": "A smartphone inside a clear case with a slight purple or blue tint, featuring a prominent multi-lens camera bump.",
+            "interaction": "Rests on <Subject_1>'s lap, with her left hand resting on or near it.",
+            "timestamp_presence": [
+              "00:00.000-00:03.036"
+            ]
+          }
+        ],
+        "interaction_tracking": [
+          {
+            "id": "temp_interaction_1",
+            "subject_id": [
+              "<Subject_1>"
+            ],
+            "prop_id": [
+              "<Prop_1>"
+            ],
+            "interaction": "<Subject_1> holds <Prop_1> to her mouth to speak into it, actively using it for audio recording.",
+            "timestamp_presence": [
+              "00:00.000-00:03.036"
+            ]
+          }
+        ],
+        "location_tracking": [
+          {
+            "id": "<Location_1>",
+            "visual_environment": "A large, open green field under a bright, overcast sky. The scene is framed by the branches and leaves of a tree in the foreground. The lighting is soft and warm, characteristic of late afternoon. A distant tree line is visible across the field.",
+            "timestamp_presence": [
+              "00:00.000-00:03.036"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Static",
+          "shot_scale": "Medium Shot",
+          "lighting_style": "Natural daylight, diffused and soft with a warm quality.",
+          "color_tone": "A warm, natural palette dominated by the green grass, blue denim, and the warm tan stripes of the blanket.",
+          "mood_atmosphere": "Peaceful, calm, and contemplative, with a slightly nostalgic vlog aesthetic."
+        }
+      }
+    },
+    {
+      "id": "<Shot_2>",
+      "time_range": "00:03.036-00:04.004",
+      "caption": "A tight close-up of <Subject_1> (The Narrator) smiling at <Location_2> (Carnival), with the lights of a carousel in the background.",
+      "segment_id": [
+        "<Segment_2>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_2>"
+      ],
+      "dense_caption": "In a tight, handheld close-up shot, <Subject_1> is seen at what appears to be a carnival at dusk. She is a young woman of East Asian descent with long, straight dark hair parted in the middle. Her face fills most of the frame, and she looks slightly to her right with a wide, genuine smile, showing her teeth. She is wearing subtle makeup, including pinkish eyeshadow and defined eyebrows. She has small pearl or white sphere earrings. Her top is a simple white collared shirt, though only the collar and a small portion of the shoulder are visible. At the bottom left corner of the frame, the black foam windscreen of a small lavalier microphone, `temp_microphone_1`, is visible, suggesting she is recording audio. The background is beautifully blurred, dominated by the warm, golden lights of a large carousel. The out-of-focus lights create a strong bokeh effect, with circular patterns of yellow and white against the darker, teal-colored structure of the ride. The overall atmosphere is joyful, vibrant, and slightly nostalgic, created by the warm lighting and the classic carnival setting of <Location_2>.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:03.036-00:04.004",
+            "music_features": {
+              "instrumentation": "Clean electric guitar, Lo-fi drum machine",
+              "melody_motif": "A simple, repetitive, and gentle melodic line played on the electric guitar.",
+              "rhythm_type": "A slow, steady, and simple lo-fi beat.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Lo-fi Instrumental, Slow-paced, Contemplative and relaxed.",
+            "rationale": "The music provides a gentle, thoughtful backdrop that contrasts slightly with the vibrant visual, aligning more with the introspective tone of the overarching narration."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "temp_speaker_1"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:03.036-00:04.004",
+                "voice_fingerprint": {
+                  "timbre": "Clear and smooth",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator providing introspective commentary over a montage of past events.",
+                "transcript": "that's not to say",
+                "style": "Calm, conversational, and evenly paced."
+              }
+            ],
+            "rationale": "The voiceover begins to introduce the video's central theme of work and productivity, with the visual of a fun outing serving as a counterpoint or illustration."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "A young East Asian woman with long dark hair, wearing a white collared shirt and pearl earrings. She has a wide smile and is looking slightly off-camera.",
+            "action": "Smiling and looking towards her right, holding a relatively static pose for the selfie-style shot.",
+            "timestamp_presence": [
+              "00:03.036-00:04.004"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "temp_microphone_1",
+            "prop_description": "The top of a small microphone with a black, fuzzy foam windscreen is visible at the bottom left of the frame.",
+            "interaction": "The microphone is positioned to capture audio, likely clipped to the subject's clothing just out of frame.",
+            "timestamp_presence": [
+              "00:03.036-00:04.004"
+            ]
+          }
+        ],
+        "interaction_tracking": [],
+        "location_tracking": [
+          {
+            "id": "<Location_2>",
+            "visual_environment": "The location is a carnival at dusk. The background is dominated by a large, out-of-focus carousel, identifiable by its ornate teal and gold structure and numerous warm, glowing yellow lights that create a strong bokeh effect.",
+            "timestamp_presence": [
+              "00:03.036-00:04.004"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Handheld",
+          "shot_scale": "Close Up",
+          "lighting_style": "Low-key with warm, bright artificial lights from the background creating a soft fill on the subject.",
+          "color_tone": "Warm golden and yellow tones, with teal and dark blue in the background.",
+          "mood_atmosphere": "Joyful, vibrant, and warm."
+        }
+      }
+    },
+    {
+      "id": "<Shot_3>",
+      "time_range": "00:04.004-00:05.105",
+      "caption": "A close-up of <Subject_2> (The Companion) talking and smiling at <Location_2> (Carnival).",
+      "segment_id": [
+        "<Segment_2>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_2>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_2>"
+      ],
+      "dense_caption": "This shot is a close-up of <Subject_2>, filmed at the same carnival, <Location_2>. He is a young man with short brown hair, a light mustache and beard, and he is wearing black-rimmed glasses. His face is angled towards the left of the frame, and he has a gentle smile as he appears to be in the middle of speaking. He is wearing a short-sleeved collared shirt with a pattern of vertical stripes in muted shades of red, white, and blue or grey. The lighting catches the reflection on his glasses. The camera is handheld, showing slight, natural movement. The background is identical to the previous shot, featuring the soft-focus, warmly lit carousel. The multitude of golden-yellow bokeh circles from the ride's lights fills the space behind him, reinforcing the festive, nighttime atmosphere of the carnival. The focus is kept shallow, sharply rendering the subject while the background melts into an abstract pattern of light and color. He appears relaxed and engaged in a pleasant social interaction.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:04.004-00:05.105",
+            "music_features": {
+              "instrumentation": "Clean electric guitar, Lo-fi drum machine",
+              "melody_motif": "The gentle electric guitar melody continues its loop from the previous shot.",
+              "rhythm_type": "A slow, steady, and simple lo-fi beat continues.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Lo-fi Instrumental, Slow-paced, Contemplative and relaxed.",
+            "rationale": "The music continues to provide a consistent, unifying emotional tone across the montage clips, bridging the cut between the two subjects."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "temp_speaker_1"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:04.004-00:05.105",
+                "voice_fingerprint": {
+                  "timbre": "Clear and smooth",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator providing introspective commentary over a montage of past events.",
+                "transcript": "that I'm a workaholic",
+                "style": "Calm, conversational, and evenly paced."
+              }
+            ],
+            "rationale": "The narration continues to develop its central idea, contrasting the concept of being a 'workaholic' with the visual of social leisure time."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_2>",
+            "appearance_description": "A young man with short brown hair, glasses, and light facial hair. He is wearing a multi-colored striped short-sleeve shirt and is smiling.",
+            "action": "Smiling and looking towards the left of the frame, appearing to be in mid-conversation.",
+            "timestamp_presence": [
+              "00:04.004-00:05.105"
+            ]
+          }
+        ],
+        "prop_tracking": [],
+        "interaction_tracking": [],
+        "location_tracking": [
+          {
+            "id": "<Location_2>",
+            "visual_environment": "The environment is the same carnival setting as the previous shot. A large, out-of-focus carousel with bright, warm yellow lights provides the backdrop.",
+            "timestamp_presence": [
+              "00:04.004-00:05.105"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Handheld",
+          "shot_scale": "Close Up",
+          "lighting_style": "Low-key with warm, bright artificial lights from the background creating a soft fill on the subject.",
+          "color_tone": "Warm golden and yellow tones.",
+          "mood_atmosphere": "Social, friendly, and warm."
+        }
+      }
+    },
+    {
+      "id": "<Shot_4>",
+      "time_range": "00:05.105-00:06.440",
+      "caption": "A low-angle view looking up at a tall, multi-colored swing ride at <Location_2> (Carnival).",
+      "segment_id": [
+        "<Segment_3>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [],
+      "prop_id": [],
+      "location_id": [
+        "<Location_2>"
+      ],
+      "dense_caption": "This is a low-angle, long shot looking directly up at a tall star-flyer swing ride, `temp_prop_swing_ride_1`, at the carnival, <Location_2>. The ride's central tower is a red metal lattice structure that tapers towards the top. At the peak, a rotating hub extends several arms of different colors: yellow, green, blue, and red. A small American flag is attached to one of the upper supports. Thin cables extend from the arms, holding individual or double-seat swings. Several groups of people, `temp_person_group_1`, can be seen in the swings, some near the bottom of their trajectory and others high in the air, appearing as small silhouettes against the sky. The ride is in motion, with the swings circling the central tower. The sky behind the ride is a flat, pale, almost white color, suggesting an overcast day or the bright haze of dusk. The camera remains static, emphasizing the height and rotational movement of the large mechanical structure. The vibrant primary colors of the ride contrast sharply with the plainness of the sky, making it the undeniable focus of the shot.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:05.105-00:06.440",
+            "music_features": {
+              "instrumentation": "Clean electric guitar, Lo-fi drum machine",
+              "melody_motif": "The gentle electric guitar melody continues its loop.",
+              "rhythm_type": "The steady, simple lo-fi beat continues.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Lo-fi Instrumental, Slow-paced, Contemplative and relaxed.",
+            "rationale": "The music acts as a bridge, maintaining the video's overall pensive mood while the visuals shift to a more dynamic and impersonal shot of the carnival atmosphere."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "temp_speaker_1"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:05.105-00:06.440",
+                "voice_fingerprint": {
+                  "timbre": "Clear and smooth",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator providing introspective commentary over a montage of past events.",
+                "transcript": "but more like",
+                "style": "Calm, conversational, and evenly paced."
+              }
+            ],
+            "rationale": "The narration provides a transition in thought, leading into a new clause that will further clarify the narrator's relationship with work and procrastination."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "temp_person_group_1",
+            "appearance_description": "Several indistinct people are visible riding in the swings of the large ride. They are too distant to identify features.",
+            "action": "Riding the star-flyer swing ride, rotating around the central tower at various heights.",
+            "timestamp_presence": [
+              "00:05.105-00:06.440"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "temp_prop_swing_ride_1",
+            "prop_description": "A tall, multi-colored star-flyer swing ride with a red central tower and arms in yellow, green, blue, and red. It has a small American flag attached near the top.",
+            "interaction": "The ride is actively rotating, carrying passengers in swings through the air.",
+            "timestamp_presence": [
+              "00:05.105-00:06.440"
+            ]
+          }
+        ],
+        "interaction_tracking": [],
+        "location_tracking": [
+          {
+            "id": "<Location_2>",
+            "visual_environment": "A section of the carnival featuring a large mechanical ride against a bright, overcast sky. The low angle emphasizes the scale of the ride.",
+            "timestamp_presence": [
+              "00:05.105-00:06.440"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Static",
+          "shot_scale": "Long Shot",
+          "lighting_style": "Natural daylight, diffused and bright due to the overcast sky.",
+          "color_tone": "Neutral and slightly cool, with vibrant primary colors from the ride.",
+          "mood_atmosphere": "Dynamic, expansive, and slightly exhilarating."
+        }
+      }
+    },
+    {
+      "id": "<Shot_5>",
+      "time_range": "00:06.440-00:08.008",
+      "caption": "A selfie-style close-up of <Subject_1> (The Narrator) smiling outdoors, with a blue sky and trees in the background at <Location_1> (Grassy park).",
+      "segment_id": [
+        "<Segment_4>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_1>"
+      ],
+      "dense_caption": "This is a handheld, selfie-style close-up shot of <Subject_1> in an outdoor setting, <Location_1>. Her face is shown in profile, looking towards the right of the frame with a soft, pleasant smile. Her long dark hair is partially pulled back, and a pair of dark sunglasses, `temp_prop_sunglasses_1`, rests on top of her head. She is wearing a sleeveless top with a beige, open-knit or crochet texture. Her makeup is noticeable, featuring prominent black winged eyeliner. The background is a bright, sunny day in a park. A vivid blue sky with fluffy white clouds is visible above a line of lush green trees in the distance. The lighting is bright natural sunlight, casting a gentle glow on her skin. To the far right, a small portion of another person, <Subject_2>, is visible, wearing a wide-brimmed hat. The shot has a shallow depth of field, keeping the focus on <Subject_1> while the park scenery is slightly softened. The overall mood is carefree, sunny, and peaceful.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:06.440-00:08.008",
+            "music_features": {
+              "instrumentation": "Clean electric guitar, Lo-fi drum machine",
+              "melody_motif": "The gentle electric guitar melody continues its loop.",
+              "rhythm_type": "The steady, simple lo-fi beat continues.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Lo-fi Instrumental, Slow-paced, Contemplative and relaxed.",
+            "rationale": "The music continues to score the montage, with its relaxed feel perfectly matching the sunny, leisurely park scene."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "temp_speaker_1"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:06.440-00:08.008",
+                "voice_fingerprint": {
+                  "timbre": "Clear and smooth",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator providing introspective commentary over a montage of past events.",
+                "transcript": "I'm really good at procrastinating",
+                "style": "Calm, conversational, and self-aware."
+              }
+            ],
+            "rationale": "The narration delivers a key self-assessment, which is ironically juxtaposed with a visual of leisure, suggesting that this 'break' might be a form of procrastination itself."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "A young East Asian woman shown in profile, smiling. She wears a beige knit sleeveless top, has black winged eyeliner, and dark sunglasses are perched on her head.",
+            "action": "Smiling softly while looking to her right, likely at her companion.",
+            "timestamp_presence": [
+              "00:06.440-00:08.008"
+            ]
+          },
+          {
+            "id": "<Subject_2>",
+            "appearance_description": "Partially visible on the right side of the frame, wearing a wide-brimmed hat.",
+            "action": "Standing or sitting next to <Subject_1>.",
+            "timestamp_presence": [
+              "00:06.440-00:08.008"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "temp_prop_sunglasses_1",
+            "prop_description": "A pair of dark-lensed sunglasses with brown or tortoiseshell frames.",
+            "interaction": "The sunglasses are resting on top of <Subject_1>'s head, not being worn over her eyes.",
+            "timestamp_presence": [
+              "00:06.440-00:08.008"
+            ]
+          }
+        ],
+        "interaction_tracking": [],
+        "location_tracking": [
+          {
+            "id": "<Location_1>",
+            "visual_environment": "A bright, sunny park with a wide expanse of green grass under a blue sky with white clouds. A line of green, leafy trees is visible in the background.",
+            "timestamp_presence": [
+              "00:06.440-00:08.008"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Handheld",
+          "shot_scale": "Close Up",
+          "lighting_style": "Natural daylight, bright and direct.",
+          "color_tone": "Bright and natural with a vibrant blue and green palette.",
+          "mood_atmosphere": "Carefree, peaceful, and sunny."
+        }
+      }
+    },
+    {
+      "id": "<Shot_6>",
+      "time_range": "00:08.008-00:09.510",
+      "caption": "A selfie-style close-up of <Subject_2> (The Companion) smiling outdoors in <Location_1> (Grassy park).",
+      "segment_id": [
+        "<Segment_4>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_2>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_1>"
+      ],
+      "dense_caption": "This shot is a handheld medium close-up, filmed selfie-style, featuring both <Subject_1> and <Subject_2> in the park, <Location_1>. <Subject_1> is on the left side of the frame, smiling and squinting slightly in the bright sun. The dark sunglasses, `temp_prop_sunglasses_1`, are still perched on her head, and she is wearing the same beige knit top. <Subject_2> is on the right, looking towards the camera. He is now wearing a black baseball cap, `temp_prop_baseball_cap_1`, with a white logo on the front, along with his usual black-framed glasses. His shirt is different from the carnival scene; here he wears a colorful tie-dye t-shirt with visible swirls of yellow, green, and red. The background is the same sunny park, with a clear blue sky and a backdrop of green, out-of-focus trees. The bright sunlight illuminates both subjects from the front. The composition is casual and intimate, capturing a shared moment between the two. The camera movement is minimal, consistent with someone holding a phone to take a video of themselves and a friend.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:08.008-00:09.510",
+            "music_features": {
+              "instrumentation": "Clean electric guitar, Lo-fi drum machine",
+              "melody_motif": "The gentle electric guitar melody continues its loop.",
+              "rhythm_type": "The steady, simple lo-fi beat continues.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Lo-fi Instrumental, Slow-paced, Contemplative and relaxed.",
+            "rationale": "The music continues to underscore the relaxed, friendly atmosphere of the visual, maintaining the video's consistent mood."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "temp_speaker_1"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:08.008-00:09.510",
+                "voice_fingerprint": {
+                  "timbre": "Clear and smooth",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator providing introspective commentary over a montage of past events.",
+                "transcript": "from one thing I don't wanna do",
+                "style": "Calm, conversational, and reflective."
+              }
+            ],
+            "rationale": "The narration continues to define the concept of procrastination, explaining it as a replacement activity, which these visuals of social outings perfectly illustrate."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "A young East Asian woman smiling and squinting in the sun, wearing a beige knit top with sunglasses on her head.",
+            "action": "Smiling at the camera for a selfie video.",
+            "timestamp_presence": [
+              "00:08.008-00:09.510"
+            ]
+          },
+          {
+            "id": "<Subject_2>",
+            "appearance_description": "A young man wearing a black baseball cap, glasses, and a colorful tie-dye t-shirt. He is looking at the camera.",
+            "action": "Posing for a selfie video next to <Subject_1>.",
+            "timestamp_presence": [
+              "00:08.008-00:09.510"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "temp_prop_sunglasses_1",
+            "prop_description": "A pair of dark-lensed sunglasses with brown or tortoiseshell frames.",
+            "interaction": "The sunglasses are resting on top of <Subject_1>'s head.",
+            "timestamp_presence": [
+              "00:08.008-00:09.510"
+            ]
+          },
+          {
+            "id": "temp_prop_baseball_cap_1",
+            "prop_description": "A black baseball cap with a white stylized letter 'C' or similar logo on the front.",
+            "interaction": "The cap is being worn by <Subject_2>.",
+            "timestamp_presence": [
+              "00:08.008-00:09.510"
+            ]
+          }
+        ],
+        "interaction_tracking": [
+          {
+            "id": "temp_interaction_1",
+            "subject_id": [
+              "<Subject_1>",
+              "<Subject_2>"
+            ],
+            "prop_id": [],
+            "interaction": "<Subject_1> and <Subject_2> are posing together for a selfie-style video, sharing the frame in close proximity.",
+            "timestamp_presence": [
+              "00:08.008-00:09.510"
+            ]
+          }
+        ],
+        "location_tracking": [
+          {
+            "id": "<Location_1>",
+            "visual_environment": "A bright, sunny park. The background consists of out-of-focus green trees and a clear blue sky.",
+            "timestamp_presence": [
+              "00:08.008-00:09.510"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Handheld",
+          "shot_scale": "Medium Shot",
+          "lighting_style": "Natural daylight, bright and direct.",
+          "color_tone": "Bright and natural with a vibrant blue and green palette.",
+          "mood_atmosphere": "Casual, social, and happy."
+        }
+      }
+    },
+    {
+      "id": "<Shot_7>",
+      "time_range": "00:09.510-00:12.613",
+      "caption": "<Subject_1> (The Narrator) sits on a blanket in <Location_1> (Grassy park), holding <Prop_1> (Small Silver Microphone) and speaking.",
+      "segment_id": [
+        "<Segment_5>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_1>"
+      ],
+      "location_id": [
+        "<Location_1>"
+      ],
+      "dense_caption": "A medium, static shot features <Subject_1>, a young woman of East Asian descent, sitting in a park. She is positioned on a large, woven blanket with a pattern of thick blue, white, and tan horizontal stripes, spread over a lush green lawn. The subject wears a fitted, short-sleeved top in a muted olive green color, paired with loose-fitting blue denim jeans. On her feet are white sneakers with three prominent black stripes and white socks. Her long, dark hair is styled in two low pigtails. In her right hand, she holds <Prop_1>, a small silver lavalier microphone with a black foam windscreen, close to her mouth as she speaks. Her left hand rests on her lap, holding a dark-colored smartphone. She looks slightly off-camera to her right, smiling as she talks. The background consists of a vast, vibrant green field under the shade of a large tree, whose leaves are visible at the top of the frame. In the far distance, a line of trees marks the horizon under a bright, hazy sky, suggesting a warm, overcast day. The overall lighting is soft and natural, creating a gentle and relaxed atmosphere.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:09.510-00:12.613",
+            "music_features": {
+              "instrumentation": "Clean electric guitar, subtle synth pads",
+              "melody_motif": "A simple, looping melodic phrase played on the electric guitar.",
+              "rhythm_type": "Slow, steady 4/4 beat with a lo-fi hip-hop feel.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Contemplative, gentle, lo-fi instrumental.",
+            "rationale": "The music provides a soft, continuous emotional bed for the narration, establishing a thoughtful and personal tone that parallels the visual of the narrator speaking in a calm setting."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "<Subject_1>"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:09.510-00:12.613",
+                "voice_fingerprint": {
+                  "timbre": "Clear, smooth, mid-range",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator reflecting on her past habits.",
+                "transcript": "by replacing it with another. In college, if I didn't want to write a report,",
+                "style": "Conversational, calm, and reflective."
+              }
+            ],
+            "rationale": "This voiceover provides the core narrative, explaining the concept of 'productive procrastination' that the visuals illustrate."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "A young East Asian woman with long dark hair in pigtails, wearing a green short-sleeved top, blue jeans, and white sneakers. She is sitting cross-legged and smiling.",
+            "action": "Sits on a blanket, holds a microphone, and speaks while looking off-camera.",
+            "timestamp_presence": [
+              "00:09.510-00:12.613"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "<Prop_1>",
+            "prop_description": "A small, cylindrical silver lavalier microphone with a black foam windscreen.",
+            "interaction": "Held in <Subject_1>'s right hand and positioned near her mouth for recording her speech.",
+            "timestamp_presence": [
+              "00:09.510-00:12.613"
+            ]
+          },
+          {
+            "id": "temp_prop_blanket_1",
+            "prop_description": "A large woven blanket with a repeating pattern of thick horizontal stripes in blue, white, and tan.",
+            "interaction": "<Subject_1> is sitting on it.",
+            "timestamp_presence": [
+              "00:09.510-00:12.613"
+            ]
+          },
+          {
+            "id": "temp_prop_phone_1",
+            "prop_description": "A dark-colored smartphone.",
+            "interaction": "Held loosely in <Subject_1>'s left hand, resting on her lap.",
+            "timestamp_presence": [
+              "00:09.510-00:12.613"
+            ]
+          }
+        ],
+        "interaction_tracking": [
+          {
+            "id": "temp_interaction_1",
+            "subject_id": [
+              "<Subject_1>"
+            ],
+            "prop_id": [
+              "<Prop_1>"
+            ],
+            "interaction": "<Subject_1> holds <Prop_1> to record her voiceover.",
+            "timestamp_presence": [
+              "00:09.510-00:12.613"
+            ]
+          }
+        ],
+        "location_tracking": [
+          {
+            "id": "<Location_1>",
+            "visual_environment": "A bright, open grassy park on an overcast day. The ground is covered in lush green grass. Large, leafy trees are visible in the background and at the top of the frame.",
+            "timestamp_presence": [
+              "00:09.510-00:12.613"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Static",
+          "shot_scale": "Medium Shot",
+          "lighting_style": "Natural daylight, diffused and soft.",
+          "color_tone": "Natural greens and blues with warm skin tones.",
+          "mood_atmosphere": "Calm, serene, and introspective."
+        }
+      }
+    },
+    {
+      "id": "<Shot_8>",
+      "time_range": "00:12.613-00:14.715",
+      "caption": "A close-up of <Subject_1> (The Narrator) looking up with a tired or stressed expression in <Location_3> (Home office).",
+      "segment_id": [
+        "<Segment_6>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_3>"
+      ],
+      "dense_caption": "A static close-up shot focuses on the face of <Subject_1> inside a dimly lit room, identified as <Location_3>. She is wearing a black hooded sweatshirt. Her long, dark hair frames her face. Her skin appears makeup-free, with visible redness and blemishes on her cheeks, suggesting stress or fatigue. Her expression is one of weary concentration; her dark eyes are wide and looking up and to her right, away from the camera, as if staring at a screen or thinking deeply. Her left hand is raised to her face, with the palm resting against her jaw and chin, and her fingers gently touching her cheek. A gold-colored ring with a small, dark green stone is visible on her ring finger. The background is softly out of focus, revealing a wall with a rectangular, dark-framed piece of art. The lighting is low-key and appears to be coming from a source in front of her, possibly a computer monitor, casting a soft glow on her face and creating a stark contrast with the dark room.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:12.613-00:14.715",
+            "music_features": {
+              "instrumentation": "Clean electric guitar, subtle synth pads",
+              "melody_motif": "The looping guitar melody continues from the previous shot.",
+              "rhythm_type": "Slow, steady 4/4 beat.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Contemplative, gentle, lo-fi instrumental.",
+            "rationale": "The music continues seamlessly, linking this scene of stressed work to the previous scene of reflection. The calm music creates a slight counterpoint to the subject's tired expression."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "<Subject_1>"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:12.613-00:14.715",
+                "voice_fingerprint": {
+                  "timbre": "Clear, smooth, mid-range",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator continuing her explanation.",
+                "transcript": "I would work on a capstone video.",
+                "style": "Conversational and factual."
+              }
+            ],
+            "rationale": "The narration explains the specific type of 'productive procrastination' being visually depicted, directly linking the stressed expression to an alternative work task."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "Close-up on her face. She wears a black hoodie and has visible redness on her cheeks. Her expression is tired and stressed.",
+            "action": "Looks up and to the right, resting her chin and cheek in her left hand.",
+            "timestamp_presence": [
+              "00:12.613-00:14.715"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "temp_prop_ring_1",
+            "prop_description": "A gold-colored ring with a small, rectangular dark green gemstone.",
+            "interaction": "Worn on the ring finger of <Subject_1>'s left hand, which is resting on her face.",
+            "timestamp_presence": [
+              "00:12.613-00:14.715"
+            ]
+          }
+        ],
+        "interaction_tracking": [],
+        "location_tracking": [
+          {
+            "id": "<Location_3>",
+            "visual_environment": "A dimly lit indoor room. A wall with a blurred, framed picture is visible in the background. The primary light source is in front of the subject, likely a screen.",
+            "timestamp_presence": [
+              "00:12.613-00:14.715"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Static",
+          "shot_scale": "Close Up",
+          "lighting_style": "Low-key, with a soft frontal key light (suggesting a monitor).",
+          "color_tone": "Warm, with soft shadows and prominent skin tones.",
+          "mood_atmosphere": "Tired, stressed, and focused."
+        }
+      }
+    },
+    {
+      "id": "<Shot_9>",
+      "time_range": "00:14.715-00:17.818",
+      "caption": "<Subject_1> (The Narrator) sits on a blanket in <Location_1> (Grassy park), holding <Prop_1> (Small Silver Microphone) as a white truck drives past in the background.",
+      "segment_id": [
+        "<Segment_7>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_1>"
+      ],
+      "location_id": [
+        "<Location_1>"
+      ],
+      "dense_caption": "This static medium shot returns to <Location_1>, the grassy park. <Subject_1> is again seen sitting on the striped blue, white, and tan blanket. She wears the same outfit as in the first shot: a green top, blue jeans, and white sneakers. She holds <Prop_1>, the small silver microphone, in her right hand and continues to speak, gesturing with her left hand for emphasis. Her expression is engaged and animated. The setting is identical to the first shot, with the lush green grass and distant tree line under a bright, overcast sky. A notable event occurs in the background: a white, single-cab pickup truck (`temp_prop_truck_1`) drives slowly from the right side of the frame to the left along a dirt path or road situated behind the main field. The tree branches at the top of the frame rustle slightly, indicating a gentle breeze. The shot maintains a calm and naturalistic feel, with the passing truck adding a small, diegetic detail to the environment.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:14.715-00:17.818",
+            "music_features": {
+              "instrumentation": "Clean electric guitar, subtle synth pads",
+              "melody_motif": "The consistent looping guitar melody continues.",
+              "rhythm_type": "Slow, steady 4/4 beat.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Contemplative, gentle, lo-fi instrumental.",
+            "rationale": "The music's continuity reinforces the idea that this is the primary setting for the narration, providing a consistent backdrop for her reflections."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "<Subject_1>"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:14.715-00:17.818",
+                "voice_fingerprint": {
+                  "timbre": "Clear, smooth, mid-range",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator providing another example of her habits.",
+                "transcript": "in the working world, if I don't wanna write a social media report,",
+                "style": "Conversational and illustrative."
+              }
+            ],
+            "rationale": "The voiceover continues the theme by providing a new example from her professional life, which sets up the next visual cutaway."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "A young East Asian woman in a green top and blue jeans, sitting on a blanket in a park. She is actively speaking and gesturing.",
+            "action": "Sits on a blanket, holds a microphone, speaks, and gestures with her left hand.",
+            "timestamp_presence": [
+              "00:14.715-00:17.818"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "<Prop_1>",
+            "prop_description": "A small, cylindrical silver lavalier microphone with a black foam windscreen.",
+            "interaction": "Held in <Subject_1>'s right hand as she speaks into it.",
+            "timestamp_presence": [
+              "00:14.715-00:17.818"
+            ]
+          },
+          {
+            "id": "temp_prop_blanket_1",
+            "prop_description": "A large woven blanket with a repeating pattern of thick horizontal stripes in blue, white, and tan.",
+            "interaction": "<Subject_1> is sitting on it.",
+            "timestamp_presence": [
+              "00:14.715-00:17.818"
+            ]
+          },
+          {
+            "id": "temp_prop_truck_1",
+            "prop_description": "A white, single-cab pickup truck.",
+            "interaction": "Drives from right to left in the background of the shot.",
+            "timestamp_presence": [
+              "00:16.110-00:17.818"
+            ]
+          }
+        ],
+        "interaction_tracking": [],
+        "location_tracking": [
+          {
+            "id": "<Location_1>",
+            "visual_environment": "A bright, open grassy park. A white truck is visible driving on a path in the background, behind the main field where the subject is sitting.",
+            "timestamp_presence": [
+              "00:14.715-00:17.818"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Static",
+          "shot_scale": "Medium Shot",
+          "lighting_style": "Natural daylight, diffused and soft.",
+          "color_tone": "Natural greens and blues with warm skin tones.",
+          "mood_atmosphere": "Calm, narrative, and natural."
+        }
+      }
+    },
+    {
+      "id": "<Shot_10>",
+      "time_range": "00:17.818-00:20.821",
+      "caption": "The hands of <Subject_1> (The Narrator) smooth out a piece of paper in a book on a desk in <Location_3> (Home office).",
+      "segment_id": [
+        "<Segment_8>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_3>"
+      ],
+      "dense_caption": "An extreme close-up, static shot shows a pair of hands, presumably belonging to <Subject_1>, at a desk in <Location_3>. The desk has a light-colored, possibly wood-grain, surface. The hands are interacting with an open book or journal (`temp_prop_book_1`) with unlined, off-white paper pages. The left hand, wearing a ring on the ring finger, gently smooths down the left page. The right hand enters the frame holding a red pen (`temp_prop_pen_1`) and begins to write or draw on the right page. The background is dominated by a large, white-painted window frame with vertical mullions, through which a blurry, green outdoor scene is visible. The lighting is soft and directional, coming from the window, which casts a bright, cool light onto the book and desk surface, while the rest of the room remains in shadow. The focus is sharply on the hands and the book, emphasizing the act of creation or work as a form of procrastination.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:17.818-00:20.821",
+            "music_features": {
+              "instrumentation": "Clean electric guitar, subtle synth pads",
+              "melody_motif": "The looping guitar melody continues.",
+              "rhythm_type": "Slow, steady 4/4 beat.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Contemplative, gentle, lo-fi instrumental.",
+            "rationale": "The music's persistence connects this act of 'productive' work back to the narrator's overarching theme, maintaining the introspective mood."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "<Subject_1>"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:17.818-00:20.821",
+                "voice_fingerprint": {
+                  "timbre": "Clear, smooth, mid-range",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator explaining her alternative task.",
+                "transcript": "maybe I'll just make some assets that I'll post tomorrow instead.",
+                "style": "Conversational, with a slightly dismissive tone."
+              }
+            ],
+            "rationale": "The narration explicitly states the action being shown: creating 'assets' as a way to avoid a different task. The audio and visual are perfectly synchronized to illustrate the concept."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "Only the subject's hands are visible. They are fair-skinned, and the left hand wears a small ring.",
+            "action": "The hands smooth a page in a book and then begin to write or draw with a red pen.",
+            "timestamp_presence": [
+              "00:17.818-00:20.821"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "temp_prop_book_1",
+            "prop_description": "An open book or journal with blank, off-white pages.",
+            "interaction": "The subject's hands are smoothing its pages and writing in it.",
+            "timestamp_presence": [
+              "00:17.818-00:20.821"
+            ]
+          },
+          {
+            "id": "temp_prop_pen_1",
+            "prop_description": "A pen with a red-colored body or cap.",
+            "interaction": "Held in the subject's right hand to write in the book.",
+            "timestamp_presence": [
+              "00:18.610-00:20.821"
+            ]
+          },
+          {
+            "id": "temp_prop_ring_1",
+            "prop_description": "A small ring worn on the left ring finger.",
+            "interaction": "Worn by the subject.",
+            "timestamp_presence": [
+              "00:17.818-00:20.821"
+            ]
+          }
+        ],
+        "interaction_tracking": [
+          {
+            "id": "temp_interaction_2",
+            "subject_id": [
+              "<Subject_1>"
+            ],
+            "prop_id": [
+              "temp_prop_book_1",
+              "temp_prop_pen_1"
+            ],
+            "interaction": "<Subject_1>'s hands write in the book with a pen, an act of 'productive procrastination'.",
+            "timestamp_presence": [
+              "00:17.818-00:20.821"
+            ]
+          }
+        ],
+        "location_tracking": [
+          {
+            "id": "<Location_3>",
+            "visual_environment": "An indoor desk space next to a large, white-framed window. The lighting is bright and cool, dominated by the natural light from the window.",
+            "timestamp_presence": [
+              "00:17.818-00:20.821"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Static",
+          "shot_scale": "Extreme Close Up",
+          "lighting_style": "Natural side lighting from a window, creating high contrast.",
+          "color_tone": "Cool and bright, with neutral whites and natural skin tones.",
+          "mood_atmosphere": "Quiet, focused, and intimate."
+        }
+      }
+    },
+    {
+      "id": "<Shot_11>",
+      "time_range": "00:20.821-00:25.158",
+      "caption": "<Subject_1> (The Narrator) speaks into <Prop_1> (Small Silver Microphone) while sitting on a blanket in <Location_1> (Grassy park).",
+      "segment_id": [
+        "<Segment_9>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_1>"
+      ],
+      "location_id": [
+        "<Location_1>"
+      ],
+      "dense_caption": "Returning to the park setting (<Location_1>), this static medium shot is framed identically to the first and third shots. <Subject_1> is seated on the striped blanket, dressed in her green top and blue jeans. She holds <Prop_1>, the silver microphone, and speaks directly to the camera with an earnest and expressive face. Her body language is open and engaging as she narrates a key point in her story. The background remains the expansive green field, with the leaves of the tree above her gently moving in the wind. The soft, diffuse lighting from the overcast sky provides consistent, flattering illumination. The shot serves as the narrative anchor, where the narrator explains her internal state before cutting away to a visual representation of that state. The repetition of this setup reinforces its role as the primary storytelling location.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:20.821-00:25.158",
+            "music_features": {
+              "instrumentation": "Clean electric guitar, subtle synth pads",
+              "melody_motif": "The consistent looping guitar melody continues, providing an uninterrupted emotional throughline.",
+              "rhythm_type": "Slow, steady 4/4 beat.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Contemplative, gentle, lo-fi instrumental.",
+            "rationale": "The music acts as a bridge, carrying the mood from the 'work' scene back to the 'narration' scene and setting up the next emotional beat."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "<Subject_1>"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:20.821-00:25.158",
+                "voice_fingerprint": {
+                  "timbre": "Clear, smooth, mid-range",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator describing her breaking point.",
+                "transcript": "When I finally hit a wall where doing anything more will make my head explode,",
+                "style": "Conversational, with rising intensity to match the words."
+              }
+            ],
+            "rationale": "This part of the narration describes a climax of feeling overwhelmed, which serves as a direct justification for the subsequent cut to a scene of exhaustion."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "A young East Asian woman in a green top and blue jeans, sitting on a blanket in a park. She looks directly at the camera while speaking.",
+            "action": "Sits on a blanket, holds a microphone, and speaks expressively to the camera.",
+            "timestamp_presence": [
+              "00:20.821-00:25.158"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "<Prop_1>",
+            "prop_description": "A small, cylindrical silver lavalier microphone with a black foam windscreen.",
+            "interaction": "Held in <Subject_1>'s right hand as she narrates.",
+            "timestamp_presence": [
+              "00:20.821-00:25.158"
+            ]
+          },
+          {
+            "id": "temp_prop_blanket_1",
+            "prop_description": "A large woven blanket with a repeating pattern of thick horizontal stripes in blue, white, and tan.",
+            "interaction": "<Subject_1> is sitting on it.",
+            "timestamp_presence": [
+              "00:20.821-00:25.158"
+            ]
+          }
+        ],
+        "interaction_tracking": [],
+        "location_tracking": [
+          {
+            "id": "<Location_1>",
+            "visual_environment": "A bright, open grassy park under an overcast sky. The subject is sitting under a tree, on a blanket spread on the lawn.",
+            "timestamp_presence": [
+              "00:20.821-00:25.158"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Static",
+          "shot_scale": "Medium Shot",
+          "lighting_style": "Natural daylight, diffused and soft.",
+          "color_tone": "Natural greens and blues with warm skin tones.",
+          "mood_atmosphere": "Earnest, direct, and confessional."
+        }
+      }
+    },
+    {
+      "id": "<Shot_12>",
+      "time_range": "00:25.158-00:27.794",
+      "caption": "<Subject_1> (The Narrator) lies on a couch in <Location_4> (Living room) under a green blanket, looking drained.",
+      "segment_id": [
+        "<Segment_10>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_4>"
+      ],
+      "dense_caption": "A static close-up shot captures <Subject_1> in a state of exhaustion in <Location_4>, a living room. She is lying on a couch with a coarse, textured grey-green fabric. Her head rests on a pillow or the arm of the couch, and she is partially covered by a fuzzy, soft, sage-green blanket (`temp_prop_blanket_2`). She is wearing a simple white short-sleeved t-shirt. Her long dark hair is loose and spread out behind her. She looks directly into the camera lens with a weary, almost blank expression, her eyes slightly unfocused. Her skin shows some redness on her cheeks, consistent with her appearance in the earlier close-up. The room is very dimly lit, with a warm, low-light source off-camera casting a soft glow on her face and the blanket, while the rest of the frame falls into deep shadow. The atmosphere is quiet and still, visually representing the state of burnout and the need for a passive break that the narrator describes.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:25.158-00:27.794",
+            "music_features": {
+              "instrumentation": "Clean electric guitar, subtle synth pads",
+              "melody_motif": "The looping guitar melody continues, now underscoring a moment of quiet exhaustion.",
+              "rhythm_type": "Slow, steady 4/4 beat.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Contemplative, gentle, lo-fi instrumental.",
+            "rationale": "The music's calm and gentle quality perfectly matches the visual of the subject lying down, creating a parallel mood of quiet and rest, albeit a forced one."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "<Subject_1>"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:25.158-00:27.794",
+                "voice_fingerprint": {
+                  "timbre": "Clear, smooth, mid-range",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator describing her avoidance of true rest.",
+                "transcript": "heaven forbid I actually take a nap",
+                "style": "Conversational, with a hint of sarcasm or self-deprecation."
+              }
+            ],
+            "rationale": "The voiceover provides a direct, ironic commentary on the visual. As we see her looking exhausted, she speaks about avoiding the simple act of taking a nap, highlighting her internal conflict."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "Lying on a couch in a white t-shirt, partially covered by a green blanket. Her expression is drained and weary, and her face has some redness.",
+            "action": "Lies still on a couch, looking directly at the camera with a tired expression.",
+            "timestamp_presence": [
+              "00:25.158-00:27.794"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "temp_prop_blanket_2",
+            "prop_description": "A soft, fuzzy blanket in a sage-green color.",
+            "interaction": "Partially covering <Subject_1> as she lies on the couch.",
+            "timestamp_presence": [
+              "00:25.158-00:27.794"
+            ]
+          }
+        ],
+        "interaction_tracking": [],
+        "location_tracking": [
+          {
+            "id": "<Location_4>",
+            "visual_environment": "A dimly lit living room at night. The subject is on a couch with a textured fabric. The lighting is low and warm, creating deep shadows.",
+            "timestamp_presence": [
+              "00:25.158-00:27.794"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Static",
+          "shot_scale": "Close Up",
+          "lighting_style": "Low-key, warm, and soft, likely from a single lamp.",
+          "color_tone": "Warm and dark, with muted greens and browns.",
+          "mood_atmosphere": "Exhausted, quiet, and weary."
+        }
+      }
+    },
+    {
+      "id": "<Shot_13>",
+      "time_range": "00:27.794-00:29.596",
+      "caption": "A shot of a video game playing on <Prop_3> (Living Room TV) in <Location_4> (Living room).",
+      "segment_id": [
+        "<Segment_11>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [],
+      "prop_id": [
+        "<Prop_3>"
+      ],
+      "location_id": [
+        "<Location_4>"
+      ],
+      "dense_caption": "A medium, handheld shot captures a dimly lit living room, focusing on a large flat-screen television, <Prop_3>, which is turned on. The room is dark, suggesting it is nighttime, and the primary source of light emanates from the TV screen, casting a colorful glow on the immediate surroundings. On the screen, a video game is being played. The game has a vibrant, pixelated, 2.5D graphical style, reminiscent of a classic RPG. Several small character sprites with colorful outfits (red, blue, white) are visible walking in a line along a path inside what appears to be a town or building with wooden floors and purple-tiled roofing. In the foreground, a dark brown or black coffee table, `temp_coffee_table_1`, is positioned in front of the TV. On the table rests a small black remote control, `temp_remote_1`, a stack of square coasters, `temp_coasters_1`, and a white napkin, `temp_napkin_1`. On a lower shelf of the coffee table, the reflective screen of a device, possibly a tablet or smartphone, `temp_device_1`, is visible. The top left corner of a textured, light-colored couch, `temp_couch_1`, is seen in the bottom left of the frame. Above the television, two matching dark-framed pictures, `temp_framed_art_1` and `temp_framed_art_2`, hang on the light-colored wall. The camera has a slight, natural handheld motion. The overall atmosphere is quiet and solitary, centered on the digital escapism offered by the video game.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:27.794-00:29.596",
+            "music_features": {
+              "instrumentation": "Clean electric guitar",
+              "melody_motif": "A simple, looping pensive guitar melody plays.",
+              "rhythm_type": "Slow, steady 4/4 beat with a lo-fi feel.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Gentle, contemplative, lo-fi instrumental.",
+            "rationale": "The music provides a continuous, calm, and introspective backdrop that supports the narrator's reflective tone, contrasting slightly with the active visual of the video game."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "temp_speaker_1"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:28.409-00:29.409",
+                "voice_fingerprint": {
+                  "timbre": "Calm, smooth, medium-pitch",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator explaining her actions.",
+                "transcript": "or play a video game",
+                "style": "Conversational, self-reflective, even pace."
+              }
+            ],
+            "rationale": "The voiceover explicitly identifies the on-screen action, framing it within the video's larger theme of using distractions to avoid other tasks."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [],
+        "prop_tracking": [
+          {
+            "id": "<Prop_3>",
+            "prop_description": "A large, modern flat-screen television with a thin black bezel. It is displaying a colorful 2.5D pixel-art style video game.",
+            "interaction": "The prop is active and is the central focus of the shot, displaying the video game content that illustrates the narrator's voiceover.",
+            "timestamp_presence": [
+              "00:27.794-00:29.596"
+            ]
+          },
+          {
+            "id": "temp_coffee_table_1",
+            "prop_description": "A dark brown or black rectangular coffee table with a lower shelf.",
+            "interaction": "The prop is static and holds other items like a remote control and coasters.",
+            "timestamp_presence": [
+              "00:27.794-00:29.596"
+            ]
+          },
+          {
+            "id": "temp_remote_1",
+            "prop_description": "A small black remote control lying on the coffee table.",
+            "interaction": "The prop is static and not being used.",
+            "timestamp_presence": [
+              "00:27.794-00:29.596"
+            ]
+          },
+          {
+            "id": "temp_framed_art_1",
+            "prop_description": "A square picture in a dark frame hanging on the wall above the television on the left.",
+            "interaction": "The prop is a static background element.",
+            "timestamp_presence": [
+              "00:27.794-00:29.596"
+            ]
+          },
+          {
+            "id": "temp_framed_art_2",
+            "prop_description": "A square picture in a dark frame hanging on the wall above the television on the right.",
+            "interaction": "The prop is a static background element.",
+            "timestamp_presence": [
+              "00:27.794-00:29.596"
+            ]
+          }
+        ],
+        "interaction_tracking": [],
+        "location_tracking": [
+          {
+            "id": "<Location_4>",
+            "visual_environment": "A dimly lit living room at night. The scene is characterized by low ambient light, with the bright, colorful screen of the television serving as the key light. The visible furniture includes a coffee table and the corner of a couch.",
+            "timestamp_presence": [
+              "00:27.794-00:29.596"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Handheld",
+          "shot_scale": "Medium Shot",
+          "lighting_style": "Low-key lighting, with the television screen acting as the primary, diegetic light source.",
+          "color_tone": "A dark, moody color palette for the room itself, contrasted sharply by the vibrant, multi-colored light from the TV screen.",
+          "mood_atmosphere": "Intimate and solitary, emphasizing a sense of escapism through the glowing screen."
+        }
+      }
+    },
+    {
+      "id": "<Shot_14>",
+      "time_range": "00:29.596-00:32.566",
+      "caption": "<Subject_1> (The Narrator) sits on her blanket in <Location_1> (Grassy park) and gestures as she speaks into <Prop_1> (Small Silver Microphone).",
+      "segment_id": [
+        "<Segment_12>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_1>"
+      ],
+      "location_id": [
+        "<Location_1>"
+      ],
+      "dense_caption": "A medium shot captures <Subject_1> sitting cross-legged in a serene park setting, identified as <Location_1>. She is positioned on a large blanket with a wavy pattern of blue, tan, and white stripes, made of a woven fabric that rests upon the lawn of lush green grass. The upper portion of the frame is filled with the leafy branches of a large tree, providing soft, dappled shade. In the background, a wide, open field of grass extends to a distant treeline under a bright, overcast sky. <Subject_1> is dressed casually in a muted, olive-green cotton t-shirt and loose-fitting, medium-wash blue denim jeans. On her feet, she wears white socks and classic white sneakers with three black stripes. Her long, straight dark hair is pulled back from her face, and she wears small, white pearl drop earrings. In her right hand, she holds <Prop_1>, a small silver lavalier-style microphone with a black foam windscreen, close to her mouth as she speaks. Her left hand rests gently on her knee as she gestures slightly while talking, her expression thoughtful and engaged. Next to her on the blanket lies a black smartphone inside a clear case with a circular grip accessory on the back, which can be identified as temp_smartphone_1. The camera remains static throughout the shot, maintaining a calm and observational perspective.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:59.192-01:02.162",
+            "music_features": {
+              "instrumentation": "Clean Electric Guitar",
+              "melody_motif": "A simple, gentle, and looping melodic phrase and chord progression.",
+              "rhythm_type": "Steady, relaxed 4/4 time with a lo-fi feel.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Gentle Instrumental, Slow-paced, Contemplative and relaxed.",
+            "rationale": "The music provides a parallel mood, creating a calm and introspective atmosphere that supports the narrator's thoughtful monologue and the peaceful park setting."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "dialogue",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "<Subject_1>"
+                ],
+                "voice_type": "dialogue",
+                "timestamp": "00:59.192-01:02.162",
+                "voice_fingerprint": {
+                  "timbre": "Clear and smooth",
+                  "gender_age": "Young adult female",
+                  "accent": "Neutral American"
+                },
+                "role_in_scene": "The narrator explaining her internal feelings and habits.",
+                "transcript": "No. If I'm not doing something productive, then...",
+                "style": "Calm, conversational, and self-reflective, with even pacing."
+              }
+            ],
+            "rationale": "The speech is the core of the video's narrative, with the subject directly addressing the camera (and audience) to explain the central theme of productive procrastination."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "A young East Asian woman with long, dark hair, wearing a green short-sleeved t-shirt, blue jeans, white socks, and white sneakers with black stripes. She has small pearl earrings.",
+            "action": "Sitting on a blanket in a park, holding a microphone, speaking, and making small hand gestures.",
+            "timestamp_presence": [
+              "00:59.192-01:02.162"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "<Prop_1>",
+            "prop_description": "A small, cylindrical, silver-colored microphone with a black foam windscreen at the top.",
+            "interaction": "Held in <Subject_1>'s right hand near her mouth as she speaks into it.",
+            "timestamp_presence": [
+              "00:59.192-01:02.162"
+            ]
+          },
+          {
+            "id": "temp_smartphone_1",
+            "prop_description": "A black smartphone in a clear case with a black circular grip accessory on the back.",
+            "interaction": "Lies statically on the blanket next to <Subject_1>.",
+            "timestamp_presence": [
+              "00:59.192-01:02.162"
+            ]
+          }
+        ],
+        "interaction_tracking": [
+          {
+            "id": "temp_interaction_1",
+            "subject_id": [
+              "<Subject_1>"
+            ],
+            "prop_id": [
+              "<Prop_1>"
+            ],
+            "interaction": "<Subject_1> holds <Prop_1> up to her mouth to record her voice while speaking.",
+            "timestamp_presence": [
+              "00:59.192-01:02.162"
+            ]
+          }
+        ],
+        "location_tracking": [
+          {
+            "id": "<Location_1>",
+            "visual_environment": "A grassy park on a bright, overcast day. The scene is framed by tree branches overhead, with a large green field and a distant treeline in the background. The subject is on a striped blanket on the lawn.",
+            "timestamp_presence": [
+              "00:59.192-01:02.162"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Static",
+          "shot_scale": "Medium Shot",
+          "lighting_style": "Natural daylight, diffused and soft, likely from an overcast sky or shade.",
+          "color_tone": "Natural color palette dominated by greens from the grass and trees, and blues from the jeans and blanket.",
+          "mood_atmosphere": "Calm, peaceful, and introspective."
+        }
+      }
+    },
+    {
+      "id": "<Shot_15>",
+      "time_range": "00:32.566-00:34.234",
+      "caption": "<Subject_1> (The Narrator) lies on a couch in <Location_4> (Living room), hugging <Prop_2> (Plush Stuffed Animal).",
+      "segment_id": [
+        "<Segment_13>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_2>"
+      ],
+      "location_id": [
+        "<Location_4>"
+      ],
+      "dense_caption": "In a medium shot, a young woman, <Subject_1>, is seen lying on a couch in what appears to be a dimly lit living room, <Location_4>. She has long, straight, dark hair that falls over her shoulders. She is wearing a simple, short-sleeved white t-shirt made of a soft cotton material. Her expression is passive and somewhat vacant as she gazes off-camera to her right, likely at a screen that is casting a soft, warm, purplish light onto her and the surroundings. With both arms, she is tightly hugging a large, round plush toy, <Prop_2>, to her chest. The plush toy is white on its top half, featuring a simple, minimalist embroidered face with closed eyes, and its bottom half is a light teal or blue color. It has a very soft, squishy appearance. She wears a small, simple ring on the ring finger of her left hand. Behind her, the wall is a neutral color, and a rust-orange pillow or part of the couch is visible behind her shoulder. The overall atmosphere is one of quiet, passive retreat. Burnt-in subtitles in a white, sans-serif font appear at the bottom of the frame, reading, 'then I'm drowning out the thoughts'. The camera remains static throughout the shot.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:32.566-00:34.234",
+            "music_features": {
+              "instrumentation": "Clean electric guitar",
+              "melody_motif": "A simple, gentle, looping melodic phrase.",
+              "rhythm_type": "Slow, steady, lo-fi beat.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Lo-fi Instrumental, Slow, Contemplative",
+            "rationale": "The music provides a parallel, gentle, and introspective backdrop that enhances the visual mood of passive retreat and self-reflection without overpowering the narration."
+          }
+        ],
+        "sound_effects": [],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "<Subject_1>"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:32.566-00:34.234",
+                "voice_fingerprint": {
+                  "timbre": "Clear, smooth, slightly low-pitched.",
+                  "gender_age": "Young adult female",
+                  "accent": "Standard American"
+                },
+                "role_in_scene": "The narrator explaining her internal state.",
+                "transcript": "I'm drowning out the thoughts.",
+                "style": "Calm, conversational, and self-reflective at an even pace."
+              }
+            ],
+            "rationale": "The voiceover provides the explicit meaning for the visual action, explaining that this behavior is a way for the narrator to avoid her own thoughts, directly linking the visuals to the video's central theme."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [
+          {
+            "id": "<Subject_1>",
+            "appearance_description": "A young woman of East Asian descent with long, straight dark hair. She wears a plain white short-sleeved t-shirt. Her expression is passive as she looks off-camera to her right.",
+            "action": "She is lying on a couch, propped up slightly, while hugging a large plush toy to her chest. She remains mostly static.",
+            "timestamp_presence": [
+              "00:32.566-00:34.234"
+            ]
+          }
+        ],
+        "prop_tracking": [
+          {
+            "id": "<Prop_2>",
+            "prop_description": "A large, round, squishy plush toy, white on top and light blue/teal on the bottom. It has a simple embroidered face with closed eyes. It appears to be made of a soft fabric.",
+            "interaction": "The prop is being held tightly by <Subject_1> as a comfort object, pressed against her chest and abdomen.",
+            "timestamp_presence": [
+              "00:32.566-00:34.234"
+            ]
+          }
+        ],
+        "interaction_tracking": [
+          {
+            "id": "temp_interaction_1",
+            "subject_id": [
+              "<Subject_1>"
+            ],
+            "prop_id": [
+              "<Prop_2>"
+            ],
+            "interaction": "<Subject_1> hugs <Prop_2> for comfort while lying on a couch.",
+            "timestamp_presence": [
+              "00:32.566-00:34.234"
+            ]
+          }
+        ],
+        "location_tracking": [
+          {
+            "id": "<Location_4>",
+            "visual_environment": "A dimly lit indoor space, likely a living room. A neutral-colored wall is visible, along with a rust-orange couch cushion. The scene is illuminated by a soft, warm, purplish light from an off-camera source.",
+            "timestamp_presence": [
+              "00:32.566-00:34.234"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Static",
+          "shot_scale": "Medium Shot",
+          "lighting_style": "Low-key ambient lighting, with a soft key light from the right side of the frame.",
+          "color_tone": "Warm, with a dominant purple and pink cast.",
+          "mood_atmosphere": "Introspective, passive, and cozy, suggesting a state of mental escape."
+        }
+      }
+    },
+    {
+      "id": "<Shot_16>",
+      "time_range": "00:34.234-00:36.737",
+      "caption": "A shot from the perspective of someone on a couch, looking at <Prop_3> (Living Room TV) which is playing an episode of 'Friends' in <Location_4> (Living room).",
+      "segment_id": [
+        "<Segment_14>",
+        "<Segment_15>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [],
+      "prop_id": [
+        "<Prop_3>"
+      ],
+      "location_id": [
+        "<Location_4>"
+      ],
+      "dense_caption": "The shot is a first-person point-of-view, likely from someone lying down in a dark room, looking at a television. The camera has a subtle, handheld sway. In the immediate foreground, filling the bottom third of the frame, are rumpled blankets and bedding. The fabrics have muted colors, including a prominent mustard-yellow blanket, a dark green or grey one, and another with a lighter, possibly striped pattern. The room itself, <Location_4>, is dark and in shadow, creating a low-key lighting environment. The dominant light source is the bright screen of <Prop_3>, the large flat-screen television. The TV is displaying an episode of the sitcom 'Friends'. On the screen, a blonde woman with her hair in a high ponytail (temp_woman_on_tv_1) is shown in a medium shot. She wears a dark, short-sleeved, collared shirt made of a shiny, possibly velvet material with a subtle pattern. She is smiling and holding a wine glass. The setting on the TV is a brightly lit apartment with large, black-framed windows and a distinctive purple wall in the background. A framed picture and a dark, ornate light fixture are also visible on the wall behind her. White subtitles appear at the bottom left of the TV screen, reading '- Oh. Nice. - Yeah.'. Additionally, separate white text is overlaid on the entire video frame, near the bottom, which reads 'in any way I can think of', corresponding to the narrator's ongoing voiceover.",
+      "audio": {
+        "music": [
+          {
+            "audio_id": [
+              "<Audio_2>"
+            ],
+            "timestamp": "00:34.234-00:36.737",
+            "music_features": {
+              "instrumentation": "Clean electric guitar",
+              "melody_motif": "A simple, looping, gentle chord progression with a soft melodic line.",
+              "rhythm_type": "Slow, steady 4/4 rhythm with a lo-fi, relaxed feel.",
+              "vocals": "Instrumental only"
+            },
+            "style": "Lo-fi Instrumental, Slow, Contemplative",
+            "rationale": "The music serves as a parallel, continuous emotional bed, supporting the introspective and slightly melancholic mood of the narrator's voiceover and the visual of passive media consumption."
+          }
+        ],
+        "sound_effects": [
+          {
+            "audio_id": [],
+            "sound_events": [
+              {
+                "description": "Dialogue from the television show 'Friends' is audible, spoken by two different characters.",
+                "timestamp": "00:35.284-00:36.134",
+                "style": "Clear but slightly distant, emanating from the television speakers."
+              }
+            ],
+            "rationale": "Diegetic sound originating from <Prop_3> (the television). It serves to make the scene more realistic, confirming that the character is actively watching and listening to the show as a form of distraction."
+          }
+        ],
+        "speech": [
+          {
+            "audio_id": [
+              "<Audio_1>"
+            ],
+            "voice_type": "vo",
+            "language": "English",
+            "speech_events": [
+              {
+                "speaker_id": [
+                  "<Subject_1>"
+                ],
+                "voice_type": "vo",
+                "timestamp": "00:34.234-00:35.534",
+                "voice_fingerprint": {
+                  "timbre": "Clear, smooth, and slightly airy.",
+                  "gender_age": "Young adult female",
+                  "accent": "Standard American"
+                },
+                "role_in_scene": "The narrator concluding a thought about her methods of avoidance.",
+                "transcript": "in any way I can think of.",
+                "style": "Calm, conversational, and reflective, spoken at a natural pace."
+              }
+            ],
+            "rationale": "This voiceover provides the thematic context for the visual. The words 'in any way I can think of' directly relate to her search for distractions, with the visual of watching TV serving as the prime example."
+          }
+        ]
+      },
+      "visual": {
+        "subject_tracking": [],
+        "prop_tracking": [
+          {
+            "id": "<Prop_3>",
+            "prop_description": "A large, modern flat-screen television set. Its screen is brightly lit, displaying a high-definition video.",
+            "interaction": "The television is turned on and is the central focus of the shot, being watched by the unseen viewer. It is the primary light source in the dark room.",
+            "timestamp_presence": [
+              "00:34.234-00:36.737"
+            ]
+          },
+          {
+            "id": "temp_prop_1",
+            "prop_description": "A collection of rumpled blankets and bedding in the foreground. Specific items include a mustard-yellow blanket, a dark green or grey blanket, and other crumpled fabrics.",
+            "interaction": "These blankets frame the shot from the bottom, establishing the viewer's position as lying on a couch or bed, reinforcing the cozy but passive setting.",
+            "timestamp_presence": [
+              "00:34.234-00:36.737"
+            ]
+          }
+        ],
+        "interaction_tracking": [],
+        "location_tracking": [
+          {
+            "id": "<Location_4>",
+            "visual_environment": "A dimly lit living room, viewed from the perspective of someone lying on a couch. The only visible elements are the blankets in the foreground and the television against a dark, undefined background. The atmosphere is dark and intimate.",
+            "timestamp_presence": [
+              "00:34.234-00:36.737"
+            ]
+          }
+        ],
+        "camera": {
+          "camera_pose": "Handheld",
+          "shot_scale": "Medium Shot",
+          "lighting_style": "Low-key with high contrast, where the television screen acts as the sole, bright key light illuminating the dark room.",
+          "color_tone": "A split color palette: the foreground and room are dark with warm, muted yellow and green tones, while the TV screen is bright with a cooler, more saturated palette including purples and blues.",
+          "mood_atmosphere": "Passive, intimate, and escapist. The shot conveys a sense of retreating from the world into the comfortable glow of entertainment."
+        }
+      }
+    }
+  ]
+}
