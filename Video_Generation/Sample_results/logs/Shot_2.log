@@ -1,0 +1,185 @@
+2026-04-10 11:06:05,842 - INFO - === Start processing <Shot_2> time_range=00:03.036-00:04.204 ===
+2026-04-10 11:06:05,842 - INFO - duration: 1.168s -> API duration=1
+2026-04-10 11:06:05,843 - INFO - scene_id=<Scene_1>
+2026-04-10 11:06:05,843 - INFO - full prompt:
+Shot: <Shot_2>  |  Time range: 00:03.036-00:04.204
+Summary: A close-up shot of the <Subject_1> (Narrator) smiling at an <Location_2> (Amusement park at dusk), with a carousel lit up in the background.
+
+Detailed visual description:
+In a tight, handheld close-up shot, <Subject_1> is seen at what appears to be a carnival at dusk. She is a young woman of East Asian descent with long, straight dark hair parted in the middle. Her face fills most of the frame, and she looks slightly to her right with a wide, genuine smile, showing her teeth. She is wearing subtle makeup, including pinkish eyeshadow and defined eyebrows. She has small pearl or white sphere earrings. Her top is a simple white collared shirt, though only the collar and a small portion of the shoulder are visible. At the bottom left corner of the frame, the black foam windscreen of a small lavalier microphone, `temp_microphone_1`, is visible, suggesting she is recording audio. The background is beautifully blurred, dominated by the warm, golden lights of a large carousel. The out-of-focus lights create a strong bokeh effect, with circular patterns of yellow and white against the darker, teal-colored structure of the ride. The overall atmosphere is joyful, vibrant, and slightly nostalgic, created by the warm lighting and the classic carnival setting of <Location_2>.
+
+Camera & atmosphere:
+  Shot scale: Close Up
+  Camera pose: Handheld
+  Lighting: Low-key with warm, bright artificial lights from the background creating a soft fill on the subject.
+  Color tone: Warm golden and yellow tones, with teal and dark blue in the background.
+  Mood/atmosphere: Joyful, vibrant, and warm.
+
+Characters in this shot:
+  <Subject_1> — Narrator
+    Appearance (overall): A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Appearance (this shot): A young East Asian woman with long dark hair, wearing a white collared shirt and pearl earrings. She has a wide smile and is looking slightly off-camera.
+    Action: Smiling and looking towards her right, holding a relatively static pose for the selfie-style shot.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props in this shot:
+  temp_microphone_1 — The top of a small microphone with a bla
+    Description: The top of a small microphone with a black, fuzzy foam windscreen is visible at the bottom left of the frame.
+    Interaction: The microphone is positioned to capture audio, likely clipped to the subject's clothing just out of frame.
+
+Location:
+  <Location_2> — Amusement park at dusk (Outdoor / Open)
+    Visual features: A brightly lit amusement park or carnival setting at dusk. A lit-up carousel and a tall, multi-colored star flyer swing ride are visible.
+    Visual environment (this shot): The location is a carnival at dusk. The background is dominated by a large, out-of-focus carousel, identifiable by its ornate teal and gold structure and numerous warm, glowing yellow lights that create a strong bokeh effect.
+    Key elements: Carousel with lights, Star flyer swing ride
+
+Audio in this shot:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken dialogue/VO: "that's not to say"
+
+Scene narrative (scene <Scene_1>):
+  Role type: Montage  |  Position: middle
+  Beat: Shows <Subject_1> in a happy, social setting (<Location_2>), which contrasts with her claim of not being good at taking breaks.
+  Emotional pacing: Accelerates the pace with a quick cut and introduces a joyful, energetic mood.
+  Information conveyed: Establishes that the narrator engages in social activities and can appear happy and relaxed. Introduces the carnival location.
+  Transition in:  Cuts from the calm park setting to a vibrant, nighttime carnival, initiating a montage.
+  Transition out: Cuts to her companion (<Subject_2>) in the same location, suggesting they are together and interacting.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:06:05,843 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_2_first_frame.jpg
+2026-04-10 11:06:06,137 - INFO - Submitted task_id=wft_1pP4aCJKcF5GcYnPN7MXSy
+2026-04-10 11:06:06,427 - INFO - Poll wft_1pP4aCJKcF5GcYnPN7MXSy -> processing
+2026-04-10 11:06:11,752 - INFO - Poll wft_1pP4aCJKcF5GcYnPN7MXSy -> processing
+2026-04-10 11:06:17,302 - INFO - Poll wft_1pP4aCJKcF5GcYnPN7MXSy -> processing
+2026-04-10 11:06:22,593 - INFO - Poll wft_1pP4aCJKcF5GcYnPN7MXSy -> processing
+2026-04-10 11:06:27,862 - INFO - Poll wft_1pP4aCJKcF5GcYnPN7MXSy -> processing
+2026-04-10 11:06:33,206 - INFO - Poll wft_1pP4aCJKcF5GcYnPN7MXSy -> processing
+2026-04-10 11:06:38,666 - INFO - Poll wft_1pP4aCJKcF5GcYnPN7MXSy -> failed
+2026-04-10 11:06:38,667 - ERROR - Task wft_1pP4aCJKcF5GcYnPN7MXSy ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 11:06:38,667 - INFO - Generation time: 32.5s
+2026-04-10 11:23:44,521 - INFO - === Start processing <Shot_2> time_range=00:03.036-00:04.204 ===
+2026-04-10 11:23:44,521 - INFO - duration: 1.168s -> API duration=1
+2026-04-10 11:23:44,521 - INFO - scene_id=<Scene_1>
+2026-04-10 11:23:44,521 - INFO - full prompt:
+Shot: <Shot_2>  |  Time range: 00:03.036-00:04.204
+Summary: A close-up shot of the <Subject_1> (Narrator) smiling at an <Location_2> (Amusement park at dusk), with a carousel lit up in the background.
+
+Detailed visual description:
+In a tight, handheld close-up shot, <Subject_1> is seen at what appears to be a carnival at dusk. She is a young woman of East Asian descent with long, straight dark hair parted in the middle. Her face fills most of the frame, and she looks slightly to her right with a wide, genuine smile, showing her teeth. She is wearing subtle makeup, including pinkish eyeshadow and defined eyebrows. She has small pearl or white sphere earrings. Her top is a simple white collared shirt, though only the collar and a small portion of the shoulder are visible. At the bottom left corner of the frame, the black foam windscreen of a small lavalier microphone, `temp_microphone_1`, is visible, suggesting she is recording audio. The background is beautifully blurred, dominated by the warm, golden lights of a large carousel. The out-of-focus lights create a strong bokeh effect, with circular patterns of yellow and white against the darker, teal-colored structure of the ride. The overall atmosphere is joyful, vibrant, and slightly nostalgic, created by the warm lighting and the classic carnival setting of <Location_2>.
+
+Camera & atmosphere:
+  Shot scale: Close Up
+  Camera pose: Handheld
+  Lighting: Low-key with warm, bright artificial lights from the background creating a soft fill on the subject.
+  Color tone: Warm golden and yellow tones, with teal and dark blue in the background.
+  Mood/atmosphere: Joyful, vibrant, and warm.
+
+Characters in this shot:
+  <Subject_1> — Narrator
+    Appearance (overall): A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Appearance (this shot): A young East Asian woman with long dark hair, wearing a white collared shirt and pearl earrings. She has a wide smile and is looking slightly off-camera.
+    Action: Smiling and looking towards her right, holding a relatively static pose for the selfie-style shot.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props in this shot:
+  temp_microphone_1 — The top of a small microphone with a bla
+    Description: The top of a small microphone with a black, fuzzy foam windscreen is visible at the bottom left of the frame.
+    Interaction: The microphone is positioned to capture audio, likely clipped to the subject's clothing just out of frame.
+
+Location:
+  <Location_2> — Amusement park at dusk (Outdoor / Open)
+    Visual features: A brightly lit amusement park or carnival setting at dusk. A lit-up carousel and a tall, multi-colored star flyer swing ride are visible.
+    Visual environment (this shot): The location is a carnival at dusk. The background is dominated by a large, out-of-focus carousel, identifiable by its ornate teal and gold structure and numerous warm, glowing yellow lights that create a strong bokeh effect.
+    Key elements: Carousel with lights, Star flyer swing ride
+
+Audio in this shot:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken dialogue/VO: "that's not to say"
+
+Scene narrative (scene <Scene_1>):
+  Role type: Montage  |  Position: middle
+  Beat: Shows <Subject_1> in a happy, social setting (<Location_2>), which contrasts with her claim of not being good at taking breaks.
+  Emotional pacing: Accelerates the pace with a quick cut and introduces a joyful, energetic mood.
+  Information conveyed: Establishes that the narrator engages in social activities and can appear happy and relaxed. Introduces the carnival location.
+  Transition in:  Cuts from the calm park setting to a vibrant, nighttime carnival, initiating a montage.
+  Transition out: Cuts to her companion (<Subject_2>) in the same location, suggesting they are together and interacting.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:23:44,521 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_2_first_frame.jpg
+2026-04-10 11:23:44,788 - INFO - Submitted task_id=wft_1pP4fi2JUq44nJboMCDigz
+2026-04-10 11:23:45,282 - INFO - Poll wft_1pP4fi2JUq44nJboMCDigz -> submitted
+2026-04-10 11:23:50,810 - INFO - Poll wft_1pP4fi2JUq44nJboMCDigz -> processing
+2026-04-10 11:23:56,312 - INFO - Poll wft_1pP4fi2JUq44nJboMCDigz -> processing
+2026-04-10 11:24:01,610 - INFO - Poll wft_1pP4fi2JUq44nJboMCDigz -> processing
+2026-04-10 11:24:07,148 - INFO - Poll wft_1pP4fi2JUq44nJboMCDigz -> processing
+2026-04-10 11:24:12,664 - INFO - Poll wft_1pP4fi2JUq44nJboMCDigz -> processing
+2026-04-10 11:28:02,623 - INFO - === Start processing <Shot_2> time_range=00:03.036-00:04.204 ===
+2026-04-10 11:28:02,623 - INFO - duration: 1.168s -> API duration=1
+2026-04-10 11:28:02,623 - INFO - scene_id=<Scene_1>
+2026-04-10 11:28:02,623 - INFO - full prompt:
+Shot: <Shot_2>  |  Time range: 00:03.036-00:04.204
+Summary: A close-up shot of the <Subject_1> (Narrator) smiling at an <Location_2> (Amusement park at dusk), with a carousel lit up in the background.
+
+Detailed visual description:
+In a tight, handheld close-up shot, <Subject_1> is seen at what appears to be a carnival at dusk. She is a young woman of East Asian descent with long, straight dark hair parted in the middle. Her face fills most of the frame, and she looks slightly to her right with a wide, genuine smile, showing her teeth. She is wearing subtle makeup, including pinkish eyeshadow and defined eyebrows. She has small pearl or white sphere earrings. Her top is a simple white collared shirt, though only the collar and a small portion of the shoulder are visible. At the bottom left corner of the frame, the black foam windscreen of a small lavalier microphone, `temp_microphone_1`, is visible, suggesting she is recording audio. The background is beautifully blurred, dominated by the warm, golden lights of a large carousel. The out-of-focus lights create a strong bokeh effect, with circular patterns of yellow and white against the darker, teal-colored structure of the ride. The overall atmosphere is joyful, vibrant, and slightly nostalgic, created by the warm lighting and the classic carnival setting of <Location_2>.
+
+Camera & atmosphere:
+  Shot scale: Close Up
+  Camera pose: Handheld
+  Lighting: Low-key with warm, bright artificial lights from the background creating a soft fill on the subject.
+  Color tone: Warm golden and yellow tones, with teal and dark blue in the background.
+  Mood/atmosphere: Joyful, vibrant, and warm.
+
+Characters in this shot:
+  <Subject_1> — Narrator
+    Appearance (overall): A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Appearance (this shot): A young East Asian woman with long dark hair, wearing a white collared shirt and pearl earrings. She has a wide smile and is looking slightly off-camera.
+    Action: Smiling and looking towards her right, holding a relatively static pose for the selfie-style shot.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props in this shot:
+  temp_microphone_1 — The top of a small microphone with a bla
+    Description: The top of a small microphone with a black, fuzzy foam windscreen is visible at the bottom left of the frame.
+    Interaction: The microphone is positioned to capture audio, likely clipped to the subject's clothing just out of frame.
+
+Location:
+  <Location_2> — Amusement park at dusk (Outdoor / Open)
+    Visual features: A brightly lit amusement park or carnival setting at dusk. A lit-up carousel and a tall, multi-colored star flyer swing ride are visible.
+    Visual environment (this shot): The location is a carnival at dusk. The background is dominated by a large, out-of-focus carousel, identifiable by its ornate teal and gold structure and numerous warm, glowing yellow lights that create a strong bokeh effect.
+    Key elements: Carousel with lights, Star flyer swing ride
+
+Audio in this shot:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken dialogue/VO: "that's not to say"
+
+Scene narrative (scene <Scene_1>):
+  Role type: Montage  |  Position: middle
+  Beat: Shows <Subject_1> in a happy, social setting (<Location_2>), which contrasts with her claim of not being good at taking breaks.
+  Emotional pacing: Accelerates the pace with a quick cut and introduces a joyful, energetic mood.
+  Information conveyed: Establishes that the narrator engages in social activities and can appear happy and relaxed. Introduces the carnival location.
+  Transition in:  Cuts from the calm park setting to a vibrant, nighttime carnival, initiating a montage.
+  Transition out: Cuts to her companion (<Subject_2>) in the same location, suggesting they are together and interacting.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:28:02,623 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_2_first_frame.jpg
+2026-04-10 11:28:03,156 - INFO - Submitted task_id=wft_1pP4h455FKmf4GM4FCpNVo
+2026-04-10 11:28:03,666 - INFO - Poll wft_1pP4h455FKmf4GM4FCpNVo -> processing
+2026-04-10 11:28:09,183 - INFO - Poll wft_1pP4h455FKmf4GM4FCpNVo -> processing

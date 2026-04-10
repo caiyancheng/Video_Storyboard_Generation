@@ -32,7 +32,7 @@ if __name__ == "__main__":
             男主在海边自拍然后开始尝试滑翔伞，转场后潜水，人物表情生动，电影感构图。
                     """,
             "language": "zh", 
-            "duration": 10,
+            "duration": 3,
             "seed": 42,
             "aspect_ratio": "9:16",
             "resolution": "480p", 

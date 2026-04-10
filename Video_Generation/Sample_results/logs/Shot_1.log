@@ -2,3 +2,220 @@
 2026-04-10 10:48:35,814 - INFO - duration: 3.036s -> API duration=3
 2026-04-10 10:48:58,691 - INFO - scene_id=<Scene_1>
 2026-04-10 10:48:59,518 - INFO - prompt (first 300 chars): A medium shot captures <Subject_1>, a young woman of East Asian descent, sitting in a park. The shot is static and framed by the overhanging branches of a leafy tree, which are visible at the top and right edges. She is seated cross-legged on a large picnic blanket made of a fabric with a wavy strip
+2026-04-10 11:04:02,122 - INFO - === Start processing <Shot_1> time_range=00:00.000-00:03.036 ===
+2026-04-10 11:04:05,338 - INFO - duration: 3.036s -> API duration=3
+2026-04-10 11:04:51,894 - INFO - scene_id=<Scene_1>
+2026-04-10 11:04:52,865 - INFO - full prompt:
+Shot: <Shot_1>  |  Time range: 00:00.000-00:03.036
+Summary: The <Subject_1> (Narrator) sits on a blanket in a <Location_1> (Grassy park field), holding a <Prop_1> (Small lavalier microphone) and speaking.
+
+Detailed visual description:
+A medium shot captures <Subject_1>, a young woman of East Asian descent, sitting in a park. The shot is static and framed by the overhanging branches of a leafy tree, which are visible at the top and right edges. She is seated cross-legged on a large picnic blanket made of a fabric with a wavy striped pattern in shades of dark blue, light blue, white, and tan. The blanket is spread out on a lush, green lawn. <Subject_1> is wearing a fitted, short-sleeved t-shirt in a muted olive green color, loose-fitting blue denim jeans, and white sneakers with three black stripes on the side, consistent with Adidas Superstars. She also wears white, ruffled ankle socks. Her long, straight dark hair is partially tied back, and she wears small, dangly pearl earrings. In her right hand, she holds <Prop_1>, a small silver lavalier microphone with a black foam windscreen, close to her mouth as she speaks. Her left hand rests on her lap, near a smartphone in a clear, light-purple-tinted case. She looks slightly up and to her right, a smile on her face as she talks. The background is a wide expanse of green field leading to a distant tree line under a bright, slightly overcast sky. The overall lighting is soft and warm, suggesting late afternoon. An on-screen text caption in white with a black outline reads 'never been good at' near her feet.
+
+Camera & atmosphere:
+  Shot scale: Medium Shot
+  Camera pose: Static
+  Lighting: Natural daylight, diffused and soft with a warm quality.
+  Color tone: A warm, natural palette dominated by the green grass, blue denim, and the warm tan stripes of the blanket.
+  Mood/atmosphere: Peaceful, calm, and contemplative, with a slightly nostalgic vlog aesthetic.
+
+Characters in this shot:
+  <Subject_1> — Narrator
+    Appearance (overall): A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Appearance (this shot): A young East Asian woman with long, straight dark hair partially tied back. She wears a green short-sleeved t-shirt, blue jeans, white ruffled socks, and white sneakers with black stripes. She has small pearl drop earrings.
+    Action: Sits cross-legged on a blanket in a park, holding a small microphone to her mouth with her right hand while speaking and smiling. Her left hand rests on her lap.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props in this shot:
+  <Prop_1> — Small lavalier microphone
+    Description: A small, cylindrical, silver-colored lavalier microphone with a black foam windscreen on top.
+    Interaction: Held in <Subject_1>'s right hand and positioned near her mouth, indicating she is using it to record her speech.
+    Role: The microphone is a key visual element in the primary A-roll shots, indicating that the narrator is purposefully recording her monologue. It reinforces the meta-narrative of her creating content, which is a form of 'productive procrastination' she mentions.
+  temp_prop_blanket_1 — A large picnic blanket with a wavy strip
+    Description: A large picnic blanket with a wavy striped pattern in blue, white, and tan.
+    Interaction: <Subject_1> is sitting on it. It serves as the immediate ground surface for the action.
+  temp_prop_smartphone_1 — A smartphone inside a clear case with a 
+    Description: A smartphone inside a clear case with a slight purple or blue tint, featuring a prominent multi-lens camera bump.
+    Interaction: Rests on <Subject_1>'s lap, with her left hand resting on or near it.
+
+Subject–prop interactions:
+  <Subject_1> holds <Prop_1> to her mouth to speak into it, actively using it for audio recording.
+
+Location:
+  <Location_1> — Grassy park field (Outdoor / Open)
+    Visual features: A large, open green field bordered by trees in the distance. The lighting suggests late afternoon or early evening (golden hour). The narrator is sitting on a blue and white striped blanket under a tree.
+    Visual environment (this shot): A large, open green field under a bright, overcast sky. The scene is framed by the branches and leaves of a tree in the foreground. The lighting is soft and warm, characteristic of late afternoon. A distant tree line is visible across the field.
+    Key elements: Large green lawn, Line of trees in the background, Large tree in the foreground
+
+Audio in this shot:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken dialogue/VO: "I've honestly never been good at taking a break."
+
+Scene narrative (scene <Scene_1>):
+  Role type: Establishing  |  Position: opening
+  Beat: Introduces the narrator (<Subject_1>), the main narration setting (<Location_1>), and the video's central theme about not being good at taking breaks.
+  Emotional pacing: Establishes a calm, contemplative, and personal tone for the scene.
+  Information conveyed: Introduces the narrator, her personality (reflective), the setting for her narration, and the video's main topic.
+  Transition out: Cuts to a montage of 'B-roll' clips that will illustrate and complicate the opening statement.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:05:33,376 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_1_first_frame.jpg
+2026-04-10 11:05:33,668 - INFO - Submitted task_id=wft_1pP4a2Q5sDzQGRzwQpjQzu
+2026-04-10 11:06:00,576 - INFO - Poll wft_1pP4a2Q5sDzQGRzwQpjQzu -> processing
+2026-04-10 11:06:05,840 - INFO - Poll wft_1pP4a2Q5sDzQGRzwQpjQzu -> failed
+2026-04-10 11:06:05,840 - ERROR - Task wft_1pP4a2Q5sDzQGRzwQpjQzu ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 11:06:05,840 - INFO - Generation time: 5.8s
+2026-04-10 11:23:11,745 - INFO - === Start processing <Shot_1> time_range=00:00.000-00:03.036 ===
+2026-04-10 11:23:11,745 - INFO - duration: 3.036s -> API duration=3
+2026-04-10 11:23:11,746 - INFO - scene_id=<Scene_1>
+2026-04-10 11:23:11,746 - INFO - full prompt:
+Shot: <Shot_1>  |  Time range: 00:00.000-00:03.036
+Summary: The <Subject_1> (Narrator) sits on a blanket in a <Location_1> (Grassy park field), holding a <Prop_1> (Small lavalier microphone) and speaking.
+
+Detailed visual description:
+A medium shot captures <Subject_1>, a young woman of East Asian descent, sitting in a park. The shot is static and framed by the overhanging branches of a leafy tree, which are visible at the top and right edges. She is seated cross-legged on a large picnic blanket made of a fabric with a wavy striped pattern in shades of dark blue, light blue, white, and tan. The blanket is spread out on a lush, green lawn. <Subject_1> is wearing a fitted, short-sleeved t-shirt in a muted olive green color, loose-fitting blue denim jeans, and white sneakers with three black stripes on the side, consistent with Adidas Superstars. She also wears white, ruffled ankle socks. Her long, straight dark hair is partially tied back, and she wears small, dangly pearl earrings. In her right hand, she holds <Prop_1>, a small silver lavalier microphone with a black foam windscreen, close to her mouth as she speaks. Her left hand rests on her lap, near a smartphone in a clear, light-purple-tinted case. She looks slightly up and to her right, a smile on her face as she talks. The background is a wide expanse of green field leading to a distant tree line under a bright, slightly overcast sky. The overall lighting is soft and warm, suggesting late afternoon. An on-screen text caption in white with a black outline reads 'never been good at' near her feet.
+
+Camera & atmosphere:
+  Shot scale: Medium Shot
+  Camera pose: Static
+  Lighting: Natural daylight, diffused and soft with a warm quality.
+  Color tone: A warm, natural palette dominated by the green grass, blue denim, and the warm tan stripes of the blanket.
+  Mood/atmosphere: Peaceful, calm, and contemplative, with a slightly nostalgic vlog aesthetic.
+
+Characters in this shot:
+  <Subject_1> — Narrator
+    Appearance (overall): A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Appearance (this shot): A young East Asian woman with long, straight dark hair partially tied back. She wears a green short-sleeved t-shirt, blue jeans, white ruffled socks, and white sneakers with black stripes. She has small pearl drop earrings.
+    Action: Sits cross-legged on a blanket in a park, holding a small microphone to her mouth with her right hand while speaking and smiling. Her left hand rests on her lap.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props in this shot:
+  <Prop_1> — Small lavalier microphone
+    Description: A small, cylindrical, silver-colored lavalier microphone with a black foam windscreen on top.
+    Interaction: Held in <Subject_1>'s right hand and positioned near her mouth, indicating she is using it to record her speech.
+    Role: The microphone is a key visual element in the primary A-roll shots, indicating that the narrator is purposefully recording her monologue. It reinforces the meta-narrative of her creating content, which is a form of 'productive procrastination' she mentions.
+  temp_prop_blanket_1 — A large picnic blanket with a wavy strip
+    Description: A large picnic blanket with a wavy striped pattern in blue, white, and tan.
+    Interaction: <Subject_1> is sitting on it. It serves as the immediate ground surface for the action.
+  temp_prop_smartphone_1 — A smartphone inside a clear case with a 
+    Description: A smartphone inside a clear case with a slight purple or blue tint, featuring a prominent multi-lens camera bump.
+    Interaction: Rests on <Subject_1>'s lap, with her left hand resting on or near it.
+
+Subject–prop interactions:
+  <Subject_1> holds <Prop_1> to her mouth to speak into it, actively using it for audio recording.
+
+Location:
+  <Location_1> — Grassy park field (Outdoor / Open)
+    Visual features: A large, open green field bordered by trees in the distance. The lighting suggests late afternoon or early evening (golden hour). The narrator is sitting on a blue and white striped blanket under a tree.
+    Visual environment (this shot): A large, open green field under a bright, overcast sky. The scene is framed by the branches and leaves of a tree in the foreground. The lighting is soft and warm, characteristic of late afternoon. A distant tree line is visible across the field.
+    Key elements: Large green lawn, Line of trees in the background, Large tree in the foreground
+
+Audio in this shot:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken dialogue/VO: "I've honestly never been good at taking a break."
+
+Scene narrative (scene <Scene_1>):
+  Role type: Establishing  |  Position: opening
+  Beat: Introduces the narrator (<Subject_1>), the main narration setting (<Location_1>), and the video's central theme about not being good at taking breaks.
+  Emotional pacing: Establishes a calm, contemplative, and personal tone for the scene.
+  Information conveyed: Introduces the narrator, her personality (reflective), the setting for her narration, and the video's main topic.
+  Transition out: Cuts to a montage of 'B-roll' clips that will illustrate and complicate the opening statement.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:23:11,746 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_1_first_frame.jpg
+2026-04-10 11:23:12,043 - INFO - Submitted task_id=wft_1pP4fY5Bf6r5S4jrSL9efC
+2026-04-10 11:23:12,341 - INFO - Poll wft_1pP4fY5Bf6r5S4jrSL9efC -> submitted
+2026-04-10 11:23:17,618 - INFO - Poll wft_1pP4fY5Bf6r5S4jrSL9efC -> processing
+2026-04-10 11:23:22,915 - INFO - Poll wft_1pP4fY5Bf6r5S4jrSL9efC -> processing
+2026-04-10 11:23:28,449 - INFO - Poll wft_1pP4fY5Bf6r5S4jrSL9efC -> processing
+2026-04-10 11:23:33,730 - INFO - Poll wft_1pP4fY5Bf6r5S4jrSL9efC -> processing
+2026-04-10 11:23:39,014 - INFO - Poll wft_1pP4fY5Bf6r5S4jrSL9efC -> processing
+2026-04-10 11:23:44,520 - INFO - Poll wft_1pP4fY5Bf6r5S4jrSL9efC -> failed
+2026-04-10 11:23:44,520 - ERROR - Task wft_1pP4fY5Bf6r5S4jrSL9efC ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 11:23:44,520 - INFO - Generation time: 32.5s
+2026-04-10 11:27:29,468 - INFO - === Start processing <Shot_1> time_range=00:00.000-00:03.036 ===
+2026-04-10 11:27:29,468 - INFO - duration: 3.036s -> API duration=3
+2026-04-10 11:27:29,468 - INFO - scene_id=<Scene_1>
+2026-04-10 11:27:29,468 - INFO - full prompt:
+Shot: <Shot_1>  |  Time range: 00:00.000-00:03.036
+Summary: The <Subject_1> (Narrator) sits on a blanket in a <Location_1> (Grassy park field), holding a <Prop_1> (Small lavalier microphone) and speaking.
+
+Detailed visual description:
+A medium shot captures <Subject_1>, a young woman of East Asian descent, sitting in a park. The shot is static and framed by the overhanging branches of a leafy tree, which are visible at the top and right edges. She is seated cross-legged on a large picnic blanket made of a fabric with a wavy striped pattern in shades of dark blue, light blue, white, and tan. The blanket is spread out on a lush, green lawn. <Subject_1> is wearing a fitted, short-sleeved t-shirt in a muted olive green color, loose-fitting blue denim jeans, and white sneakers with three black stripes on the side, consistent with Adidas Superstars. She also wears white, ruffled ankle socks. Her long, straight dark hair is partially tied back, and she wears small, dangly pearl earrings. In her right hand, she holds <Prop_1>, a small silver lavalier microphone with a black foam windscreen, close to her mouth as she speaks. Her left hand rests on her lap, near a smartphone in a clear, light-purple-tinted case. She looks slightly up and to her right, a smile on her face as she talks. The background is a wide expanse of green field leading to a distant tree line under a bright, slightly overcast sky. The overall lighting is soft and warm, suggesting late afternoon. An on-screen text caption in white with a black outline reads 'never been good at' near her feet.
+
+Camera & atmosphere:
+  Shot scale: Medium Shot
+  Camera pose: Static
+  Lighting: Natural daylight, diffused and soft with a warm quality.
+  Color tone: A warm, natural palette dominated by the green grass, blue denim, and the warm tan stripes of the blanket.
+  Mood/atmosphere: Peaceful, calm, and contemplative, with a slightly nostalgic vlog aesthetic.
+
+Characters in this shot:
+  <Subject_1> — Narrator
+    Appearance (overall): A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Appearance (this shot): A young East Asian woman with long, straight dark hair partially tied back. She wears a green short-sleeved t-shirt, blue jeans, white ruffled socks, and white sneakers with black stripes. She has small pearl drop earrings.
+    Action: Sits cross-legged on a blanket in a park, holding a small microphone to her mouth with her right hand while speaking and smiling. Her left hand rests on her lap.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props in this shot:
+  <Prop_1> — Small lavalier microphone
+    Description: A small, cylindrical, silver-colored lavalier microphone with a black foam windscreen on top.
+    Interaction: Held in <Subject_1>'s right hand and positioned near her mouth, indicating she is using it to record her speech.
+    Role: The microphone is a key visual element in the primary A-roll shots, indicating that the narrator is purposefully recording her monologue. It reinforces the meta-narrative of her creating content, which is a form of 'productive procrastination' she mentions.
+  temp_prop_blanket_1 — A large picnic blanket with a wavy strip
+    Description: A large picnic blanket with a wavy striped pattern in blue, white, and tan.
+    Interaction: <Subject_1> is sitting on it. It serves as the immediate ground surface for the action.
+  temp_prop_smartphone_1 — A smartphone inside a clear case with a 
+    Description: A smartphone inside a clear case with a slight purple or blue tint, featuring a prominent multi-lens camera bump.
+    Interaction: Rests on <Subject_1>'s lap, with her left hand resting on or near it.
+
+Subject–prop interactions:
+  <Subject_1> holds <Prop_1> to her mouth to speak into it, actively using it for audio recording.
+
+Location:
+  <Location_1> — Grassy park field (Outdoor / Open)
+    Visual features: A large, open green field bordered by trees in the distance. The lighting suggests late afternoon or early evening (golden hour). The narrator is sitting on a blue and white striped blanket under a tree.
+    Visual environment (this shot): A large, open green field under a bright, overcast sky. The scene is framed by the branches and leaves of a tree in the foreground. The lighting is soft and warm, characteristic of late afternoon. A distant tree line is visible across the field.
+    Key elements: Large green lawn, Line of trees in the background, Large tree in the foreground
+
+Audio in this shot:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken dialogue/VO: "I've honestly never been good at taking a break."
+
+Scene narrative (scene <Scene_1>):
+  Role type: Establishing  |  Position: opening
+  Beat: Introduces the narrator (<Subject_1>), the main narration setting (<Location_1>), and the video's central theme about not being good at taking breaks.
+  Emotional pacing: Establishes a calm, contemplative, and personal tone for the scene.
+  Information conveyed: Introduces the narrator, her personality (reflective), the setting for her narration, and the video's main topic.
+  Transition out: Cuts to a montage of 'B-roll' clips that will illustrate and complicate the opening statement.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:27:29,468 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_1_first_frame.jpg
+2026-04-10 11:27:29,954 - INFO - Submitted task_id=wft_1pP4gskgBQDp9EzvbjySEd
+2026-04-10 11:27:30,462 - INFO - Poll wft_1pP4gskgBQDp9EzvbjySEd -> processing
+2026-04-10 11:27:35,753 - INFO - Poll wft_1pP4gskgBQDp9EzvbjySEd -> processing
+2026-04-10 11:27:41,034 - INFO - Poll wft_1pP4gskgBQDp9EzvbjySEd -> processing
+2026-04-10 11:27:46,323 - INFO - Poll wft_1pP4gskgBQDp9EzvbjySEd -> processing
+2026-04-10 11:27:51,618 - INFO - Poll wft_1pP4gskgBQDp9EzvbjySEd -> processing
+2026-04-10 11:27:57,103 - INFO - Poll wft_1pP4gskgBQDp9EzvbjySEd -> processing
+2026-04-10 11:28:02,622 - INFO - Poll wft_1pP4gskgBQDp9EzvbjySEd -> failed
+2026-04-10 11:28:02,622 - ERROR - Task wft_1pP4gskgBQDp9EzvbjySEd ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 11:28:02,622 - INFO - Generation time: 32.7s

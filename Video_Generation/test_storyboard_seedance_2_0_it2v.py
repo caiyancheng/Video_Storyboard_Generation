@@ -304,8 +304,8 @@ if __name__ == "__main__":
                 "language": "en",
                 "duration": duration_int,
                 "seed": 42,
-                "aspect_ratio": "16:9",
-                "resolution": "576p",
+                "aspect_ratio": "9:16",
+                "resolution": "576x1024",
                 "binary_var_name": ["image"],
                 "workflow": "seedance_2_0_pe_integration.json"
             }
