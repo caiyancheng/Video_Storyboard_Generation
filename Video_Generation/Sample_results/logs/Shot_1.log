@@ -1,0 +1,4 @@
+2026-04-10 10:48:16,184 - INFO - === Start processing <Shot_1> time_range=00:00.000-00:03.036 ===
+2026-04-10 10:48:35,814 - INFO - duration: 3.036s -> API duration=3
+2026-04-10 10:48:58,691 - INFO - scene_id=<Scene_1>
+2026-04-10 10:48:59,518 - INFO - prompt (first 300 chars): A medium shot captures <Subject_1>, a young woman of East Asian descent, sitting in a park. The shot is static and framed by the overhanging branches of a leafy tree, which are visible at the top and right edges. She is seated cross-legged on a large picnic blanket made of a fabric with a wavy strip

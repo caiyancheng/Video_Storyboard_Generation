@@ -10,11 +10,11 @@ from euler import base_compat_middleware
 from cairo_v2.idls.thrift import GetTaskReportRequestThrift
 from cairo_v2.idls import CairoService, SubmitAsyncTaskRequest, Task
 
-STORYBOARD_PHASE0_PATH = "Sample_Prompts/sample_storyboard_phase0_v15_result.json"
-STORYBOARD_PHASE1_PATH = "Sample_Prompts/sample_storyboard_phase1_v15_result.json"
-STORYBOARD_PHASE1_5_PATH = "Sample_Prompts/sample_storyboard_phase1_5_v15_result.json"
-OUTPUT_DIR = "Sample_results"
-LOG_DIR = "Sample_results/logs"
+STORYBOARD_PHASE0_PATH = "Video_Generation/Sample_Prompts/sample_storyboard_phase0_v15_result.json"
+STORYBOARD_PHASE1_PATH = "Video_Generation/Sample_Prompts/sample_storyboard_phase1_v15_result.json"
+STORYBOARD_PHASE1_5_PATH = "Video_Generation/Sample_Prompts/sample_storyboard_phase1_5_v15_result.json"
+OUTPUT_DIR = "Video_Generation/Sample_results"
+LOG_DIR = "Video_Generation/Sample_results/logs"
 
 
 def parse_time_range(time_range):
