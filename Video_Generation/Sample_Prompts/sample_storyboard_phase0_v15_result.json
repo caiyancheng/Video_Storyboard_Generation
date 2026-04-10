@@ -1,0 +1,504 @@
+{
+  "video_id": "v15044gf0000cpmpet7og65tmqmc48k0",
+  "item_id": "7380722414042352927",
+  "tos_key": "wenzhong300M/v15044gf0000cpmpet7og65tmqmc48k0",
+  "video_url": "https://tosv-va.tiktok-row.org/obj/nebudata-us/wenzhong300M/v15044gf0000cpmpet7og65tmqmc48k0",
+  "audio_registry": [
+    {
+      "id": "<Audio_1>",
+      "name": "Monologue on productive procrastination",
+      "type": "VO",
+      "secondary_type": "Narration",
+      "content": "The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.",
+      "style": "The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.",
+      "rationale": "This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration."
+    },
+    {
+      "id": "<Audio_2>",
+      "name": "Gentle Lo-Fi Instrumental",
+      "type": "BGM",
+      "secondary_type": "Instrumental",
+      "content": "na",
+      "style": "This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.",
+      "rationale": "The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips."
+    }
+  ],
+  "subject_registry": [
+    {
+      "id": "<Subject_1>",
+      "name": "Narrator",
+      "visual_features": "A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.",
+      "rationale": "This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative."
+    },
+    {
+      "id": "<Subject_2>",
+      "name": "Male friend",
+      "visual_features": "A young man with short brown hair, a light goatee, and black-rimmed glasses. He is seen wearing a colorful tie-dye t-shirt and a vertically striped short-sleeve button-up shirt.",
+      "rationale": "The subject appears in a brief montage sequence with the narrator, illustrating the idea of taking a break. His presence helps visualize the social aspect of the activities being discussed."
+    }
+  ],
+  "prop_registry": [
+    {
+      "id": "<Prop_1>",
+      "name": "Small lavalier microphone",
+      "visual_features": "A small, cylindrical, dark-colored microphone, likely a lavalier or similar small condenser mic. The narrator holds it in her hand while speaking.",
+      "rationale": "The microphone is a key visual element in the primary A-roll shots, indicating that the narrator is purposefully recording her monologue. It reinforces the meta-narrative of her creating content, which is a form of 'productive procrastination' she mentions."
+    },
+    {
+      "id": "<Prop_2>",
+      "name": "White and blue stuffed animal",
+      "visual_features": "A round, plush stuffed animal, likely a Squishmallow, with a white body, a light blue belly, and simple facial features.",
+      "rationale": "The narrator hugs this prop while on the couch. It visually represents her attempt to find comfort and 'drown out the thoughts' when she is feeling overwhelmed and unable to be productive, as described in the narration."
+    },
+    {
+      "id": "<Prop_3>",
+      "name": "TV Screen",
+      "visual_features": "A large, flat-screen television. It is shown displaying a pixel-art style video game and later a scene from the TV show 'Friends'.",
+      "rationale": "The TV screen is used to visually represent the narrator's methods of distraction and procrastination. Showing a video game and a sitcom illustrates the ways she 'drowns out the thoughts' instead of taking a proper break."
+    }
+  ],
+  "location_registry": [
+    {
+      "id": "<Location_1>",
+      "name": "Grassy park field",
+      "type": "Outdoor",
+      "secondary_type": "Open",
+      "visual_features": "A large, open green field bordered by trees in the distance. The lighting suggests late afternoon or early evening (golden hour). The narrator is sitting on a blue and white striped blanket under a tree.",
+      "static_elements": [
+        "Large green lawn",
+        "Line of trees in the background",
+        "Large tree in the foreground"
+      ]
+    },
+    {
+      "id": "<Location_2>",
+      "name": "Amusement park at dusk",
+      "type": "Outdoor",
+      "secondary_type": "Open",
+      "visual_features": "A brightly lit amusement park or carnival setting at dusk. A lit-up carousel and a tall, multi-colored star flyer swing ride are visible.",
+      "static_elements": [
+        "Carousel with lights",
+        "Star flyer swing ride"
+      ]
+    },
+    {
+      "id": "<Location_3>",
+      "name": "Home interior",
+      "type": "Indoor",
+      "secondary_type": "Enclosed",
+      "visual_features": "A dimly lit home environment. Scenes include a desk area near a window, and a living room area with a couch, coffee table, and a large TV.",
+      "static_elements": [
+        "Couch",
+        "Desk",
+        "Window with white trim",
+        "TV console"
+      ]
+    }
+  ],
+  "shot_registry": [
+    {
+      "id": "<Shot_1>",
+      "time_range": "00:00.000-00:03.036",
+      "caption": "The <Subject_1> (Narrator) sits on a blanket in a <Location_1> (Grassy park field), holding a <Prop_1> (Small lavalier microphone) and speaking.",
+      "segment_id": [
+        "<Segment_1>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_1>"
+      ],
+      "location_id": [
+        "<Location_1>"
+      ]
+    },
+    {
+      "id": "<Shot_2>",
+      "time_range": "00:03.036-00:04.204",
+      "caption": "A close-up shot of the <Subject_1> (Narrator) smiling at an <Location_2> (Amusement park at dusk), with a carousel lit up in the background.",
+      "segment_id": [
+        "<Segment_2>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_2>"
+      ]
+    },
+    {
+      "id": "<Shot_3>",
+      "time_range": "00:04.204-00:05.105",
+      "caption": "A close-up shot of the <Subject_2> (Male friend) at the <Location_2> (Amusement park at dusk), with the carousel in the background.",
+      "segment_id": [
+        "<Segment_2>",
+        "<Segment_3>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_2>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_2>"
+      ]
+    },
+    {
+      "id": "<Shot_4>",
+      "time_range": "00:05.105-00:06.440",
+      "caption": "A low-angle shot looking up at a tall, colorful swing ride in motion at the <Location_2> (Amusement park at dusk).",
+      "segment_id": [
+        "<Segment_3>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [],
+      "prop_id": [],
+      "location_id": [
+        "<Location_2>"
+      ]
+    },
+    {
+      "id": "<Shot_5>",
+      "time_range": "00:06.440-00:07.777",
+      "caption": "A close-up side profile of the <Subject_1> (Narrator) smiling on a sunny day in what appears to be the <Location_1> (Grassy park field).",
+      "segment_id": [
+        "<Segment_4>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_1>"
+      ]
+    },
+    {
+      "id": "<Shot_6>",
+      "time_range": "00:07.777-00:09.510",
+      "caption": "A selfie-style shot of the <Subject_1> (Narrator) and <Subject_2> (Male friend) smiling together outdoors, with a blue sky behind them.",
+      "segment_id": [
+        "<Segment_4>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>",
+        "<Subject_2>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_1>"
+      ]
+    },
+    {
+      "id": "<Shot_7>",
+      "time_range": "00:09.510-00:12.613",
+      "caption": "The <Subject_1> (Narrator) is back in the <Location_1> (Grassy park field), sitting on the blanket and speaking into the <Prop_1> (Small lavalier microphone).",
+      "segment_id": [
+        "<Segment_5>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_1>"
+      ],
+      "location_id": [
+        "<Location_1>"
+      ]
+    },
+    {
+      "id": "<Shot_8>",
+      "time_range": "00:12.613-00:14.715",
+      "caption": "A close-up shot of the <Subject_1> (Narrator)'s face as she looks up, seemingly at a computer screen, inside her <Location_3> (Home interior). Her expression is stressed.",
+      "segment_id": [
+        "<Segment_6>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_3>"
+      ]
+    },
+    {
+      "id": "<Shot_9>",
+      "time_range": "00:14.715-00:17.818",
+      "caption": "The <Subject_1> (Narrator) speaks into the <Prop_1> (Small lavalier microphone) while sitting on a blanket in the <Location_1> (Grassy park field).",
+      "segment_id": [
+        "<Segment_7>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_1>"
+      ],
+      "location_id": [
+        "<Location_1>"
+      ]
+    },
+    {
+      "id": "<Shot_10>",
+      "time_range": "00:17.818-00:20.821",
+      "caption": "A shot of a person's hands writing in a notebook on a desk in the <Location_3> (Home interior), near a window.",
+      "segment_id": [
+        "<Segment_8>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_3>"
+      ]
+    },
+    {
+      "id": "<Shot_11>",
+      "time_range": "00:20.821-00:25.158",
+      "caption": "The <Subject_1> (Narrator) continues her monologue in the <Location_1> (Grassy park field), holding the <Prop_1> (Small lavalier microphone).",
+      "segment_id": [
+        "<Segment_9>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_1>"
+      ],
+      "location_id": [
+        "<Location_1>"
+      ]
+    },
+    {
+      "id": "<Shot_12>",
+      "time_range": "00:25.158-00:27.794",
+      "caption": "The <Subject_1> (Narrator) lies on a couch in her <Location_3> (Home interior) under a blanket, looking sad.",
+      "segment_id": [
+        "<Segment_10>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [],
+      "location_id": [
+        "<Location_3>"
+      ]
+    },
+    {
+      "id": "<Shot_13>",
+      "time_range": "00:27.794-00:29.596",
+      "caption": "A shot of a <Prop_3> (TV Screen) in the <Location_3> (Home interior) displaying a pixel-art style video game.",
+      "segment_id": [
+        "<Segment_11>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [],
+      "prop_id": [
+        "<Prop_3>"
+      ],
+      "location_id": [
+        "<Location_3>"
+      ]
+    },
+    {
+      "id": "<Shot_14>",
+      "time_range": "00:29.596-00:32.566",
+      "caption": "The <Subject_1> (Narrator) gestures while speaking into the <Prop_1> (Small lavalier microphone) in the <Location_1> (Grassy park field).",
+      "segment_id": [
+        "<Segment_12>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_1>"
+      ],
+      "location_id": [
+        "<Location_1>"
+      ]
+    },
+    {
+      "id": "<Shot_15>",
+      "time_range": "00:32.566-00:34.234",
+      "caption": "The <Subject_1> (Narrator) lies on the couch in her <Location_3> (Home interior), hugging the <Prop_2> (White and blue stuffed animal).",
+      "segment_id": [
+        "<Segment_13>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [
+        "<Subject_1>"
+      ],
+      "prop_id": [
+        "<Prop_2>"
+      ],
+      "location_id": [
+        "<Location_3>"
+      ]
+    },
+    {
+      "id": "<Shot_16>",
+      "time_range": "00:34.234-00:36.737",
+      "caption": "A shot of the <Prop_3> (TV Screen) in the <Location_3> (Home interior) from the perspective of someone on the couch, showing a scene from the TV show 'Friends'.",
+      "segment_id": [
+        "<Segment_14>",
+        "<Segment_15>"
+      ],
+      "audio_id": [
+        "<Audio_1>",
+        "<Audio_2>"
+      ],
+      "subject_id": [],
+      "prop_id": [
+        "<Prop_3>"
+      ],
+      "location_id": [
+        "<Location_3>"
+      ]
+    }
+  ],
+  "scene_registry": [
+    {
+      "id": "<Scene_1>",
+      "time_range": "00:00.000-00:36.737",
+      "caption": "In a continuous monologue, the <Subject_1> (Narrator) reflects on her habit of 'productive procrastination,' where she avoids difficult tasks by doing other, easier productive activities instead of taking genuine breaks. Through a montage of B-roll footage, she illustrates this with examples from her life and shows how, upon reaching burnout, she resorts to simple distractions like watching TV (<Prop_3>) rather than truly resting.",
+      "shot_id": [
+        "<Shot_1>",
+        "<Shot_2>",
+        "<Shot_3>",
+        "<Shot_4>",
+        "<Shot_5>",
+        "<Shot_6>",
+        "<Shot_7>",
+        "<Shot_8>",
+        "<Shot_9>",
+        "<Shot_10>",
+        "<Shot_11>",
+        "<Shot_12>",
+        "<Shot_13>",
+        "<Shot_14>",
+        "<Shot_15>",
+        "<Shot_16>"
+      ]
+    }
+  ],
+  "segment_registry": [
+    {
+      "id": "<Segment_1>",
+      "time_range": "00:00.000-00:03.036"
+    },
+    {
+      "id": "<Segment_2>",
+      "time_range": "00:03.036-00:05.105"
+    },
+    {
+      "id": "<Segment_3>",
+      "time_range": "00:05.105-00:06.440"
+    },
+    {
+      "id": "<Segment_4>",
+      "time_range": "00:06.440-00:09.510"
+    },
+    {
+      "id": "<Segment_5>",
+      "time_range": "00:09.510-00:12.613"
+    },
+    {
+      "id": "<Segment_6>",
+      "time_range": "00:12.613-00:14.715"
+    },
+    {
+      "id": "<Segment_7>",
+      "time_range": "00:14.715-00:17.818"
+    },
+    {
+      "id": "<Segment_8>",
+      "time_range": "00:17.818-00:20.821"
+    },
+    {
+      "id": "<Segment_9>",
+      "time_range": "00:20.821-00:25.158"
+    },
+    {
+      "id": "<Segment_10>",
+      "time_range": "00:25.158-00:27.794"
+    },
+    {
+      "id": "<Segment_11>",
+      "time_range": "00:27.794-00:29.596"
+    },
+    {
+      "id": "<Segment_12>",
+      "time_range": "00:29.596-00:32.566"
+    },
+    {
+      "id": "<Segment_13>",
+      "time_range": "00:32.566-00:34.234"
+    },
+    {
+      "id": "<Segment_14>",
+      "time_range": "00:34.234-00:34.668"
+    },
+    {
+      "id": "<Segment_15>",
+      "time_range": "00:34.668-00:36.737"
+    }
+  ]
+}
