@@ -364,6 +364,7 @@ if __name__ == "__main__":
                 elif status in ("failed", "cancelled"):
                     logger.error(f"Task {task_id} ended with status={status}, report={report}")
                     print(f"  Task {task_id} ended: {status}")
+                    print(task_report["output"]) # 这里注明了为啥要报错
                     break
             except Exception as e:
                 logger.warning(f"Poll error: {e}")
