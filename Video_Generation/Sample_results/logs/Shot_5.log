@@ -1,0 +1,81 @@
+2026-04-10 18:50:21,679 - INFO - === Start processing <Shot_5> time_range=00:06.440-00:07.777 ===
+2026-04-10 18:50:21,679 - INFO - duration: 1.337s -> API duration=1
+2026-04-10 18:50:21,679 - INFO - scene_id=<Scene_1>
+2026-04-10 18:50:21,679 - INFO - full prompt:
+Shot: <Shot_5>  |  Time: 00:06.440-00:07.777
+Summary: A close-up side profile of the <Subject_1> (Narrator) smiling on a sunny day in what appears to be the <Location_1> (Grassy park field).
+
+Detailed visual description:
+This is a handheld, selfie-style close-up shot of <Subject_1> in an outdoor setting, <Location_1>. Her face is shown in profile, looking towards the right of the frame with a soft, pleasant smile. Her long dark hair is partially pulled back, and a pair of dark sunglasses, `temp_prop_sunglasses_1`, rests on top of her head. She is wearing a sleeveless top with a beige, open-knit or crochet texture. Her makeup is noticeable, featuring prominent black winged eyeliner. The background is a bright, sunny day in a park. A vivid blue sky with fluffy white clouds is visible above a line of lush green trees in the distance. The lighting is bright natural sunlight, casting a gentle glow on her skin. To the far right, a small portion of another person, <Subject_2>, is visible, wearing a wide-brimmed hat. The shot has a shallow depth of field, keeping the focus on <Subject_1> while the park scenery is slightly softened. The overall mood is carefree, sunny, and peaceful.
+
+Camera & atmosphere:
+  Shot scale: Close Up
+  Mood/atmosphere: Carefree, peaceful, and sunny.
+  Camera pose: Handheld
+  Lighting: Natural daylight, bright and direct.
+  Color tone: Bright and natural with a vibrant blue and green palette.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: A young East Asian woman shown in profile, smiling. She wears a beige knit sleeveless top, has black winged eyeliner, and dark sunglasses are perched on her head.
+    Action: Smiling softly while looking to her right, likely at her companion.
+    Overall appearance: A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props:
+  temp_prop_sunglasses_1 — A pair of dark-lensed sunglasses with brown or tor
+    Description: A pair of dark-lensed sunglasses with brown or tortoiseshell frames.
+    Interaction: The sunglasses are resting on top of <Subject_1>'s head, not being worn over her eyes.
+
+Location:
+  <Location_1> — Grassy park field (Outdoor / Open)
+    Visual features: A large, open green field bordered by trees in the distance. The lighting suggests late afternoon or early evening (golden hour). The narrator is sitting on a blue and white striped blanket under a tree.
+    Environment (this shot): A bright, sunny park with a wide expanse of green grass under a blue sky with white clouds. A line of green, leafy trees is visible in the background.
+    Key elements: Large green lawn, Line of trees in the background, Large tree in the foreground
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "I'm really good at procrastinating"
+
+Scene narrative (<Scene_1>):
+  Beat: Visually depicts a pleasant break while the narration re-contextualizes this activity as procrastination.
+  Emotional pacing: Creates a moment of ironic contrast between the happy visual and the self-critical narration.
+  Information conveyed: Introduces the core concept of the narrator's procrastination, linking it to seemingly leisurely activities.
+  Transition in:  Cuts from the carnival at night to a park during the day, starting a new visual example.
+  Transition out: Maintains the selfie-style framing and location while widening the shot to include <Subject_2>.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 18:50:21,679 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_5_first_frame.jpg
+2026-04-10 18:50:22,211 - INFO - Submitted task_id=wft_1pP75DF7QVkY1rBTYZgQKe
+2026-04-10 18:50:22,488 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:50:28,012 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:50:33,308 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:50:38,797 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:50:44,314 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:50:49,815 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:50:55,082 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:51:00,375 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:51:05,880 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:51:11,146 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:51:18,163 - WARNING - Poll error: the JSON object must be str, bytes or bytearray, not NoneType
+2026-04-10 18:51:23,455 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:51:28,726 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:51:34,008 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:51:39,512 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:51:44,795 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:51:50,098 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:51:55,607 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:52:01,103 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:52:06,625 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:52:11,904 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:52:17,194 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:52:22,712 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> processing
+2026-04-10 18:52:28,196 - INFO - Poll wft_1pP75DF7QVkY1rBTYZgQKe -> failed
+2026-04-10 18:52:28,196 - ERROR - Task wft_1pP75DF7QVkY1rBTYZgQKe ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 18:52:28,196 - INFO - Generation time: 126.0s

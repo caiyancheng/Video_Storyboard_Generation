@@ -1,0 +1,172 @@
+2026-04-10 18:58:29,123 - INFO - === Start processing <Shot_7> time_range=00:09.510-00:12.613 ===
+2026-04-10 18:58:29,123 - INFO - duration: 3.103s -> API duration=3
+2026-04-10 18:58:29,123 - INFO - scene_id=<Scene_1>
+2026-04-10 18:58:29,123 - INFO - full prompt:
+Shot: <Shot_7>  |  Time: 00:09.510-00:12.613
+Summary: The <Subject_1> (Narrator) is back in the <Location_1> (Grassy park field), sitting on the blanket and speaking into the <Prop_1> (Small lavalier microphone).
+
+Detailed visual description:
+A medium, static shot features <Subject_1>, a young woman of East Asian descent, sitting in a park. She is positioned on a large, woven blanket with a pattern of thick blue, white, and tan horizontal stripes, spread over a lush green lawn. The subject wears a fitted, short-sleeved top in a muted olive green color, paired with loose-fitting blue denim jeans. On her feet are white sneakers with three prominent black stripes and white socks. Her long, dark hair is styled in two low pigtails. In her right hand, she holds <Prop_1>, a small silver lavalier microphone with a black foam windscreen, close to her mouth as she speaks. Her left hand rests on her lap, holding a dark-colored smartphone. She looks slightly off-camera to her right, smiling as she talks. The background consists of a vast, vibrant green field under the shade of a large tree, whose leaves are visible at the top of the frame. In the far distance, a line of trees marks the horizon under a bright, hazy sky, suggesting a warm, overcast day. The overall lighting is soft and natural, creating a gentle and relaxed atmosphere.
+
+Camera & atmosphere:
+  Shot scale: Medium Shot
+  Mood/atmosphere: Calm, serene, and introspective.
+  Camera pose: Static
+  Lighting: Natural daylight, diffused and soft.
+  Color tone: Natural greens and blues with warm skin tones.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: A young East Asian woman with long dark hair in pigtails, wearing a green short-sleeved top, blue jeans, and white sneakers. She is sitting cross-legged and smiling.
+    Action: Sits on a blanket, holds a microphone, and speaks while looking off-camera.
+    Overall appearance: A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props:
+  <Prop_1> — Small lavalier microphone
+    Description: A small, cylindrical silver lavalier microphone with a black foam windscreen.
+    Interaction: Held in <Subject_1>'s right hand and positioned near her mouth for recording her speech.
+    Role: The microphone is a key visual element in the primary A-roll shots, indicating that the narrator is purposefully recording her monologue. It reinforces the meta-narrative of her creating content, which is a form of 'productive procrastination' she mentions.
+  temp_prop_blanket_1 — A large woven blanket with a repeating pattern of 
+    Description: A large woven blanket with a repeating pattern of thick horizontal stripes in blue, white, and tan.
+    Interaction: <Subject_1> is sitting on it.
+  temp_prop_phone_1 — A dark-colored smartphone.
+    Description: A dark-colored smartphone.
+    Interaction: Held loosely in <Subject_1>'s left hand, resting on her lap.
+
+Subject–prop interactions:
+  <Subject_1> holds <Prop_1> to record her voiceover.
+
+Location:
+  <Location_1> — Grassy park field (Outdoor / Open)
+    Visual features: A large, open green field bordered by trees in the distance. The lighting suggests late afternoon or early evening (golden hour). The narrator is sitting on a blue and white striped blanket under a tree.
+    Environment (this shot): A bright, open grassy park on an overcast day. The ground is covered in lush green grass. Large, leafy trees are visible in the background and at the top of the frame.
+    Key elements: Large green lawn, Line of trees in the background, Large tree in the foreground
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "by replacing it with another. In college, if I didn't want to write a report,"
+
+Scene narrative (<Scene_1>):
+  Beat: Returns to the 'A-roll' to provide a specific example of 'productive procrastination' from her college days, setting up the next visual insert.
+  Emotional pacing: Slows the pace down from the montage, returning to a more deliberate, narrative rhythm.
+  Information conveyed: Provides a concrete example from the narrator's past to support her thesis on procrastination.
+  Transition in:  Returns from the montage back to the main narration setting.
+  Transition out: Cuts to an illustrative insert shot that visually depicts the 'capstone video' work she is describing.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 18:58:29,123 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_7_first_frame.jpg
+2026-04-10 18:58:29,392 - INFO - Submitted task_id=wft_1pP77kDrxxLtaK3zCjiDa2
+2026-04-10 18:58:29,678 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> submitted
+2026-04-10 18:58:35,190 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:58:40,720 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:58:46,002 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:58:51,524 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:58:57,041 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:59:02,350 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:59:07,639 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:59:12,901 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:59:18,201 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:59:23,486 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:59:28,994 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:59:34,502 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:59:39,986 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:59:45,297 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:59:50,570 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 18:59:56,057 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:00:01,563 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:00:06,832 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:00:12,361 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:00:17,634 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:00:23,138 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:00:28,399 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:00:33,886 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:00:39,392 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:00:44,927 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:00:50,194 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:00:55,496 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:01:00,978 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:01:06,470 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:01:11,784 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:01:17,297 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:01:22,569 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:01:28,068 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:01:33,573 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:01:38,853 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:01:44,366 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:01:49,641 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:01:54,918 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:00,221 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:05,685 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:10,985 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:16,274 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:21,571 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:26,841 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:32,116 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:37,615 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:42,885 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:48,163 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:53,653 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:02:58,952 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:03:04,236 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:03:09,525 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:03:14,794 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:03:20,377 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:03:25,898 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:03:31,201 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:03:36,549 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:03:41,827 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:03:47,109 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:03:52,388 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:03:57,908 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:04:03,177 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:04:08,681 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:04:13,945 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:04:19,226 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:04:24,495 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:04:30,042 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:04:35,546 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:04:40,818 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:04:46,090 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:04:51,388 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:04:56,668 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:05:02,179 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:05:07,698 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:05:12,994 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:05:18,327 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:05:23,615 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:05:28,897 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:05:34,194 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:05:39,687 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:05:44,964 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:05:50,252 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:05:55,519 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:01,004 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:06,527 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:12,037 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:17,340 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:22,601 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:27,885 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:33,181 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:38,454 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:43,743 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:49,030 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:54,527 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:06:59,817 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:07:05,299 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:07:10,610 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:07:15,918 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:07:21,428 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:07:26,718 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:07:32,275 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:07:37,570 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:07:42,855 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> processing
+2026-04-10 19:07:48,380 - INFO - Poll wft_1pP77kDrxxLtaK3zCjiDa2 -> failed
+2026-04-10 19:07:48,380 - ERROR - Task wft_1pP77kDrxxLtaK3zCjiDa2 ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 19:07:48,380 - INFO - Generation time: 559.0s

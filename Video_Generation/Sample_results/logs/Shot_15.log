@@ -1,0 +1,105 @@
+2026-04-10 19:46:14,576 - INFO - === Start processing <Shot_15> time_range=00:32.566-00:34.234 ===
+2026-04-10 19:46:14,576 - INFO - duration: 1.668s -> API duration=2
+2026-04-10 19:46:14,576 - INFO - scene_id=<Scene_1>
+2026-04-10 19:46:14,576 - INFO - full prompt:
+Shot: <Shot_15>  |  Time: 00:32.566-00:34.234
+Summary: The <Subject_1> (Narrator) lies on the couch in her <Location_3> (Home interior), hugging the <Prop_2> (White and blue stuffed animal).
+
+Detailed visual description:
+In a medium shot, a young woman, <Subject_1>, is seen lying on a couch in what appears to be a dimly lit living room, <Location_4>. She has long, straight, dark hair that falls over her shoulders. She is wearing a simple, short-sleeved white t-shirt made of a soft cotton material. Her expression is passive and somewhat vacant as she gazes off-camera to her right, likely at a screen that is casting a soft, warm, purplish light onto her and the surroundings. With both arms, she is tightly hugging a large, round plush toy, <Prop_2>, to her chest. The plush toy is white on its top half, featuring a simple, minimalist embroidered face with closed eyes, and its bottom half is a light teal or blue color. It has a very soft, squishy appearance. She wears a small, simple ring on the ring finger of her left hand. Behind her, the wall is a neutral color, and a rust-orange pillow or part of the couch is visible behind her shoulder. The overall atmosphere is one of quiet, passive retreat. Burnt-in subtitles in a white, sans-serif font appear at the bottom of the frame, reading, 'then I'm drowning out the thoughts'. The camera remains static throughout the shot.
+
+Camera & atmosphere:
+  Shot scale: Medium Shot
+  Mood/atmosphere: Introspective, passive, and cozy, suggesting a state of mental escape.
+  Camera pose: Static
+  Lighting: Low-key ambient lighting, with a soft key light from the right side of the frame.
+  Color tone: Warm, with a dominant purple and pink cast.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: A young woman of East Asian descent with long, straight dark hair. She wears a plain white short-sleeved t-shirt. Her expression is passive as she looks off-camera to her right.
+    Action: She is lying on a couch, propped up slightly, while hugging a large plush toy to her chest. She remains mostly static.
+    Overall appearance: A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props:
+  <Prop_2> — White and blue stuffed animal
+    Description: A large, round, squishy plush toy, white on top and light blue/teal on the bottom. It has a simple embroidered face with closed eyes. It appears to be made of a soft fabric.
+    Interaction: The prop is being held tightly by <Subject_1> as a comfort object, pressed against her chest and abdomen.
+    Role: The narrator hugs this prop while on the couch. It visually represents her attempt to find comfort and 'drown out the thoughts' when she is feeling overwhelmed and unable to be productive, as described in the narration.
+
+Subject–prop interactions:
+  <Subject_1> hugs <Prop_2> for comfort while lying on a couch.
+
+Location:
+  <Location_3> — Home interior (Indoor / Enclosed)
+    Visual features: A dimly lit home environment. Scenes include a desk area near a window, and a living room area with a couch, coffee table, and a large TV.
+    Key elements: Couch, Desk, Window with white trim, TV console
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "I'm drowning out the thoughts."
+
+Scene narrative (<Scene_1>):
+  Beat: Provides a powerful visual metaphor for the narrator's state of mind, showing her passively 'drowning out the thoughts' with a comfort object.
+  Emotional pacing: Brings the scene to its emotional climax, creating a strong feeling of empathy and pathos.
+  Information conveyed: Reveals the emotional state of passive escapism and the need for comfort (<Prop_2>) that accompanies her burnout.
+  Transition in:  Cuts from the narrator explaining her mindset to a powerful visual representation of that mindset in action.
+  Transition out: Cuts to a point-of-view shot showing what she is looking at (<Prop_3>), completing the action.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 19:46:14,576 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_15_first_frame.jpg
+2026-04-10 19:46:15,101 - INFO - Submitted task_id=wft_1pP7NfJfiwEQbLMteP1aGS
+2026-04-10 19:46:15,602 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> submitted
+2026-04-10 19:46:20,888 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:46:26,166 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:46:31,435 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:46:36,962 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:46:42,267 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:46:47,560 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:46:52,843 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:46:58,348 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:47:03,623 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:47:08,928 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:47:14,222 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:47:19,713 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:47:25,242 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:47:30,514 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:47:35,782 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:47:41,058 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:47:46,594 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:47:52,100 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:47:57,373 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:48:02,889 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:48:08,186 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:48:13,495 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:48:18,795 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:48:24,299 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:48:29,592 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:48:34,883 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:48:40,175 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:48:45,456 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:48:50,738 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:48:56,001 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:49:01,524 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:49:06,800 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:49:12,071 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:49:17,576 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:49:22,852 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:49:28,140 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:49:33,645 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:49:39,136 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:49:44,666 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:49:49,953 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:49:55,445 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:50:00,733 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:50:06,030 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> processing
+2026-04-10 19:50:11,548 - INFO - Poll wft_1pP7NfJfiwEQbLMteP1aGS -> failed
+2026-04-10 19:50:11,548 - ERROR - Task wft_1pP7NfJfiwEQbLMteP1aGS ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 19:50:11,548 - INFO - Generation time: 236.4s

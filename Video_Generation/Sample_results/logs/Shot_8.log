@@ -1,0 +1,114 @@
+2026-04-10 19:07:48,382 - INFO - === Start processing <Shot_8> time_range=00:12.613-00:14.715 ===
+2026-04-10 19:07:48,382 - INFO - duration: 2.102s -> API duration=2
+2026-04-10 19:07:48,382 - INFO - scene_id=<Scene_1>
+2026-04-10 19:07:48,382 - INFO - full prompt:
+Shot: <Shot_8>  |  Time: 00:12.613-00:14.715
+Summary: A close-up shot of the <Subject_1> (Narrator)'s face as she looks up, seemingly at a computer screen, inside her <Location_3> (Home interior). Her expression is stressed.
+
+Detailed visual description:
+A static close-up shot focuses on the face of <Subject_1> inside a dimly lit room, identified as <Location_3>. She is wearing a black hooded sweatshirt. Her long, dark hair frames her face. Her skin appears makeup-free, with visible redness and blemishes on her cheeks, suggesting stress or fatigue. Her expression is one of weary concentration; her dark eyes are wide and looking up and to her right, away from the camera, as if staring at a screen or thinking deeply. Her left hand is raised to her face, with the palm resting against her jaw and chin, and her fingers gently touching her cheek. A gold-colored ring with a small, dark green stone is visible on her ring finger. The background is softly out of focus, revealing a wall with a rectangular, dark-framed piece of art. The lighting is low-key and appears to be coming from a source in front of her, possibly a computer monitor, casting a soft glow on her face and creating a stark contrast with the dark room.
+
+Camera & atmosphere:
+  Shot scale: Close Up
+  Mood/atmosphere: Tired, stressed, and focused.
+  Camera pose: Static
+  Lighting: Low-key, with a soft frontal key light (suggesting a monitor).
+  Color tone: Warm, with soft shadows and prominent skin tones.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: Close-up on her face. She wears a black hoodie and has visible redness on her cheeks. Her expression is tired and stressed.
+    Action: Looks up and to the right, resting her chin and cheek in her left hand.
+    Overall appearance: A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props:
+  temp_prop_ring_1 — A gold-colored ring with a small, rectangular dark
+    Description: A gold-colored ring with a small, rectangular dark green gemstone.
+    Interaction: Worn on the ring finger of <Subject_1>'s left hand, which is resting on her face.
+
+Location:
+  <Location_3> — Home interior (Indoor / Enclosed)
+    Visual features: A dimly lit home environment. Scenes include a desk area near a window, and a living room area with a couch, coffee table, and a large TV.
+    Environment (this shot): A dimly lit indoor room. A wall with a blurred, framed picture is visible in the background. The primary light source is in front of the subject, likely a screen.
+    Key elements: Couch, Desk, Window with white trim, TV console
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "I would work on a capstone video."
+
+Scene narrative (<Scene_1>):
+  Beat: Visually illustrates the 'capstone video' work mentioned in the narration, emphasizing the stress and fatigue involved.
+  Emotional pacing: Injects a feeling of stress and weariness, contrasting with the calm narration setting.
+  Information conveyed: Shows the emotional state (stress, fatigue) associated with her procrastination, clarifying it's not a true break.
+  Transition in:  Cuts from the narrator telling a story to a visual depiction of that story.
+  Transition out: Cuts back to the primary narration setting to introduce the next example.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 19:07:48,382 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_8_first_frame.jpg
+2026-04-10 19:07:48,886 - INFO - Submitted task_id=wft_1pP7Aez8GGq1VUY9QzysJ5
+2026-04-10 19:07:49,418 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> submitted
+2026-04-10 19:07:54,913 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:00,439 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:05,722 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:11,228 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:16,554 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:21,848 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:27,106 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:32,661 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:37,928 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:43,448 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:48,935 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:54,223 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:08:59,806 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:09:05,076 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:09:10,361 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:09:15,635 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:09:20,929 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:09:26,414 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:09:31,702 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:09:37,206 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:09:42,473 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:09:47,756 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:09:53,262 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:09:58,568 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:10:03,842 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:10:09,115 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:10:14,646 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:10:19,956 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:10:25,218 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:10:30,691 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:10:35,993 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:10:41,269 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:10:46,569 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:10:51,856 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:10:57,346 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:11:02,646 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:11:08,152 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:11:13,425 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:11:18,998 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:11:24,293 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:11:29,795 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:11:35,330 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:11:40,629 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:11:46,184 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:11:51,482 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:11:57,074 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:12:02,347 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:12:07,854 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:12:13,367 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:12:18,941 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:12:24,230 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:12:29,562 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:12:34,829 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:12:40,127 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:12:45,389 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> processing
+2026-04-10 19:12:50,647 - INFO - Poll wft_1pP7Aez8GGq1VUY9QzysJ5 -> failed
+2026-04-10 19:12:50,647 - ERROR - Task wft_1pP7Aez8GGq1VUY9QzysJ5 ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 19:12:50,647 - INFO - Generation time: 301.8s

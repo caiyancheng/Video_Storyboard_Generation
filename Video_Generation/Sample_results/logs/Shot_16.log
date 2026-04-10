@@ -1,0 +1,76 @@
+2026-04-10 19:50:11,550 - INFO - === Start processing <Shot_16> time_range=00:34.234-00:36.737 ===
+2026-04-10 19:50:11,550 - INFO - duration: 2.503s -> API duration=3
+2026-04-10 19:50:11,550 - INFO - scene_id=<Scene_1>
+2026-04-10 19:50:11,550 - INFO - full prompt:
+Shot: <Shot_16>  |  Time: 00:34.234-00:36.737
+Summary: A shot of the <Prop_3> (TV Screen) in the <Location_3> (Home interior) from the perspective of someone on the couch, showing a scene from the TV show 'Friends'.
+
+Detailed visual description:
+The shot is a first-person point-of-view, likely from someone lying down in a dark room, looking at a television. The camera has a subtle, handheld sway. In the immediate foreground, filling the bottom third of the frame, are rumpled blankets and bedding. The fabrics have muted colors, including a prominent mustard-yellow blanket, a dark green or grey one, and another with a lighter, possibly striped pattern. The room itself, <Location_4>, is dark and in shadow, creating a low-key lighting environment. The dominant light source is the bright screen of <Prop_3>, the large flat-screen television. The TV is displaying an episode of the sitcom 'Friends'. On the screen, a blonde woman with her hair in a high ponytail (temp_woman_on_tv_1) is shown in a medium shot. She wears a dark, short-sleeved, collared shirt made of a shiny, possibly velvet material with a subtle pattern. She is smiling and holding a wine glass. The setting on the TV is a brightly lit apartment with large, black-framed windows and a distinctive purple wall in the background. A framed picture and a dark, ornate light fixture are also visible on the wall behind her. White subtitles appear at the bottom left of the TV screen, reading '- Oh. Nice. - Yeah.'. Additionally, separate white text is overlaid on the entire video frame, near the bottom, which reads 'in any way I can think of', corresponding to the narrator's ongoing voiceover.
+
+Camera & atmosphere:
+  Shot scale: Medium Shot
+  Mood/atmosphere: Passive, intimate, and escapist. The shot conveys a sense of retreating from the world into the comfortable glow of entertainment.
+  Camera pose: Handheld
+  Lighting: Low-key with high contrast, where the television screen acts as the sole, bright key light illuminating the dark room.
+  Color tone: A split color palette: the foreground and room are dark with warm, muted yellow and green tones, while the TV screen is bright with a cooler, more saturated palette including purples and blues.
+
+Props:
+  <Prop_3> — TV Screen
+    Description: A large, modern flat-screen television set. Its screen is brightly lit, displaying a high-definition video.
+    Interaction: The television is turned on and is the central focus of the shot, being watched by the unseen viewer. It is the primary light source in the dark room.
+    Role: The TV screen is used to visually represent the narrator's methods of distraction and procrastination. Showing a video game and a sitcom illustrates the ways she 'drowns out the thoughts' instead of taking a proper break.
+  temp_prop_1 — A collection of rumpled blankets and bedding in th
+    Description: A collection of rumpled blankets and bedding in the foreground. Specific items include a mustard-yellow blanket, a dark green or grey blanket, and other crumpled fabrics.
+    Interaction: These blankets frame the shot from the bottom, establishing the viewer's position as lying on a couch or bed, reinforcing the cozy but passive setting.
+
+Location:
+  <Location_3> — Home interior (Indoor / Enclosed)
+    Visual features: A dimly lit home environment. Scenes include a desk area near a window, and a living room area with a couch, coffee table, and a large TV.
+    Key elements: Couch, Desk, Window with white trim, TV console
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "in any way I can think of."
+
+Scene narrative (<Scene_1>):
+  Beat: Concludes the scene by showing the narrator's POV as she distracts herself with TV, providing a final, empathetic illustration of her behavior.
+  Emotional pacing: Resolves the scene on a note of quiet, passive escapism, leaving the viewer to contemplate the narrator's state.
+  Information conveyed: Provides a final, specific example of distraction (watching 'Friends') and uses a POV shot to create viewer empathy.
+  Transition in:  Cuts from the narrator looking off-screen to a POV shot of what she is looking at (the TV).
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 19:50:11,550 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_16_first_frame.jpg
+2026-04-10 19:50:11,840 - INFO - Submitted task_id=wft_1pP7PtiKC4a7R3rV67B6kE
+2026-04-10 19:50:12,141 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> submitted
+2026-04-10 19:50:17,429 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:50:22,710 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:50:27,976 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:50:33,548 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:50:38,844 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:50:44,402 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:50:49,937 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:50:55,211 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:00,481 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:05,794 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:11,302 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:16,577 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:21,859 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:27,175 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:32,471 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:37,757 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:43,035 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:48,510 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:53,779 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:51:59,059 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:52:04,346 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:52:09,887 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> processing
+2026-04-10 19:52:15,466 - INFO - Poll wft_1pP7PtiKC4a7R3rV67B6kE -> failed
+2026-04-10 19:52:15,466 - ERROR - Task wft_1pP7PtiKC4a7R3rV67B6kE ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 19:52:15,466 - INFO - Generation time: 123.6s

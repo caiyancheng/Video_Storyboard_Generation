@@ -265,3 +265,99 @@ Reference image: The provided image is the first frame of this shot. Use it as a
 2026-04-10 12:00:23,346 - INFO - Submitted task_id=wft_1pP4s9qW7Bn8iDbJxeS3oD
 2026-04-10 12:00:23,616 - INFO - Poll wft_1pP4s9qW7Bn8iDbJxeS3oD -> submitted
 2026-04-10 12:00:29,118 - INFO - Poll wft_1pP4s9qW7Bn8iDbJxeS3oD -> processing
+2026-04-10 18:38:56,038 - INFO - === Start processing <Shot_2> time_range=00:03.036-00:04.204 ===
+2026-04-10 18:38:56,038 - INFO - duration: 1.168s -> API duration=1
+2026-04-10 18:38:56,039 - INFO - scene_id=<Scene_1>
+2026-04-10 18:38:56,039 - INFO - full prompt:
+Shot: <Shot_2>  |  Time: 00:03.036-00:04.204
+Summary: A close-up shot of the <Subject_1> (Narrator) smiling at an <Location_2> (Amusement park at dusk), with a carousel lit up in the background.
+
+Detailed visual description:
+In a tight, handheld close-up shot, <Subject_1> is seen at what appears to be a carnival at dusk. She is a young woman of East Asian descent with long, straight dark hair parted in the middle. Her face fills most of the frame, and she looks slightly to her right with a wide, genuine smile, showing her teeth. She is wearing subtle makeup, including pinkish eyeshadow and defined eyebrows. She has small pearl or white sphere earrings. Her top is a simple white collared shirt, though only the collar and a small portion of the shoulder are visible. At the bottom left corner of the frame, the black foam windscreen of a small lavalier microphone, `temp_microphone_1`, is visible, suggesting she is recording audio. The background is beautifully blurred, dominated by the warm, golden lights of a large carousel. The out-of-focus lights create a strong bokeh effect, with circular patterns of yellow and white against the darker, teal-colored structure of the ride. The overall atmosphere is joyful, vibrant, and slightly nostalgic, created by the warm lighting and the classic carnival setting of <Location_2>.
+
+Camera & atmosphere:
+  Shot scale: Close Up
+  Mood/atmosphere: Joyful, vibrant, and warm.
+  Camera pose: Handheld
+  Lighting: Low-key with warm, bright artificial lights from the background creating a soft fill on the subject.
+  Color tone: Warm golden and yellow tones, with teal and dark blue in the background.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: A young East Asian woman with long dark hair, wearing a white collared shirt and pearl earrings. She has a wide smile and is looking slightly off-camera.
+    Action: Smiling and looking towards her right, holding a relatively static pose for the selfie-style shot.
+    Overall appearance: A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props:
+  temp_microphone_1 — The top of a small microphone with a black, fuzzy 
+    Description: The top of a small microphone with a black, fuzzy foam windscreen is visible at the bottom left of the frame.
+    Interaction: The microphone is positioned to capture audio, likely clipped to the subject's clothing just out of frame.
+
+Location:
+  <Location_2> — Amusement park at dusk (Outdoor / Open)
+    Visual features: A brightly lit amusement park or carnival setting at dusk. A lit-up carousel and a tall, multi-colored star flyer swing ride are visible.
+    Environment (this shot): The location is a carnival at dusk. The background is dominated by a large, out-of-focus carousel, identifiable by its ornate teal and gold structure and numerous warm, glowing yellow lights that create a strong bokeh effect.
+    Key elements: Carousel with lights, Star flyer swing ride
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "that's not to say"
+
+Scene narrative (<Scene_1>):
+  Beat: Shows <Subject_1> in a happy, social setting (<Location_2>), which contrasts with her claim of not being good at taking breaks.
+  Emotional pacing: Accelerates the pace with a quick cut and introduces a joyful, energetic mood.
+  Information conveyed: Establishes that the narrator engages in social activities and can appear happy and relaxed. Introduces the carnival location.
+  Transition in:  Cuts from the calm park setting to a vibrant, nighttime carnival, initiating a montage.
+  Transition out: Cuts to her companion (<Subject_2>) in the same location, suggesting they are together and interacting.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 18:38:56,039 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_2_first_frame.jpg
+2026-04-10 18:38:56,519 - INFO - Submitted task_id=wft_1pP71e2PWBbW4MjV5F2WDU
+2026-04-10 18:38:56,781 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> submitted
+2026-04-10 18:39:02,056 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:39:07,383 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:39:12,655 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:39:18,196 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:39:23,699 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:39:29,186 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:39:34,460 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:39:39,753 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:39:45,252 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:39:50,528 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:39:56,007 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:40:01,488 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:40:06,748 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:40:12,059 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:40:17,674 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:40:22,983 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:40:28,539 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:40:33,809 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:40:39,099 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:40:44,406 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:40:49,928 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:40:55,418 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:41:00,924 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:41:06,194 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:41:11,482 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:41:16,955 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:41:22,468 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:41:27,968 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:41:33,502 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:41:38,985 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:41:44,278 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:41:49,547 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:41:54,807 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:42:00,141 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:42:05,412 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:42:10,931 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:42:16,444 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> processing
+2026-04-10 18:42:21,694 - INFO - Poll wft_1pP71e2PWBbW4MjV5F2WDU -> failed
+2026-04-10 18:42:21,694 - ERROR - Task wft_1pP71e2PWBbW4MjV5F2WDU ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 18:42:21,694 - INFO - Generation time: 205.2s

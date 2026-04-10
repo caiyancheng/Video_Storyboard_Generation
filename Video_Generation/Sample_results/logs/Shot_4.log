@@ -1,0 +1,88 @@
+2026-04-10 18:47:01,224 - INFO - === Start processing <Shot_4> time_range=00:05.105-00:06.440 ===
+2026-04-10 18:47:01,224 - INFO - duration: 1.335s -> API duration=1
+2026-04-10 18:47:01,224 - INFO - scene_id=<Scene_1>
+2026-04-10 18:47:01,224 - INFO - full prompt:
+Shot: <Shot_4>  |  Time: 00:05.105-00:06.440
+Summary: A low-angle shot looking up at a tall, colorful swing ride in motion at the <Location_2> (Amusement park at dusk).
+
+Detailed visual description:
+This is a low-angle, long shot looking directly up at a tall star-flyer swing ride, `temp_prop_swing_ride_1`, at the carnival, <Location_2>. The ride's central tower is a red metal lattice structure that tapers towards the top. At the peak, a rotating hub extends several arms of different colors: yellow, green, blue, and red. A small American flag is attached to one of the upper supports. Thin cables extend from the arms, holding individual or double-seat swings. Several groups of people, `temp_person_group_1`, can be seen in the swings, some near the bottom of their trajectory and others high in the air, appearing as small silhouettes against the sky. The ride is in motion, with the swings circling the central tower. The sky behind the ride is a flat, pale, almost white color, suggesting an overcast day or the bright haze of dusk. The camera remains static, emphasizing the height and rotational movement of the large mechanical structure. The vibrant primary colors of the ride contrast sharply with the plainness of the sky, making it the undeniable focus of the shot.
+
+Camera & atmosphere:
+  Shot scale: Long Shot
+  Mood/atmosphere: Dynamic, expansive, and slightly exhilarating.
+  Camera pose: Static
+  Lighting: Natural daylight, diffused and bright due to the overcast sky.
+  Color tone: Neutral and slightly cool, with vibrant primary colors from the ride.
+
+Props:
+  temp_prop_swing_ride_1 — A tall, multi-colored star-flyer swing ride with a
+    Description: A tall, multi-colored star-flyer swing ride with a red central tower and arms in yellow, green, blue, and red. It has a small American flag attached near the top.
+    Interaction: The ride is actively rotating, carrying passengers in swings through the air.
+
+Location:
+  <Location_2> — Amusement park at dusk (Outdoor / Open)
+    Visual features: A brightly lit amusement park or carnival setting at dusk. A lit-up carousel and a tall, multi-colored star flyer swing ride are visible.
+    Environment (this shot): A section of the carnival featuring a large mechanical ride against a bright, overcast sky. The low angle emphasizes the scale of the ride.
+    Key elements: Carousel with lights, Star flyer swing ride
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "but more like"
+
+Scene narrative (<Scene_1>):
+  Beat: Provides an establishing shot for the carnival location, adding atmosphere and a sense of scale to the montage.
+  Emotional pacing: Provides a brief, dynamic visual break from the close-ups.
+  Information conveyed: Shows the scale and type of activity at the location (<Location_2>).
+  Transition in:  Cuts from a close-up of a person to a wide shot of the environment, providing context.
+  Transition out: Cuts to a completely different location and time (daytime park), continuing the montage with a new set of illustrative clips.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 18:47:01,225 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_4_first_frame.jpg
+2026-04-10 18:47:01,544 - INFO - Submitted task_id=wft_1pP74AYrGUJV2PLJsbyuB6
+2026-04-10 18:47:02,046 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:47:07,595 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:47:12,856 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:47:18,179 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:47:23,443 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:47:28,970 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:47:34,252 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:47:39,523 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:47:44,996 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:47:50,518 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:47:56,009 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:48:01,495 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:48:06,792 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:48:12,089 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:48:17,391 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:48:22,676 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:48:27,965 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:48:33,244 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:48:38,719 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:48:44,009 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:48:49,301 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:48:54,788 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:00,298 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:05,586 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:11,178 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:16,701 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:22,195 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:27,484 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:32,750 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:38,232 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:43,724 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:49,016 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:54,276 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:49:59,767 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:50:05,063 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:50:10,566 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:50:16,155 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> processing
+2026-04-10 18:50:21,677 - INFO - Poll wft_1pP74AYrGUJV2PLJsbyuB6 -> failed
+2026-04-10 18:50:21,677 - ERROR - Task wft_1pP74AYrGUJV2PLJsbyuB6 ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 18:50:21,677 - INFO - Generation time: 200.1s

@@ -1,0 +1,108 @@
+2026-04-10 19:19:36,354 - INFO - === Start processing <Shot_11> time_range=00:20.821-00:25.158 ===
+2026-04-10 19:19:36,354 - INFO - duration: 4.337s -> API duration=4
+2026-04-10 19:19:36,354 - INFO - scene_id=<Scene_1>
+2026-04-10 19:19:36,354 - INFO - full prompt:
+Shot: <Shot_11>  |  Time: 00:20.821-00:25.158
+Summary: The <Subject_1> (Narrator) continues her monologue in the <Location_1> (Grassy park field), holding the <Prop_1> (Small lavalier microphone).
+
+Detailed visual description:
+Returning to the park setting (<Location_1>), this static medium shot is framed identically to the first and third shots. <Subject_1> is seated on the striped blanket, dressed in her green top and blue jeans. She holds <Prop_1>, the silver microphone, and speaks directly to the camera with an earnest and expressive face. Her body language is open and engaging as she narrates a key point in her story. The background remains the expansive green field, with the leaves of the tree above her gently moving in the wind. The soft, diffuse lighting from the overcast sky provides consistent, flattering illumination. The shot serves as the narrative anchor, where the narrator explains her internal state before cutting away to a visual representation of that state. The repetition of this setup reinforces its role as the primary storytelling location.
+
+Camera & atmosphere:
+  Shot scale: Medium Shot
+  Mood/atmosphere: Earnest, direct, and confessional.
+  Camera pose: Static
+  Lighting: Natural daylight, diffused and soft.
+  Color tone: Natural greens and blues with warm skin tones.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: A young East Asian woman in a green top and blue jeans, sitting on a blanket in a park. She looks directly at the camera while speaking.
+    Action: Sits on a blanket, holds a microphone, and speaks expressively to the camera.
+    Overall appearance: A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props:
+  <Prop_1> — Small lavalier microphone
+    Description: A small, cylindrical silver lavalier microphone with a black foam windscreen.
+    Interaction: Held in <Subject_1>'s right hand as she narrates.
+    Role: The microphone is a key visual element in the primary A-roll shots, indicating that the narrator is purposefully recording her monologue. It reinforces the meta-narrative of her creating content, which is a form of 'productive procrastination' she mentions.
+  temp_prop_blanket_1 — A large woven blanket with a repeating pattern of 
+    Description: A large woven blanket with a repeating pattern of thick horizontal stripes in blue, white, and tan.
+    Interaction: <Subject_1> is sitting on it.
+
+Location:
+  <Location_1> — Grassy park field (Outdoor / Open)
+    Visual features: A large, open green field bordered by trees in the distance. The lighting suggests late afternoon or early evening (golden hour). The narrator is sitting on a blue and white striped blanket under a tree.
+    Environment (this shot): A bright, open grassy park under an overcast sky. The subject is sitting under a tree, on a blanket spread on the lawn.
+    Key elements: Large green lawn, Line of trees in the background, Large tree in the foreground
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "When I finally hit a wall where doing anything more will make my head explode,"
+
+Scene narrative (<Scene_1>):
+  Beat: The narrator describes the climax of her procrastination cycle: hitting a mental wall and feeling overwhelmed, which pivots the story towards its consequences.
+  Emotional pacing: Builds tension and raises the emotional stakes of the narrative.
+  Information conveyed: Explains the negative consequence of her behavior (burnout).
+  Transition in:  Returns from the illustrative insert to the main narration setting to deliver a key narrative turning point.
+  Transition out: Cuts to a shot that visually represents the feeling of 'hitting a wall': her lying exhausted on the couch.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 19:19:36,354 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_11_first_frame.jpg
+2026-04-10 19:19:36,840 - INFO - Submitted task_id=wft_1pP7ELv1hm8CFnzXynjm7B
+2026-04-10 19:19:37,148 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> submitted
+2026-04-10 19:19:42,416 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:19:47,929 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:19:53,346 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:19:58,620 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:20:04,191 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:20:09,709 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:20:14,995 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:20:20,278 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:20:25,574 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:20:30,857 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:20:36,118 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:20:41,419 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:20:46,746 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:20:52,239 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:20:57,739 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:21:03,031 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:21:08,303 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:21:13,628 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:21:18,942 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:21:24,223 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:21:29,520 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:21:35,036 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:21:40,307 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:21:45,836 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:21:51,314 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:21:56,624 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:22:01,910 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:22:07,188 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:22:12,501 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:22:17,788 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:22:23,284 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:22:28,770 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:22:34,079 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:22:39,340 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:22:44,623 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:22:50,134 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:22:55,636 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:23:01,147 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:23:06,620 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:23:12,122 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:23:17,629 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:23:22,907 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:23:28,419 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:23:33,723 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:23:39,023 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> processing
+2026-04-10 19:23:44,517 - INFO - Poll wft_1pP7ELv1hm8CFnzXynjm7B -> failed
+2026-04-10 19:23:44,518 - ERROR - Task wft_1pP7ELv1hm8CFnzXynjm7B ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 19:23:44,518 - INFO - Generation time: 247.7s

@@ -1,0 +1,87 @@
+2026-04-10 19:17:48,243 - INFO - === Start processing <Shot_10> time_range=00:17.818-00:20.821 ===
+2026-04-10 19:17:48,243 - INFO - duration: 3.003s -> API duration=3
+2026-04-10 19:17:48,243 - INFO - scene_id=<Scene_1>
+2026-04-10 19:17:48,243 - INFO - full prompt:
+Shot: <Shot_10>  |  Time: 00:17.818-00:20.821
+Summary: A shot of a person's hands writing in a notebook on a desk in the <Location_3> (Home interior), near a window.
+
+Detailed visual description:
+An extreme close-up, static shot shows a pair of hands, presumably belonging to <Subject_1>, at a desk in <Location_3>. The desk has a light-colored, possibly wood-grain, surface. The hands are interacting with an open book or journal (`temp_prop_book_1`) with unlined, off-white paper pages. The left hand, wearing a ring on the ring finger, gently smooths down the left page. The right hand enters the frame holding a red pen (`temp_prop_pen_1`) and begins to write or draw on the right page. The background is dominated by a large, white-painted window frame with vertical mullions, through which a blurry, green outdoor scene is visible. The lighting is soft and directional, coming from the window, which casts a bright, cool light onto the book and desk surface, while the rest of the room remains in shadow. The focus is sharply on the hands and the book, emphasizing the act of creation or work as a form of procrastination.
+
+Camera & atmosphere:
+  Shot scale: Extreme Close Up
+  Mood/atmosphere: Quiet, focused, and intimate.
+  Camera pose: Static
+  Lighting: Natural side lighting from a window, creating high contrast.
+  Color tone: Cool and bright, with neutral whites and natural skin tones.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: Only the subject's hands are visible. They are fair-skinned, and the left hand wears a small ring.
+    Action: The hands smooth a page in a book and then begin to write or draw with a red pen.
+    Overall appearance: A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props:
+  temp_prop_book_1 — An open book or journal with blank, off-white page
+    Description: An open book or journal with blank, off-white pages.
+    Interaction: The subject's hands are smoothing its pages and writing in it.
+  temp_prop_pen_1 — A pen with a red-colored body or cap.
+    Description: A pen with a red-colored body or cap.
+    Interaction: Held in the subject's right hand to write in the book.
+  temp_prop_ring_1 — A small ring worn on the left ring finger.
+    Description: A small ring worn on the left ring finger.
+    Interaction: Worn by the subject.
+
+Subject–prop interactions:
+  <Subject_1>'s hands write in the book with a pen, an act of 'productive procrastination'.
+
+Location:
+  <Location_3> — Home interior (Indoor / Enclosed)
+    Visual features: A dimly lit home environment. Scenes include a desk area near a window, and a living room area with a couch, coffee table, and a large TV.
+    Environment (this shot): An indoor desk space next to a large, white-framed window. The lighting is bright and cool, dominated by the natural light from the window.
+    Key elements: Couch, Desk, Window with white trim, TV console
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "maybe I'll just make some assets that I'll post tomorrow instead."
+
+Scene narrative (<Scene_1>):
+  Beat: Visually depicts the act of creating 'assets' as a form of work-related procrastination.
+  Emotional pacing: Creates a quiet, focused moment that contrasts with the previous stressed close-up.
+  Information conveyed: Provides a second, distinct example of 'productive procrastination,' this time in a professional context.
+  Transition in:  Cuts from the narrator describing her work procrastination to a visual of the act itself.
+  Transition out: Cuts back to the primary narration setting for the narrative's turning point.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 19:17:48,243 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_10_first_frame.jpg
+2026-04-10 19:17:48,785 - INFO - Submitted task_id=wft_1pP7Dn9qhepcYikiHJHsDg
+2026-04-10 19:17:49,051 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> submitted
+2026-04-10 19:17:54,570 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:00,142 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:05,410 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:10,707 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:16,201 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:21,690 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:26,987 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:32,271 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:37,571 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:42,869 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:48,371 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:53,673 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:18:59,191 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:19:04,457 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:19:09,745 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:19:15,027 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:19:20,281 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:19:25,544 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:19:30,831 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> processing
+2026-04-10 19:19:36,352 - INFO - Poll wft_1pP7Dn9qhepcYikiHJHsDg -> failed
+2026-04-10 19:19:36,352 - ERROR - Task wft_1pP7Dn9qhepcYikiHJHsDg ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 19:19:36,352 - INFO - Generation time: 107.6s

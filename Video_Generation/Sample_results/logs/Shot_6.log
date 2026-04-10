@@ -1,0 +1,136 @@
+2026-04-10 18:52:28,198 - INFO - === Start processing <Shot_6> time_range=00:07.777-00:09.510 ===
+2026-04-10 18:52:28,198 - INFO - duration: 1.733s -> API duration=2
+2026-04-10 18:52:28,198 - INFO - scene_id=<Scene_1>
+2026-04-10 18:52:28,198 - INFO - full prompt:
+Shot: <Shot_6>  |  Time: 00:07.777-00:09.510
+Summary: A selfie-style shot of the <Subject_1> (Narrator) and <Subject_2> (Male friend) smiling together outdoors, with a blue sky behind them.
+
+Detailed visual description:
+This shot is a handheld medium close-up, filmed selfie-style, featuring both <Subject_1> and <Subject_2> in the park, <Location_1>. <Subject_1> is on the left side of the frame, smiling and squinting slightly in the bright sun. The dark sunglasses, `temp_prop_sunglasses_1`, are still perched on her head, and she is wearing the same beige knit top. <Subject_2> is on the right, looking towards the camera. He is now wearing a black baseball cap, `temp_prop_baseball_cap_1`, with a white logo on the front, along with his usual black-framed glasses. His shirt is different from the carnival scene; here he wears a colorful tie-dye t-shirt with visible swirls of yellow, green, and red. The background is the same sunny park, with a clear blue sky and a backdrop of green, out-of-focus trees. The bright sunlight illuminates both subjects from the front. The composition is casual and intimate, capturing a shared moment between the two. The camera movement is minimal, consistent with someone holding a phone to take a video of themselves and a friend.
+
+Camera & atmosphere:
+  Shot scale: Medium Shot
+  Mood/atmosphere: Casual, social, and happy.
+  Camera pose: Handheld
+  Lighting: Natural daylight, bright and direct.
+  Color tone: Bright and natural with a vibrant blue and green palette.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: A young East Asian woman smiling and squinting in the sun, wearing a beige knit top with sunglasses on her head.
+    Action: Smiling at the camera for a selfie video.
+    Overall appearance: A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+  <Subject_2> — Male friend
+    Appearance: A young man wearing a black baseball cap, glasses, and a colorful tie-dye t-shirt. He is looking at the camera.
+    Action: Posing for a selfie video next to <Subject_1>.
+    Overall appearance: A young man with short brown hair, a light goatee, and black-rimmed glasses. He is seen wearing a colorful tie-dye t-shirt and a vertically striped short-sleeve button-up shirt.
+    Role: The subject appears in a brief montage sequence with the narrator, illustrating the idea of taking a break. His presence helps visualize the social aspect of the activities being discussed.
+
+Props:
+  temp_prop_sunglasses_1 — A pair of dark-lensed sunglasses with brown or tor
+    Description: A pair of dark-lensed sunglasses with brown or tortoiseshell frames.
+    Interaction: The sunglasses are resting on top of <Subject_1>'s head.
+  temp_prop_baseball_cap_1 — A black baseball cap with a white stylized letter 
+    Description: A black baseball cap with a white stylized letter 'C' or similar logo on the front.
+    Interaction: The cap is being worn by <Subject_2>.
+
+Subject–prop interactions:
+  <Subject_1> and <Subject_2> are posing together for a selfie-style video, sharing the frame in close proximity.
+
+Location:
+  <Location_1> — Grassy park field (Outdoor / Open)
+    Visual features: A large, open green field bordered by trees in the distance. The lighting suggests late afternoon or early evening (golden hour). The narrator is sitting on a blue and white striped blanket under a tree.
+    Environment (this shot): A bright, sunny park. The background consists of out-of-focus green trees and a clear blue sky.
+    Key elements: Large green lawn, Line of trees in the background, Large tree in the foreground
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "from one thing I don't wanna do"
+
+Scene narrative (<Scene_1>):
+  Beat: Visually illustrates the concept of replacing an unwanted task with a social activity, completing the thought from the previous shot.
+  Emotional pacing: Maintains the upbeat, social feel of the montage before returning to the main narration.
+  Information conveyed: Confirms <Subject_2> is present with <Subject_1> in this second location, and visually completes the definition of her procrastination.
+  Transition in:  Continues the selfie-style shot from the previous clip, widening to include <Subject_2>.
+  Transition out: Cuts back to the primary narration setting (<Location_1>), concluding the montage sequence.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 18:52:28,198 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_6_first_frame.jpg
+2026-04-10 18:52:28,717 - INFO - Submitted task_id=wft_1pP75sBqedQcRiGqp8BT9c
+2026-04-10 18:52:28,975 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:52:34,272 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:52:39,573 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:52:44,841 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:52:50,351 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:52:55,650 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:53:00,961 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:53:06,473 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:53:11,971 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:53:17,475 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:53:22,759 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:53:28,262 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:53:33,544 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:53:38,850 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:53:44,390 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:53:49,688 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:53:54,970 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:00,480 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:05,758 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:11,261 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:16,765 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:22,060 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:27,328 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:32,638 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:37,914 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:43,179 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:48,652 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:53,946 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:54:59,240 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:55:04,539 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:55:09,827 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:55:15,349 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:55:20,662 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:55:25,943 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:55:31,232 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:55:36,744 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:55:42,011 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:55:47,319 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:55:52,574 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:55:58,060 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:56:03,560 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:56:08,908 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:56:14,189 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:56:19,488 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:56:24,752 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:56:30,048 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:56:35,550 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:56:41,065 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:56:46,593 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:56:51,929 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:56:57,218 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:57:02,717 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:57:08,230 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:57:13,509 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:57:18,777 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:57:24,091 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:57:29,595 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:57:35,096 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:57:40,637 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:57:45,919 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:57:51,411 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:57:56,670 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:58:02,199 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:58:07,477 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:58:13,056 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:58:18,349 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:58:23,644 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> processing
+2026-04-10 18:58:29,121 - INFO - Poll wft_1pP75sBqedQcRiGqp8BT9c -> failed
+2026-04-10 18:58:29,121 - ERROR - Task wft_1pP75sBqedQcRiGqp8BT9c ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 18:58:29,121 - INFO - Generation time: 360.4s

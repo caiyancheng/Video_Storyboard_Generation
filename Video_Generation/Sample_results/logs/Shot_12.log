@@ -1,0 +1,105 @@
+2026-04-10 19:23:44,519 - INFO - === Start processing <Shot_12> time_range=00:25.158-00:27.794 ===
+2026-04-10 19:23:44,519 - INFO - duration: 2.636s -> API duration=3
+2026-04-10 19:23:44,520 - INFO - scene_id=<Scene_1>
+2026-04-10 19:23:44,520 - INFO - full prompt:
+Shot: <Shot_12>  |  Time: 00:25.158-00:27.794
+Summary: The <Subject_1> (Narrator) lies on a couch in her <Location_3> (Home interior) under a blanket, looking sad.
+
+Detailed visual description:
+A static close-up shot captures <Subject_1> in a state of exhaustion in <Location_4>, a living room. She is lying on a couch with a coarse, textured grey-green fabric. Her head rests on a pillow or the arm of the couch, and she is partially covered by a fuzzy, soft, sage-green blanket (`temp_prop_blanket_2`). She is wearing a simple white short-sleeved t-shirt. Her long dark hair is loose and spread out behind her. She looks directly into the camera lens with a weary, almost blank expression, her eyes slightly unfocused. Her skin shows some redness on her cheeks, consistent with her appearance in the earlier close-up. The room is very dimly lit, with a warm, low-light source off-camera casting a soft glow on her face and the blanket, while the rest of the frame falls into deep shadow. The atmosphere is quiet and still, visually representing the state of burnout and the need for a passive break that the narrator describes.
+
+Camera & atmosphere:
+  Shot scale: Close Up
+  Mood/atmosphere: Exhausted, quiet, and weary.
+  Camera pose: Static
+  Lighting: Low-key, warm, and soft, likely from a single lamp.
+  Color tone: Warm and dark, with muted greens and browns.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: Lying on a couch in a white t-shirt, partially covered by a green blanket. Her expression is drained and weary, and her face has some redness.
+    Action: Lies still on a couch, looking directly at the camera with a tired expression.
+    Overall appearance: A young East Asian woman with long, dark brown hair often tied back in a half-ponytail. She wears different casual outfits, including a green t-shirt and jeans, a beige top, and a white t-shirt.
+    Role: This subject is the narrator and central figure of the video. She appears in the majority of the shots and her monologue drives the entire narrative.
+
+Props:
+  temp_prop_blanket_2 — A soft, fuzzy blanket in a sage-green color.
+    Description: A soft, fuzzy blanket in a sage-green color.
+    Interaction: Partially covering <Subject_1> as she lies on the couch.
+
+Location:
+  <Location_3> — Home interior (Indoor / Enclosed)
+    Visual features: A dimly lit home environment. Scenes include a desk area near a window, and a living room area with a couch, coffee table, and a large TV.
+    Key elements: Couch, Desk, Window with white trim, TV console
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "heaven forbid I actually take a nap"
+
+Scene narrative (<Scene_1>):
+  Beat: Visually depicts the narrator's state of burnout after 'hitting a wall,' while the narration explains her avoidance of actual rest.
+  Emotional pacing: Shifts the mood to one of quiet exhaustion and weariness.
+  Information conveyed: Visually confirms the narrator's state of exhaustion and introduces her avoidance of napping.
+  Transition in:  Cuts from the narrator describing burnout to a visual of her experiencing it.
+  Transition out: Cuts to an example of the distracting activity (playing a video game) she chooses instead of resting.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 19:23:44,520 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_12_first_frame.jpg
+2026-04-10 19:23:44,818 - INFO - Submitted task_id=wft_1pP7FdigzAuVZRmvoJXVNU
+2026-04-10 19:23:45,098 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> submitted
+2026-04-10 19:23:50,623 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:23:56,127 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:24:01,417 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:24:06,673 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:24:11,931 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:24:17,459 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:24:22,946 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:24:28,261 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:24:33,767 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:24:39,059 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:24:44,362 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:24:49,857 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:24:55,383 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:00,658 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:05,928 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:11,437 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:16,726 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:22,013 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:27,530 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:32,830 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:38,361 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:43,648 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:49,163 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:54,446 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:25:59,733 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:26:05,017 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:26:10,333 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:26:15,823 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:26:21,105 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:26:26,625 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:26:31,929 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:26:37,417 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:26:42,964 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:26:48,457 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:26:53,734 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:26:59,011 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:27:04,290 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:27:09,562 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:27:14,873 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:27:20,151 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:27:25,447 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:27:30,757 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:27:36,058 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:27:41,567 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:27:46,854 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:27:52,422 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:27:57,952 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> processing
+2026-04-10 19:28:03,234 - INFO - Poll wft_1pP7FdigzAuVZRmvoJXVNU -> failed
+2026-04-10 19:28:03,235 - ERROR - Task wft_1pP7FdigzAuVZRmvoJXVNU ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 19:28:03,235 - INFO - Generation time: 258.4s

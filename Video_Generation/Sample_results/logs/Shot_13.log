@@ -1,0 +1,198 @@
+2026-04-10 19:28:03,237 - INFO - === Start processing <Shot_13> time_range=00:27.794-00:29.596 ===
+2026-04-10 19:28:03,237 - INFO - duration: 1.802s -> API duration=2
+2026-04-10 19:28:03,237 - INFO - scene_id=<Scene_1>
+2026-04-10 19:28:03,237 - INFO - full prompt:
+Shot: <Shot_13>  |  Time: 00:27.794-00:29.596
+Summary: A shot of a <Prop_3> (TV Screen) in the <Location_3> (Home interior) displaying a pixel-art style video game.
+
+Detailed visual description:
+A medium, handheld shot captures a dimly lit living room, focusing on a large flat-screen television, <Prop_3>, which is turned on. The room is dark, suggesting it is nighttime, and the primary source of light emanates from the TV screen, casting a colorful glow on the immediate surroundings. On the screen, a video game is being played. The game has a vibrant, pixelated, 2.5D graphical style, reminiscent of a classic RPG. Several small character sprites with colorful outfits (red, blue, white) are visible walking in a line along a path inside what appears to be a town or building with wooden floors and purple-tiled roofing. In the foreground, a dark brown or black coffee table, `temp_coffee_table_1`, is positioned in front of the TV. On the table rests a small black remote control, `temp_remote_1`, a stack of square coasters, `temp_coasters_1`, and a white napkin, `temp_napkin_1`. On a lower shelf of the coffee table, the reflective screen of a device, possibly a tablet or smartphone, `temp_device_1`, is visible. The top left corner of a textured, light-colored couch, `temp_couch_1`, is seen in the bottom left of the frame. Above the television, two matching dark-framed pictures, `temp_framed_art_1` and `temp_framed_art_2`, hang on the light-colored wall. The camera has a slight, natural handheld motion. The overall atmosphere is quiet and solitary, centered on the digital escapism offered by the video game.
+
+Camera & atmosphere:
+  Shot scale: Medium Shot
+  Mood/atmosphere: Intimate and solitary, emphasizing a sense of escapism through the glowing screen.
+  Camera pose: Handheld
+  Lighting: Low-key lighting, with the television screen acting as the primary, diegetic light source.
+  Color tone: A dark, moody color palette for the room itself, contrasted sharply by the vibrant, multi-colored light from the TV screen.
+
+Props:
+  <Prop_3> — TV Screen
+    Description: A large, modern flat-screen television with a thin black bezel. It is displaying a colorful 2.5D pixel-art style video game.
+    Interaction: The prop is active and is the central focus of the shot, displaying the video game content that illustrates the narrator's voiceover.
+    Role: The TV screen is used to visually represent the narrator's methods of distraction and procrastination. Showing a video game and a sitcom illustrates the ways she 'drowns out the thoughts' instead of taking a proper break.
+  temp_coffee_table_1 — A dark brown or black rectangular coffee table wit
+    Description: A dark brown or black rectangular coffee table with a lower shelf.
+    Interaction: The prop is static and holds other items like a remote control and coasters.
+  temp_remote_1 — A small black remote control lying on the coffee t
+    Description: A small black remote control lying on the coffee table.
+    Interaction: The prop is static and not being used.
+  temp_framed_art_1 — A square picture in a dark frame hanging on the wa
+    Description: A square picture in a dark frame hanging on the wall above the television on the left.
+    Interaction: The prop is a static background element.
+  temp_framed_art_2 — A square picture in a dark frame hanging on the wa
+    Description: A square picture in a dark frame hanging on the wall above the television on the right.
+    Interaction: The prop is a static background element.
+
+Location:
+  <Location_3> — Home interior (Indoor / Enclosed)
+    Visual features: A dimly lit home environment. Scenes include a desk area near a window, and a living room area with a couch, coffee table, and a large TV.
+    Key elements: Couch, Desk, Window with white trim, TV console
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination [VO / Narration]
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+    Content: The speaker explains that she is not good at taking breaks, but rather engages in 'productive procrastination' by replacing a task she doesn't want to do with another, more appealing productive task. She gives examples from college and her work life. She concludes by saying that when she finally hits a wall and can't be productive, she simply distracts herself by watching TV or playing video games to 'drown out the thoughts' rather than taking a restorative break.
+    Rationale: This voiceover provides the entire narrative of the video. It functions as a personal reflection or video essay, explaining the speaker's habits and mindset regarding work, rest, and procrastination. The visuals serve as illustrations for the concepts described in the narration.
+  <Audio_2> — Gentle Lo-Fi Instrumental [BGM / Instrumental]
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+    Rationale: The music establishes a relaxed and thoughtful mood that complements the speaker's reflective narration. It runs continuously in the background, providing a consistent emotional tone and a smooth, cohesive audio bed for the montage of different video clips.
+  Spoken VO/dialogue: "or play a video game"
+
+Scene narrative (<Scene_1>):
+  Beat: Illustrates one of the specific passive distractions (playing a video game) the narrator uses to avoid rest.
+  Emotional pacing: Maintains the low-energy, passive mood, emphasizing escapism.
+  Information conveyed: Shows a specific example of the narrator's avoidance behavior (playing video games).
+  Transition in:  Cuts from the exhausted narrator to a shot of the activity she is doing.
+  Transition out: Cuts back to the main narration setting to provide the psychological explanation for this behavior.
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 19:28:03,238 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/yancheng/Shot_13_first_frame.jpg
+2026-04-10 19:28:03,714 - INFO - Submitted task_id=wft_1pP7Gyx3zoGZpAe5JAwXbk
+2026-04-10 19:28:04,025 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> submitted
+2026-04-10 19:28:09,317 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:28:14,601 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:28:19,895 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:28:25,160 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:28:30,450 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:28:35,727 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:28:41,025 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:28:46,562 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:28:51,860 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:28:57,159 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:29:02,417 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:29:07,794 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:29:13,296 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:29:18,602 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:29:23,876 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:29:29,200 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:29:34,726 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:29:40,240 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:29:45,515 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:29:50,789 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:29:56,068 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:30:01,356 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:30:06,625 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:30:11,937 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:30:17,524 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:30:23,046 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:30:28,306 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:30:33,568 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:30:38,838 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:30:44,129 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:30:49,413 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:30:54,933 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:00,212 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:05,502 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:10,792 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:16,288 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:21,761 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:27,040 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:32,579 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:37,881 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:43,169 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:48,486 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:53,831 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:31:59,119 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:32:04,391 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:32:09,900 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:32:15,176 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:32:20,677 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:32:25,965 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:32:31,285 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:32:36,591 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:32:41,855 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:32:47,372 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:32:52,861 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:32:58,378 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:33:03,858 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:33:09,369 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:33:14,639 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:33:19,933 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:33:25,255 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:33:30,547 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:33:35,823 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:33:41,145 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:33:46,647 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:33:51,926 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:33:57,438 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:34:02,717 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:34:08,229 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:34:13,511 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:34:19,029 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:34:24,295 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:34:29,547 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:34:34,835 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:34:40,109 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:34:45,626 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:34:51,205 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:34:56,484 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:35:01,765 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:35:07,069 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:35:12,375 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:35:17,670 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:35:22,967 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:35:28,244 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:35:33,519 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:35:39,036 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:35:44,326 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:35:49,841 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:35:55,131 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:00,453 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:05,774 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:11,056 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:16,328 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:21,595 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:26,892 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:32,156 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:37,494 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:42,980 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:48,503 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:53,996 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:36:59,308 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:37:04,851 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:37:10,140 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:37:15,418 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:37:20,713 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:37:25,994 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:37:31,305 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:37:36,574 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:37:41,853 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:37:47,138 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:37:52,428 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:37:57,706 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:38:03,240 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:38:08,751 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:38:14,281 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:38:19,562 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:38:24,825 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:38:30,319 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:38:35,592 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:38:41,106 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:38:46,620 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:38:51,898 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:38:57,434 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:39:02,929 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:39:08,434 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:39:13,913 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:39:19,203 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:39:24,708 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:39:29,988 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:39:35,265 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:39:40,796 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:39:46,082 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:39:51,674 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:39:56,989 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:40:02,271 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> processing
+2026-04-10 19:40:07,805 - INFO - Poll wft_1pP7Gyx3zoGZpAe5JAwXbk -> failed
+2026-04-10 19:40:07,805 - ERROR - Task wft_1pP7Gyx3zoGZpAe5JAwXbk ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 19:40:07,805 - INFO - Generation time: 724.1s
