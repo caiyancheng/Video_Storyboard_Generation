@@ -183,3 +183,85 @@ Reference image: The provided image is the first frame of this shot. Use it as a
 2026-04-10 11:28:03,156 - INFO - Submitted task_id=wft_1pP4h455FKmf4GM4FCpNVo
 2026-04-10 11:28:03,666 - INFO - Poll wft_1pP4h455FKmf4GM4FCpNVo -> processing
 2026-04-10 11:28:09,183 - INFO - Poll wft_1pP4h455FKmf4GM4FCpNVo -> processing
+2026-04-10 11:54:55,544 - INFO - === Start processing <Shot_2> time_range=00:03.036-00:04.204 ===
+2026-04-10 11:54:55,545 - INFO - duration: 1.168s -> API duration=1
+2026-04-10 11:54:55,545 - INFO - scene_id=<Scene_1>
+2026-04-10 11:54:55,545 - INFO - full prompt:
+Shot: <Shot_2>  |  Time: 00:03.036-00:04.204
+Summary: A close-up shot of the <Subject_1> (Narrator) smiling at an <Location_2> (Amusement park at dusk), with a carousel lit up in the background.
+
+Detailed visual description:
+In a tight, handheld close-up shot, <Subject_1> is seen at what appears to be a carnival at dusk. She is a young woman of East Asian descent with long, straight dark hair parted in the middle. Her face fills most of the frame, and she looks slightly to her right with a wide, genuine smile, showing her teeth. She is wearing subtle makeup, including pinkish eyeshadow and defined eyebrows. She has small pearl or white sphere earrings. Her top is a simple white collared shirt, though only the collar and a small portion of the shoulder are visible. At the bottom left corner of the frame, the black foam windscreen of a small lavalier microphone, `temp_microphone_1`, is visible, suggesting she is recording audio. The background is beautifully blurred, dominated by the warm, golden lights of a large carousel. The out-of-focus lights create a strong bokeh effect, with circular patterns of yellow and white against the darker, teal-colored structure of the ride. The overall atmosphere is joyful, vibrant, and slightly nostalgic, created by the warm lighting and the classic carnival setting of <Location_2>.
+
+Camera & atmosphere:
+  Shot scale: Close Up
+  Mood/atmosphere: Joyful, vibrant, and warm.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: A young East Asian woman with long dark hair, wearing a white collared shirt and pearl earrings. She has a wide smile and is looking slightly off-camera.
+    Action: Smiling and looking towards her right, holding a relatively static pose for the selfie-style shot.
+
+Props:
+  temp_microphone_1 — The top of a small microphone with a black, fuzzy 
+    Description: The top of a small microphone with a black, fuzzy foam windscreen is visible at the bottom left of the frame.
+    Interaction: The microphone is positioned to capture audio, likely clipped to the subject's clothing just out of frame.
+
+Location:
+  <Location_2> — Amusement park at dusk
+    Visual features: A brightly lit amusement park or carnival setting at dusk. A lit-up carousel and a tall, multi-colored star flyer swing ride are visible.
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+  <Audio_2> — Gentle Lo-Fi Instrumental
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+  Spoken VO/dialogue: "that's not to say"
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:54:55,545 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_2_first_frame.jpg
+2026-04-10 11:54:56,065 - INFO - Submitted task_id=wft_1pP4qStsaa7JxxfhtodjgM
+2026-04-10 11:54:56,371 - INFO - Poll wft_1pP4qStsaa7JxxfhtodjgM -> submitted
+2026-04-10 11:56:44,220 - INFO - === Start processing <Shot_2> time_range=00:03.036-00:04.204 ===
+2026-04-10 11:56:44,220 - INFO - duration: 1.168s -> API duration=1
+2026-04-10 11:56:44,221 - INFO - scene_id=<Scene_1>
+2026-04-10 11:56:44,221 - INFO - full prompt:
+Shot: <Shot_2>  |  Time: 00:03.036-00:04.204
+Summary: A close-up shot of the <Subject_1> (Narrator) smiling at an <Location_2> (Amusement park at dusk), with a carousel lit up in the background.
+
+Characters:
+  <Subject_1> — Narrator
+    Action: Smiling and looking towards her right, holding a relatively static pose for the selfie-style shot.
+
+Location:
+  <Location_2> — Amusement park at dusk
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination
+  <Audio_2> — Gentle Lo-Fi Instrumental
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:56:44,221 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_2_first_frame.jpg
+2026-04-10 12:00:23,035 - INFO - === Start processing <Shot_2> time_range=00:03.036-00:04.204 ===
+2026-04-10 12:00:23,036 - INFO - duration: 1.168s -> API duration=1
+2026-04-10 12:00:23,036 - INFO - scene_id=<Scene_1>
+2026-04-10 12:00:23,036 - INFO - full prompt:
+Shot: <Shot_2>  |  Time: 00:03.036-00:04.204
+Summary: A close-up shot of the <Subject_1> (Narrator) smiling at an <Location_2> (Amusement park at dusk), with a carousel lit up in the background.
+
+Characters:
+  <Subject_1> — Narrator
+    Action: Smiling and looking towards her right, holding a relatively static pose for the selfie-style shot.
+
+Location:
+  <Location_2> — Amusement park at dusk
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination
+  <Audio_2> — Gentle Lo-Fi Instrumental
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 12:00:23,036 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_2_first_frame.jpg
+2026-04-10 12:00:23,346 - INFO - Submitted task_id=wft_1pP4s9qW7Bn8iDbJxeS3oD
+2026-04-10 12:00:23,616 - INFO - Poll wft_1pP4s9qW7Bn8iDbJxeS3oD -> submitted
+2026-04-10 12:00:29,118 - INFO - Poll wft_1pP4s9qW7Bn8iDbJxeS3oD -> processing

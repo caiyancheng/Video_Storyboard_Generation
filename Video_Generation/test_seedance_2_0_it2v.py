@@ -33,7 +33,7 @@ if __name__ == "__main__":
             女主在草坪上畅谈自己的理想，人物表情生动，电影感构图。
                     """,
             "language": "zh", 
-            "duration": 3,
+            "duration": 10,
             "seed": 42,
             "aspect_ratio": "9:16",
             "resolution": "480p", 

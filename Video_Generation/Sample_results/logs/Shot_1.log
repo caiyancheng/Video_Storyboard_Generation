@@ -219,3 +219,199 @@ Reference image: The provided image is the first frame of this shot. Use it as a
 2026-04-10 11:28:02,622 - INFO - Poll wft_1pP4gskgBQDp9EzvbjySEd -> failed
 2026-04-10 11:28:02,622 - ERROR - Task wft_1pP4gskgBQDp9EzvbjySEd ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
 2026-04-10 11:28:02,622 - INFO - Generation time: 32.7s
+2026-04-10 11:53:19,689 - INFO - === Start processing <Shot_1> time_range=00:00.000-00:03.036 ===
+2026-04-10 11:53:19,689 - INFO - duration: 3.036s -> API duration=3
+2026-04-10 11:53:19,689 - INFO - scene_id=<Scene_1>
+2026-04-10 11:53:19,690 - INFO - full prompt:
+Shot: <Shot_1>  |  Time: 00:00.000-00:03.036
+Summary: The <Subject_1> (Narrator) sits on a blanket in a <Location_1> (Grassy park field), holding a <Prop_1> (Small lavalier microphone) and speaking.
+
+Detailed visual description:
+A medium shot captures <Subject_1>, a young woman of East Asian descent, sitting in a park. The shot is static and framed by the overhanging branches of a leafy tree, which are visible at the top and right edges. She is seated cross-legged on a large picnic blanket made of a fabric with a wavy striped pattern in shades of dark blue, light blue, white, and tan. The blanket is spread out on a lush, green lawn. <Subject_1> is wearing a fitted, short-sleeved t-shirt in a muted olive green color, loose-fitting blue denim jeans, and white sneakers with three black stripes on the side, consistent with Adidas Superstars. She also wears white, ruffled ankle socks. Her long, straight dark hair is partially tied back, and she wears small, dangly pearl earrings. In her right hand, she holds <Prop_1>, a small silver lavalier microphone with a black foam windscreen, close to her mouth as she speaks. Her left hand rests on her lap, near a smartphone in a clear, light-purple-tinted case. She looks slightly up and to her right, a smile on her face as she talks. The background is a wide expanse of green field leading to a distant tree line under a bright, slightly overcast sky. The overall lighting is soft and warm, suggesting late afternoon. An on-screen text caption in white with a black outline reads 'never been good at' near her feet.
+
+Camera & atmosphere:
+  Shot scale: Medium Shot
+  Mood/atmosphere: Peaceful, calm, and contemplative, with a slightly nostalgic vlog aesthetic.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: A young East Asian woman with long, straight dark hair partially tied back. She wears a green short-sleeved t-shirt, blue jeans, white ruffled socks, and white sneakers with black stripes. She has small pearl drop earrings.
+    Action: Sits cross-legged on a blanket in a park, holding a small microphone to her mouth with her right hand while speaking and smiling. Her left hand rests on her lap.
+
+Props:
+  <Prop_1> — Small lavalier microphone
+    Description: A small, cylindrical, silver-colored lavalier microphone with a black foam windscreen on top.
+    Interaction: Held in <Subject_1>'s right hand and positioned near her mouth, indicating she is using it to record her speech.
+  temp_prop_blanket_1 — A large picnic blanket with a wavy striped pattern
+    Description: A large picnic blanket with a wavy striped pattern in blue, white, and tan.
+    Interaction: <Subject_1> is sitting on it. It serves as the immediate ground surface for the action.
+  temp_prop_smartphone_1 — A smartphone inside a clear case with a slight pur
+    Description: A smartphone inside a clear case with a slight purple or blue tint, featuring a prominent multi-lens camera bump.
+    Interaction: Rests on <Subject_1>'s lap, with her left hand resting on or near it.
+
+Location:
+  <Location_1> — Grassy park field
+    Visual features: A large, open green field bordered by trees in the distance. The lighting suggests late afternoon or early evening (golden hour). The narrator is sitting on a blue and white striped blanket under a tree.
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+  <Audio_2> — Gentle Lo-Fi Instrumental
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+  Spoken VO/dialogue: "I've honestly never been good at taking a break."
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:53:19,690 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_1_first_frame.jpg
+2026-04-10 11:54:22,935 - INFO - === Start processing <Shot_1> time_range=00:00.000-00:03.036 ===
+2026-04-10 11:54:22,936 - INFO - duration: 3.036s -> API duration=3
+2026-04-10 11:54:22,936 - INFO - scene_id=<Scene_1>
+2026-04-10 11:54:22,936 - INFO - full prompt:
+Shot: <Shot_1>  |  Time: 00:00.000-00:03.036
+Summary: The <Subject_1> (Narrator) sits on a blanket in a <Location_1> (Grassy park field), holding a <Prop_1> (Small lavalier microphone) and speaking.
+
+Detailed visual description:
+A medium shot captures <Subject_1>, a young woman of East Asian descent, sitting in a park. The shot is static and framed by the overhanging branches of a leafy tree, which are visible at the top and right edges. She is seated cross-legged on a large picnic blanket made of a fabric with a wavy striped pattern in shades of dark blue, light blue, white, and tan. The blanket is spread out on a lush, green lawn. <Subject_1> is wearing a fitted, short-sleeved t-shirt in a muted olive green color, loose-fitting blue denim jeans, and white sneakers with three black stripes on the side, consistent with Adidas Superstars. She also wears white, ruffled ankle socks. Her long, straight dark hair is partially tied back, and she wears small, dangly pearl earrings. In her right hand, she holds <Prop_1>, a small silver lavalier microphone with a black foam windscreen, close to her mouth as she speaks. Her left hand rests on her lap, near a smartphone in a clear, light-purple-tinted case. She looks slightly up and to her right, a smile on her face as she talks. The background is a wide expanse of green field leading to a distant tree line under a bright, slightly overcast sky. The overall lighting is soft and warm, suggesting late afternoon. An on-screen text caption in white with a black outline reads 'never been good at' near her feet.
+
+Camera & atmosphere:
+  Shot scale: Medium Shot
+  Mood/atmosphere: Peaceful, calm, and contemplative, with a slightly nostalgic vlog aesthetic.
+
+Characters:
+  <Subject_1> — Narrator
+    Appearance: A young East Asian woman with long, straight dark hair partially tied back. She wears a green short-sleeved t-shirt, blue jeans, white ruffled socks, and white sneakers with black stripes. She has small pearl drop earrings.
+    Action: Sits cross-legged on a blanket in a park, holding a small microphone to her mouth with her right hand while speaking and smiling. Her left hand rests on her lap.
+
+Props:
+  <Prop_1> — Small lavalier microphone
+    Description: A small, cylindrical, silver-colored lavalier microphone with a black foam windscreen on top.
+    Interaction: Held in <Subject_1>'s right hand and positioned near her mouth, indicating she is using it to record her speech.
+  temp_prop_blanket_1 — A large picnic blanket with a wavy striped pattern
+    Description: A large picnic blanket with a wavy striped pattern in blue, white, and tan.
+    Interaction: <Subject_1> is sitting on it. It serves as the immediate ground surface for the action.
+  temp_prop_smartphone_1 — A smartphone inside a clear case with a slight pur
+    Description: A smartphone inside a clear case with a slight purple or blue tint, featuring a prominent multi-lens camera bump.
+    Interaction: Rests on <Subject_1>'s lap, with her left hand resting on or near it.
+
+Location:
+  <Location_1> — Grassy park field
+    Visual features: A large, open green field bordered by trees in the distance. The lighting suggests late afternoon or early evening (golden hour). The narrator is sitting on a blue and white striped blanket under a tree.
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination
+    Style: The speaker has a youthful, female-presenting voice. Her delivery is conversational, calm, and slightly reflective. The pacing is steady and easy to follow, with a friendly and relatable tone.
+  <Audio_2> — Gentle Lo-Fi Instrumental
+    Style: This is a chill, lo-fi hip-hop style instrumental. It features a simple, relaxed drum beat, soft keyboard chords, and a gentle, clean electric guitar melody. The overall mood is calm, contemplative, and slightly wistful.
+  Spoken VO/dialogue: "I've honestly never been good at taking a break."
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:54:22,936 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_1_first_frame.jpg
+2026-04-10 11:54:23,237 - INFO - Submitted task_id=wft_1pP4qHMFZXhxMMon4RnUXa
+2026-04-10 11:54:23,525 - INFO - Poll wft_1pP4qHMFZXhxMMon4RnUXa -> submitted
+2026-04-10 11:54:29,127 - INFO - Poll wft_1pP4qHMFZXhxMMon4RnUXa -> processing
+2026-04-10 11:54:34,423 - INFO - Poll wft_1pP4qHMFZXhxMMon4RnUXa -> processing
+2026-04-10 11:54:39,693 - INFO - Poll wft_1pP4qHMFZXhxMMon4RnUXa -> processing
+2026-04-10 11:54:44,957 - INFO - Poll wft_1pP4qHMFZXhxMMon4RnUXa -> processing
+2026-04-10 11:54:50,254 - INFO - Poll wft_1pP4qHMFZXhxMMon4RnUXa -> processing
+2026-04-10 11:54:55,543 - INFO - Poll wft_1pP4qHMFZXhxMMon4RnUXa -> failed
+2026-04-10 11:54:55,543 - ERROR - Task wft_1pP4qHMFZXhxMMon4RnUXa ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 11:54:55,543 - INFO - Generation time: 32.3s
+2026-04-10 11:56:11,529 - INFO - === Start processing <Shot_1> time_range=00:00.000-00:03.036 ===
+2026-04-10 11:56:11,529 - INFO - duration: 3.036s -> API duration=3
+2026-04-10 11:56:11,529 - INFO - scene_id=<Scene_1>
+2026-04-10 11:56:11,529 - INFO - full prompt:
+Shot: <Shot_1>  |  Time: 00:00.000-00:03.036
+Summary: The <Subject_1> (Narrator) sits on a blanket in a <Location_1> (Grassy park field), holding a <Prop_1> (Small lavalier microphone) and speaking.
+
+Characters:
+  <Subject_1> — Narrator
+    Action: Sits cross-legged on a blanket in a park, holding a small microphone to her mouth with her right hand while speaking and smiling. Her left hand rests on her lap.
+
+Location:
+  <Location_1> — Grassy park field
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination
+  <Audio_2> — Gentle Lo-Fi Instrumental
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:56:11,529 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_1_first_frame.jpg
+2026-04-10 11:56:12,043 - INFO - Submitted task_id=wft_1pP4qqg28bmt1nUfjeK865
+2026-04-10 11:56:12,301 - INFO - Poll wft_1pP4qqg28bmt1nUfjeK865 -> submitted
+2026-04-10 11:56:17,587 - INFO - Poll wft_1pP4qqg28bmt1nUfjeK865 -> processing
+2026-04-10 11:56:22,900 - INFO - Poll wft_1pP4qqg28bmt1nUfjeK865 -> processing
+2026-04-10 11:56:28,419 - INFO - Poll wft_1pP4qqg28bmt1nUfjeK865 -> processing
+2026-04-10 11:56:33,694 - INFO - Poll wft_1pP4qqg28bmt1nUfjeK865 -> processing
+2026-04-10 11:56:38,965 - INFO - Poll wft_1pP4qqg28bmt1nUfjeK865 -> processing
+2026-04-10 11:56:44,218 - INFO - Poll wft_1pP4qqg28bmt1nUfjeK865 -> failed
+2026-04-10 11:56:44,219 - ERROR - Task wft_1pP4qqg28bmt1nUfjeK865 ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 11:56:44,219 - INFO - Generation time: 32.2s
+2026-04-10 11:58:50,484 - INFO - === Start processing <Shot_1> time_range=00:00.000-00:03.036 ===
+2026-04-10 11:58:50,485 - INFO - duration: 3.036s -> API duration=3
+2026-04-10 11:58:50,485 - INFO - scene_id=<Scene_1>
+2026-04-10 11:58:50,485 - INFO - full prompt:
+Shot: <Shot_1>  |  Time: 00:00.000-00:03.036
+Summary: The <Subject_1> (Narrator) sits on a blanket in a <Location_1> (Grassy park field), holding a <Prop_1> (Small lavalier microphone) and speaking.
+
+Characters:
+  <Subject_1> — Narrator
+    Action: Sits cross-legged on a blanket in a park, holding a small microphone to her mouth with her right hand while speaking and smiling. Her left hand rests on her lap.
+
+Location:
+  <Location_1> — Grassy park field
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination
+  <Audio_2> — Gentle Lo-Fi Instrumental
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:58:50,485 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_1_first_frame.jpg
+2026-04-10 11:59:41,154 - INFO - === Start processing <Shot_1> time_range=00:00.000-00:03.036 ===
+2026-04-10 11:59:41,156 - INFO - duration: 3.036s -> API duration=3
+2026-04-10 11:59:41,156 - INFO - scene_id=<Scene_1>
+2026-04-10 11:59:41,156 - INFO - full prompt:
+Shot: <Shot_1>  |  Time: 00:00.000-00:03.036
+Summary: The <Subject_1> (Narrator) sits on a blanket in a <Location_1> (Grassy park field), holding a <Prop_1> (Small lavalier microphone) and speaking.
+
+Characters:
+  <Subject_1> — Narrator
+    Action: Sits cross-legged on a blanket in a park, holding a small microphone to her mouth with her right hand while speaking and smiling. Her left hand rests on her lap.
+
+Location:
+  <Location_1> — Grassy park field
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination
+  <Audio_2> — Gentle Lo-Fi Instrumental
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 11:59:41,156 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_1_first_frame.jpg
+2026-04-10 11:59:49,693 - INFO - Submitted task_id=wft_1pP4rymgbfKKCxcPoNFQg1
+2026-04-10 11:59:50,190 - INFO - Poll wft_1pP4rymgbfKKCxcPoNFQg1 -> processing
+2026-04-10 11:59:55,666 - INFO - Poll wft_1pP4rymgbfKKCxcPoNFQg1 -> processing
+2026-04-10 12:00:01,214 - INFO - Poll wft_1pP4rymgbfKKCxcPoNFQg1 -> processing
+2026-04-10 12:00:06,741 - INFO - Poll wft_1pP4rymgbfKKCxcPoNFQg1 -> processing
+2026-04-10 12:00:12,232 - INFO - Poll wft_1pP4rymgbfKKCxcPoNFQg1 -> processing
+2026-04-10 12:00:17,771 - INFO - Poll wft_1pP4rymgbfKKCxcPoNFQg1 -> processing
+2026-04-10 12:00:23,033 - INFO - Poll wft_1pP4rymgbfKKCxcPoNFQg1 -> failed
+2026-04-10 12:00:23,033 - ERROR - Task wft_1pP4rymgbfKKCxcPoNFQg1 ended with status=failed, report={'queue_time_left': 0.0, 'total_time_left': 0.0, 'progress': 0.0}
+2026-04-10 12:00:23,033 - INFO - Generation time: 33.3s
+2026-04-10 12:01:55,962 - INFO - === Start processing <Shot_1> time_range=00:00.000-00:03.036 ===
+2026-04-10 12:01:55,962 - INFO - duration: 3.036s -> API duration=3
+2026-04-10 12:01:55,963 - INFO - scene_id=<Scene_1>
+2026-04-10 12:01:55,963 - INFO - full prompt:
+Shot: <Shot_1>  |  Time: 00:00.000-00:03.036
+Summary: The <Subject_1> (Narrator) sits on a blanket in a <Location_1> (Grassy park field), holding a <Prop_1> (Small lavalier microphone) and speaking.
+
+Characters:
+  <Subject_1> — Narrator
+    Action: Sits cross-legged on a blanket in a park, holding a small microphone to her mouth with her right hand while speaking and smiling. Her left hand rests on her lap.
+
+Location:
+  <Location_1> — Grassy park field
+
+Audio:
+  <Audio_1> — Monologue on productive procrastination
+  <Audio_2> — Gentle Lo-Fi Instrumental
+
+Reference image: The provided image is the first frame of this shot. Use it as a precise visual reference for scene composition, character appearance, props, and setting.
+2026-04-10 12:01:55,963 - INFO - first_frame_url=https://tosv.byted.org/obj/dm-stickers-rec-sg/dm-stickers-rec-sg/yancheng/Shot_1_first_frame.jpg

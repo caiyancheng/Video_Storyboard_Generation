@@ -15,7 +15,7 @@ from cairo_v2.idls import CairoService, SubmitAsyncTaskRequest, Task
 # 2  standard (~200 words): + dense_caption + camera mood + appearances + props + audio transcript
 # 3  detailed (~400 words): + full camera + rationales + location env + audio content + scene beat
 # 4  full     (no limit)  : + interaction tracking + continuity transitions + information_gain
-PROMPT_LEVEL = 3
+PROMPT_LEVEL = 1
 
 STORYBOARD_PHASE0_PATH = "Video_Generation/Sample_Prompts/sample_storyboard_phase0_v15_result.json"
 STORYBOARD_PHASE1_PATH = "Video_Generation/Sample_Prompts/sample_storyboard_phase1_v15_result.json"
@@ -310,12 +310,15 @@ if __name__ == "__main__":
                 }
             ],
             "req_json": {
-                "prompt": prompt,
+                # "prompt": prompt,
+                "prompt": """
+            女主在草坪上畅谈自己的理想，人物表情生动，电影感构图。
+                    """,
                 "language": "en",
-                "duration": duration_int,
+                "duration": 10, #duration_int,
                 "seed": 42,
                 "aspect_ratio": "9:16",
-                "resolution": "576x1024",
+                "resolution": "480p", 
                 "binary_var_name": ["image"],
                 "workflow": "seedance_2_0_pe_integration.json"
             }
