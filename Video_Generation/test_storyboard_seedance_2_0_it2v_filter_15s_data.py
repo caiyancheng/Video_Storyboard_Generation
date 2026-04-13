@@ -40,9 +40,9 @@ SCORED_FILE = Path("/mnt/bn/yilin4/yancheng/Datasets/tt_template_hq_publish_data
 
 LABEL_ROOT  = Path("/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_video_sample"
                    "/shu_inverse_label")
-PHASE0_DIR  = LABEL_ROOT / "phase0_labels"
-PHASE1_DIR  = LABEL_ROOT / "phase1_labels"
-PHASE1_5_DIR = LABEL_ROOT / "phase1_5_labels"
+PHASE0_DIR  = LABEL_ROOT / "phase0_chinese_labels"
+PHASE1_DIR  = LABEL_ROOT / "phase1_chinese_labels"
+PHASE1_5_DIR = LABEL_ROOT / "phase1_5_chinese_labels"
 FIRST_FRAME_DIR = Path("/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_video_sample"
                        "/first_frame")
 
@@ -292,7 +292,7 @@ def submit_and_poll(cairo_client, prompt: str, duration: int,
         ],
         "req_json": {
             "prompt": prompt,
-            "language": "en",
+            "language": "zh",
             "duration": duration,
             "seed": SEED,
             "aspect_ratio": ASPECT_RATIO,
