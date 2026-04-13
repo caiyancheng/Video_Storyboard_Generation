@@ -117,7 +117,7 @@ def parse_time_range(time_range: str) -> tuple[float, float]:
 
 
 def build_whole_video_prompt(phase0: dict, phase1: dict, phase1_5: dict,
-                             level: int) -> tuple[str, int]:
+                             level: int) -> tuple[str, float]:
     """
     Build a single whole-video generation prompt.
     Returns (prompt_text, duration_seconds).
@@ -141,14 +141,14 @@ def build_whole_video_prompt(phase0: dict, phase1: dict, phase1_5: dict,
     # ── Total duration from last shot's end time ──────────────────────────────
     last_shot = shots_p0[-1] if shots_p0 else {}
     _, end_sec = parse_time_range(last_shot.get('time_range', '00:00.000-00:00.000'))
-    duration_int = max(1, round(end_sec))
+    duration = round(max(4.0, min(15.0, end_sec)), 3)
 
     parts = []
 
     # ── 1. Scene overview (all levels) ───────────────────────────────────────
     scene_caption = scene.get('caption', '')
     parts.append(
-        f"[Whole-video generation | {duration_int}s | Level {level}]\n"
+        f"[Whole-video generation | {duration}s | Level {level}]\n"
         f"Scene overview: {scene_caption}"
     )
 
@@ -257,7 +257,7 @@ def build_whole_video_prompt(phase0: dict, phase1: dict, phase1_5: dict,
         "lighting, and setting throughout the whole video."
     )
 
-    return '\n\n'.join(parts), duration_int
+    return '\n\n'.join(parts), duration
 
 
 def get_first_frame_url(vid_label: str) -> str:
@@ -283,7 +283,7 @@ def get_task_report(cairo_client, task_id: str):
     return json.loads(resp.task), json.loads(resp.report)
 
 
-def submit_and_poll(cairo_client, prompt: str, duration: int,
+def submit_and_poll(cairo_client, prompt: str, duration: float,
                     first_frame_url: str, logger: logging.Logger) -> str | None:
     """Submit to Seedance, poll until done, return video_url or None."""
     task_input = json.dumps({
