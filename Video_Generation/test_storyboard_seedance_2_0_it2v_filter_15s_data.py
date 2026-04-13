@@ -33,7 +33,7 @@ from cairo_v2.idls.thrift import GetTaskReportRequestThrift
 
 # ═══════════════════════════ CONFIG ══════════════════════════════════════════
 
-PROMPT_LEVEL = 1   # 1 / 2 / 3 / 4  — change here to regenerate at different level
+PROMPT_LEVELS = [1, 2, 3, 4]   # list of levels to run; e.g. [1, 2] or [4]
 
 SCORED_FILE = Path("/mnt/bn/yilin4/yancheng/Datasets/tt_template_hq_publish_data_1400k_USAU"
                    ".dedup_item_id_aesthetic_quality_v1_filtered_scored.jsonl")
@@ -366,15 +366,14 @@ def download_video(video_url: str, out_path: Path, logger: logging.Logger) -> bo
 # ═══════════════════════════ MAIN ═══════════════════════════════════════════
 
 if __name__ == "__main__":
-    level = PROMPT_LEVEL
-    out_dir = OUT_ROOT / f"level_{level}"
-    out_dir.mkdir(parents=True, exist_ok=True)
     LOG_DIR.mkdir(parents=True, exist_ok=True)
+    for level in PROMPT_LEVELS:
+        (OUT_ROOT / f"level_{level}").mkdir(parents=True, exist_ok=True)
 
     # ── Load scored records ──────────────────────────────────────────────────
     records = load_scored_records()
     print(f"Found {len(records)} records with score {sorted(TARGET_SCORES)}")
-    print(f"Prompt level: {level}  |  Output: {out_dir}\n")
+    print(f"Prompt levels: {PROMPT_LEVELS}\n")
 
     # ── Cairo client ─────────────────────────────────────────────────────────
     cairo_client = setup_cairo_client()
@@ -382,18 +381,16 @@ if __name__ == "__main__":
     # ── Per-video loop ───────────────────────────────────────────────────────
     for rec in records:
         video_id = rec.get("video_id", "unknown")
-        idx      = rec.get("_idx", 0)   # may not be in scored file; fallback below
+        idx      = rec.get("_idx", 0)
         score    = rec.get("_score", 0)
 
-        # Infer idx from scored file ordering if not stored
-        # (extract from filename via glob)
         p0_path, p1_path, p15_path = find_label_files(video_id, idx, score)
         if not p0_path:
             print(f"[SKIP] No label files for {video_id}")
             continue
 
-        # Parse idx from actual filename
-        actual_stem = p0_path.stem  # e.g. id_0003_score5_xxx_phase0
+        # Parse idx/score from actual filename
+        actual_stem = p0_path.stem
         try:
             idx   = int(actual_stem.split('_')[1])
             score = int(actual_stem.split('_')[2].replace('score', ''))
@@ -401,49 +398,51 @@ if __name__ == "__main__":
             pass
 
         vid_label = f"id_{idx:04d}_score{score}_{video_id}"
-        logger = logging.getLogger(vid_label)
-        logger.setLevel(logging.DEBUG)
-        if not logger.handlers:
-            fh = logging.FileHandler(LOG_DIR / f"{vid_label}_level{level}.log",
-                                     encoding='utf-8')
-            fh.setFormatter(logging.Formatter('%(asctime)s %(levelname)s %(message)s'))
-            logger.addHandler(fh)
 
-        print(f"\n{'='*70}")
-        print(f"Processing {vid_label}  score={score}  level={level}")
-        logger.info(f"=== Start {vid_label} score={score} level={level} ===")
-
-        # Skip if output already exists
-        out_path = out_dir / f"{vid_label}_level{level}.mp4"
-        if out_path.exists():
-            print(f"  [SKIP] already generated: {out_path.name}")
-            continue
-
-        # ── Load label JSONs ─────────────────────────────────────────────────
+        # ── Load label JSONs once per video ──────────────────────────────────
         with p0_path.open(encoding='utf-8')  as f: phase0   = json.load(f)
         with p1_path.open(encoding='utf-8')  as f: phase1   = json.load(f)
         with p15_path.open(encoding='utf-8') as f: phase1_5 = json.load(f)
 
-        # ── Build whole-video prompt ─────────────────────────────────────────
-        prompt, duration = build_whole_video_prompt(phase0, phase1, phase1_5, level)
-        logger.info(f"duration={duration}s  prompt_len={len(prompt.split())}_words")
-        logger.info(f"Full prompt:\n{prompt}")
-        print(f"  Duration: {duration}s")
-        print(f"  Prompt (~{len(prompt.split())} words):\n    {prompt[:200].replace(chr(10),' ')}...")
-
-        # ── First frame TOS URL (pre-uploaded) ──────────────────────────────
         first_frame_url = get_first_frame_url(vid_label)
-        logger.info(f"first_frame_url={first_frame_url}")
-        print(f"  First frame URL: {first_frame_url}")
 
-        # ── Submit & poll ────────────────────────────────────────────────────
-        video_url = submit_and_poll(cairo_client, prompt, duration,
-                                    first_frame_url, logger)
-        if not video_url:
-            continue
+        # ── Inner loop: one submission per level ──────────────────────────────
+        for level in PROMPT_LEVELS:
+            out_dir  = OUT_ROOT / f"level_{level}"
+            out_path = out_dir / f"{vid_label}_level{level}.mp4"
 
-        # ── Download ─────────────────────────────────────────────────────────
-        download_video(video_url, out_path, logger)
+            logger_name = f"{vid_label}_lv{level}"
+            logger = logging.getLogger(logger_name)
+            logger.setLevel(logging.DEBUG)
+            if not logger.handlers:
+                fh = logging.FileHandler(LOG_DIR / f"{logger_name}.log", encoding='utf-8')
+                fh.setFormatter(logging.Formatter('%(asctime)s %(levelname)s %(message)s'))
+                logger.addHandler(fh)
+
+            print(f"\n{'='*70}")
+            print(f"Processing {vid_label}  score={score}  level={level}")
+            logger.info(f"=== Start {vid_label} score={score} level={level} ===")
+
+            if out_path.exists():
+                print(f"  [SKIP] already generated: {out_path.name}")
+                continue
+
+            # ── Build whole-video prompt ─────────────────────────────────────
+            prompt, duration = build_whole_video_prompt(phase0, phase1, phase1_5, level)
+            logger.info(f"duration={duration}s  prompt_len={len(prompt.split())}_words")
+            logger.info(f"Full prompt:\n{prompt}")
+            print(f"  Duration: {duration}s")
+            print(f"  Prompt (~{len(prompt.split())} words):\n    {prompt[:200].replace(chr(10), ' ')}...")
+            print(f"  First frame URL: {first_frame_url}")
+
+            # ── Submit & poll ────────────────────────────────────────────────
+            video_url = submit_and_poll(cairo_client, prompt, duration,
+                                        first_frame_url, logger)
+            if not video_url:
+                continue
+
+            # ── Download ────────────────────────────────────────────────────
+            download_video(video_url, out_path, logger)
 
     print(f"\n{'='*70}")
-    print(f"All done. Results in: {out_dir}")
+    print(f"All done. Results in: {OUT_ROOT}")
