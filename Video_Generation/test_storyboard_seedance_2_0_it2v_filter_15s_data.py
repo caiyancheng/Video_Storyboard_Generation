@@ -19,11 +19,11 @@ Prompt verbosity levels (whole-video, not per-shot):
   4  full     (no lim): + per-shot dense captions + transitions + interactions
 """
 
+import csv
 import json
 import logging
 import os
 import time
-import urllib.request
 from pathlib import Path
 
 import euler
@@ -48,6 +48,10 @@ FIRST_FRAME_DIR = Path("/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_v
 
 OUT_ROOT    = LABEL_ROOT / "generated_videos"
 LOG_DIR     = OUT_ROOT / "logs"
+CSV_PATH    = OUT_ROOT / "generation_results.csv"
+
+CSV_FIELDS  = ["vid_label", "video_id", "idx", "score", "prompt_level",
+               "duration", "prompt_words", "video_url", "generated_at"]
 
 TARGET_SCORES = {4, 5}
 
@@ -350,41 +354,72 @@ def submit_and_poll(cairo_client, prompt: str, duration: float,
     return video_url
 
 
-def download_video(video_url: str, out_path: Path, logger: logging.Logger) -> bool:
-    try:
-        print(f"  Downloading -> {out_path}")
-        urllib.request.urlretrieve(video_url, str(out_path))
-        logger.info(f"Saved: {out_path}")
-        print(f"  Saved: {out_path}")
-        return True
-    except Exception as e:
-        logger.error(f"Download failed: {e}")
-        print(f"  Download failed: {e}")
-        return False
+def load_csv_index() -> dict[str, dict]:
+    """Load existing CSV into a dict keyed by (vid_label, prompt_level)."""
+    index = {}
+    if not CSV_PATH.exists():
+        return index
+    with CSV_PATH.open("r", encoding="utf-8", newline="") as f:
+        for row in csv.DictReader(f):
+            key = (row["vid_label"], row["prompt_level"])
+            index[key] = row
+    return index
+
+
+def save_csv_index(index: dict[str, dict]) -> None:
+    """Write all rows back to CSV (sorted for readability)."""
+    rows = sorted(index.values(), key=lambda r: (r["idx"], r["prompt_level"]))
+    with CSV_PATH.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def record_result(index: dict[str, dict], vid_label: str, video_id: str,
+                  idx: int, score: int, level: int, duration: float,
+                  prompt_words: int, video_url: str) -> None:
+    """Upsert one row into the in-memory index, then flush to disk."""
+    key = (vid_label, str(level))
+    index[key] = {
+        "vid_label":    vid_label,
+        "video_id":     video_id,
+        "idx":          str(idx),
+        "score":        str(score),
+        "prompt_level": str(level),
+        "duration":     str(duration),
+        "prompt_words": str(prompt_words),
+        "video_url":    video_url,
+        "generated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+    }
+    save_csv_index(index)
+    print(f"  CSV updated: {CSV_PATH.name}")
 
 
 # ═══════════════════════════ MAIN ═══════════════════════════════════════════
 
 if __name__ == "__main__":
     LOG_DIR.mkdir(parents=True, exist_ok=True)
-    for level in PROMPT_LEVELS:
-        (OUT_ROOT / f"level_{level}").mkdir(parents=True, exist_ok=True)
+    OUT_ROOT.mkdir(parents=True, exist_ok=True)
+
+    # ── Load existing CSV index (for upsert logic) ───────────────────────────
+    csv_index = load_csv_index()
+    print(f"Loaded {len(csv_index)} existing CSV entries from {CSV_PATH}")
 
     # ── Load scored records ──────────────────────────────────────────────────
-    records = load_scored_records()
-    print(f"Found {len(records)} records with score {sorted(TARGET_SCORES)}")
+    all_records = load_scored_records()
+    print(f"Found {len(all_records)} records with score {sorted(TARGET_SCORES)}")
     print(f"Prompt levels: {PROMPT_LEVELS}\n")
 
     # ── Cairo client ─────────────────────────────────────────────────────────
     cairo_client = setup_cairo_client()
 
     # ── Per-video loop ───────────────────────────────────────────────────────
-    for rec in records:
+    for rec in all_records:
         video_id = rec.get("video_id", "unknown")
-        idx      = rec.get("_idx", 0)
-        score    = rec.get("_score", 0)
+        rec_idx  = rec.get("_idx", 0)
+        rec_score = rec.get("_score", 0)
 
-        p0_path, p1_path, p15_path = find_label_files(video_id, idx, score)
+        p0_path, p1_path, p15_path = find_label_files(video_id, rec_idx, rec_score)
         if not p0_path:
             print(f"[SKIP] No label files for {video_id}")
             continue
@@ -392,26 +427,25 @@ if __name__ == "__main__":
         # Parse idx/score from actual filename
         actual_stem = p0_path.stem
         try:
-            idx   = int(actual_stem.split('_')[1])
-            score = int(actual_stem.split('_')[2].replace('score', ''))
+            rec_idx   = int(actual_stem.split('_')[1])
+            rec_score = int(actual_stem.split('_')[2].replace('score', ''))
         except (IndexError, ValueError):
             pass
 
-        vid_label = f"id_{idx:04d}_score{score}_{video_id}"
+        vid_label = f"id_{rec_idx:04d}_score{rec_score}_{video_id}"
 
         # ── Load label JSONs once per video ──────────────────────────────────
-        with p0_path.open(encoding='utf-8')  as f: phase0   = json.load(f)
-        with p1_path.open(encoding='utf-8')  as f: phase1   = json.load(f)
-        with p15_path.open(encoding='utf-8') as f: phase1_5 = json.load(f)
+        with p0_path.open(encoding='utf-8')  as fp: phase0   = json.load(fp)
+        with p1_path.open(encoding='utf-8')  as fp: phase1   = json.load(fp)
+        with p15_path.open(encoding='utf-8') as fp: phase1_5 = json.load(fp)
 
         first_frame_url = get_first_frame_url(vid_label)
 
         # ── Inner loop: one submission per level ──────────────────────────────
-        for level in PROMPT_LEVELS:
-            out_dir  = OUT_ROOT / f"level_{level}"
-            out_path = out_dir / f"{vid_label}_level{level}.mp4"
+        for lv in PROMPT_LEVELS:
+            csv_key = (vid_label, str(lv))
 
-            logger_name = f"{vid_label}_lv{level}"
+            logger_name = f"{vid_label}_lv{lv}"
             logger = logging.getLogger(logger_name)
             logger.setLevel(logging.DEBUG)
             if not logger.handlers:
@@ -420,19 +454,21 @@ if __name__ == "__main__":
                 logger.addHandler(fh)
 
             print(f"\n{'='*70}")
-            print(f"Processing {vid_label}  score={score}  level={level}")
-            logger.info(f"=== Start {vid_label} score={score} level={level} ===")
+            print(f"Processing {vid_label}  score={rec_score}  level={lv}")
+            logger.info(f"=== Start {vid_label} score={rec_score} level={lv} ===")
 
-            if out_path.exists():
-                print(f"  [SKIP] already generated: {out_path.name}")
+            # Skip if already recorded in CSV
+            if csv_key in csv_index:
+                print(f"  [SKIP] already in CSV: {csv_index[csv_key]['video_url']}")
                 continue
 
             # ── Build whole-video prompt ─────────────────────────────────────
-            prompt, duration = build_whole_video_prompt(phase0, phase1, phase1_5, level)
-            logger.info(f"duration={duration}s  prompt_len={len(prompt.split())}_words")
+            prompt, duration = build_whole_video_prompt(phase0, phase1, phase1_5, lv)
+            prompt_words = len(prompt.split())
+            logger.info(f"duration={duration}s  prompt_words={prompt_words}")
             logger.info(f"Full prompt:\n{prompt}")
             print(f"  Duration: {duration}s")
-            print(f"  Prompt (~{len(prompt.split())} words):\n    {prompt[:200].replace(chr(10), ' ')}...")
+            print(f"  Prompt (~{prompt_words} words):\n    {prompt[:200].replace(chr(10), ' ')}...")
             print(f"  First frame URL: {first_frame_url}")
 
             # ── Submit & poll ────────────────────────────────────────────────
@@ -441,8 +477,11 @@ if __name__ == "__main__":
             if not video_url:
                 continue
 
-            # ── Download ────────────────────────────────────────────────────
-            download_video(video_url, out_path, logger)
+            # ── Record to CSV (no local download) ───────────────────────────
+            record_result(csv_index, vid_label, video_id,
+                          rec_idx, rec_score, lv, duration,
+                          prompt_words, video_url)
+            logger.info(f"Recorded video_url={video_url}")
 
     print(f"\n{'='*70}")
-    print(f"All done. Results in: {OUT_ROOT}")
+    print(f"All done. CSV: {CSV_PATH}")
