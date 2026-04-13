@@ -162,9 +162,9 @@ def build_whole_video_prompt(phase0: dict, phase1: dict, phase1_5: dict,
         for sid, s in subject_map.items():
             line = f"  {sid} ({s.get('name', '')})"
             if level >= 2:
-                line += f": {s.get('visual_features', '')[:120]}"
+                line += f": {s.get('visual_features', '')}"
             if level >= 3 and s.get('rationale'):
-                line += f" — Role: {s['rationale'][:80]}"
+                line += f" — Role: {s['rationale']}"
             lines.append(line)
         parts.append('\n'.join(lines))
 
@@ -174,7 +174,7 @@ def build_whole_video_prompt(phase0: dict, phase1: dict, phase1_5: dict,
         for lid, loc in location_map.items():
             line = f"  {lid} ({loc.get('name', '')})"
             if level >= 3:
-                line += f": {loc.get('visual_features', '')[:120]}"
+                line += f": {loc.get('visual_features', '')}"
             lines.append(line)
         parts.append('\n'.join(lines))
 
@@ -184,7 +184,7 @@ def build_whole_video_prompt(phase0: dict, phase1: dict, phase1_5: dict,
         for aid, a in audio_map.items():
             line = f"  {a.get('name', '')} [{a.get('type', '')}]"
             if a.get('style'):
-                line += f" — {a['style'][:100]}"
+                line += f" — {a['style']}"
             lines.append(line)
         parts.append('\n'.join(lines))
 
@@ -212,7 +212,7 @@ def build_whole_video_prompt(phase0: dict, phase1: dict, phase1_5: dict,
                 if mood:
                     extras.append(f"mood={mood}")
                 if beat:
-                    extras.append(f"beat={beat[:60]}")
+                    extras.append(f"beat={beat}")
                 if extras:
                     line += f"\n    [{'; '.join(extras)}]"
 
@@ -220,16 +220,16 @@ def build_whole_video_prompt(phase0: dict, phase1: dict, phase1_5: dict,
                 # Add dense caption
                 dense = p1s.get('dense_caption', '')
                 if dense:
-                    line += f"\n    Dense: {dense[:200]}"
+                    line += f"\n    Dense: {dense}"
                 # Add continuity
                 cont = p15s.get('continuity_logic', {})
                 to_next = cont.get('to_next_shot', {}).get('relation', '')
                 if to_next:
-                    line += f"\n    → next: {to_next[:80]}"
+                    line += f"\n    → next: {to_next}"
                 # Add interactions
                 interactions = p1s.get('visual', {}).get('interaction_tracking', [])
                 for it in interactions:
-                    line += f"\n    interact: {it.get('interaction', '')[:80]}"
+                    line += f"\n    interact: {it.get('interaction', '')}"
 
             lines.append(line)
         parts.append('\n'.join(lines))
@@ -251,7 +251,7 @@ def build_whole_video_prompt(phase0: dict, phase1: dict, phase1_5: dict,
     if level >= 3 and prop_map:
         lines = ["Key props:"]
         for pid, p in prop_map.items():
-            lines.append(f"  {pid} ({p.get('name', '')}): {p.get('visual_features', '')[:100]}")
+            lines.append(f"  {pid} ({p.get('name', '')}): {p.get('visual_features', '')}")
         parts.append('\n'.join(lines))
 
     # ── 8. First-frame reference (all levels) ────────────────────────────────
