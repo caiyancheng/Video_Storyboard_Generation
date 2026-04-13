@@ -18,7 +18,7 @@ from tqdm import tqdm
 SCORED_FILE  = Path("/Users/bytedance/Datasets/tt_template_hq_publish_data_1400k_USAU.dedup_item_id_aesthetic_quality_v1_filtered_scored.jsonl")
 TOS_BASE_URL = "https://tosv-va.tiktok-row.org/obj/nebudata-us/"
 
-OUT_ROOT    = Path("/Users/bytedance/Datasets/15s_video_sample")
+OUT_ROOT    = Path("/Users/bytedance/Datasets/tt_template_1400k_15s_video_sample")
 FIRST_DIR   = OUT_ROOT / "first_frame"
 LAST_DIR    = OUT_ROOT / "last_frame"
 
@@ -98,12 +98,14 @@ def extract_all():
     skip = 0
     fail = 0
 
-    for rec in tqdm(records, desc="提取帧"):
-        vid = rec.get("video_id", "unknown")
-        url = rec.get("video_url") or (TOS_BASE_URL + rec.get("tos_key", ""))
+    for idx, rec in enumerate(tqdm(records, desc="提取帧")):
+        vid   = rec.get("video_id", "unknown")
+        score = rec.get("_score", "x")
+        url   = rec.get("video_url") or (TOS_BASE_URL + rec.get("tos_key", ""))
 
-        first_out = FIRST_DIR / f"{vid}.png"
-        last_out  = LAST_DIR  / f"{vid}.png"
+        stem = f"id_{idx:04d}_score{score}_{vid}"
+        first_out = FIRST_DIR / f"{stem}_first.png"
+        last_out  = LAST_DIR  / f"{stem}_last.png"
 
         # 已存在则跳过
         if first_out.exists() and last_out.exists():
