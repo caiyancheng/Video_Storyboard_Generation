@@ -33,7 +33,7 @@ from cairo_v2.idls.thrift import GetTaskReportRequestThrift
 
 # ═══════════════════════════ CONFIG ══════════════════════════════════════════
 
-PROMPT_LEVEL = 4   # 1 / 2 / 3 / 4  — change here to regenerate at different level
+PROMPT_LEVEL = 1   # 1 / 2 / 3 / 4  — change here to regenerate at different level
 
 SCORED_FILE = Path("/mnt/bn/yilin4/yancheng/Datasets/tt_template_hq_publish_data_1400k_USAU"
                    ".dedup_item_id_aesthetic_quality_v1_filtered_scored.jsonl")
