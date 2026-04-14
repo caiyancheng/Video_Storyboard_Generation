@@ -68,6 +68,18 @@ def extract_frames_1fps(path: Path, num_cols: int) -> list[np.ndarray | None]:
     return [extract_frame_at(path, t) for t in range(num_cols)]
 
 
+def extract_last_frame(path: Path) -> np.ndarray | None:
+    """Extract the actual last frame of the video (regardless of 1s alignment)."""
+    cap = cv2.VideoCapture(str(path))
+    total = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    cap.set(cv2.CAP_PROP_POS_FRAMES, max(0, total - 1))
+    ok, frame = cap.read()
+    cap.release()
+    if not ok or frame is None:
+        return None
+    return cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+
+
 # ═══════════════════════ FILE LOOKUP ═════════════════════════════════════════
 
 def find_gt_video(stem: str) -> Path | None:
@@ -127,13 +139,16 @@ def build_comparison(stem: str):
 
     num_rows = len(video_paths)   # 5
 
-    # ── Extract all frames ────────────────────────────────────────────────────
+    # ── Extract all frames (1fps) + true last frame ───────────────────────────
     all_frames: list[list[np.ndarray | None]] = []
+    last_frames: list[np.ndarray | None] = []
     for vpath in video_paths:
         if vpath is None:
             all_frames.append([None] * num_cols)
+            last_frames.append(None)
         else:
             all_frames.append(extract_frames_1fps(vpath, num_cols))
+            last_frames.append(extract_last_frame(vpath))
 
     # Determine canonical frame size from first valid frame
     ref_frame = next(
@@ -152,16 +167,19 @@ def build_comparison(stem: str):
     top_pad      = 0.5
     bot_pad      = 0.3
 
-    fig_w = label_col_w + num_cols * frame_w_inch
+    # +1 col for the true last frame
+    total_display_cols = num_cols + 1
+
+    fig_w = label_col_w + total_display_cols * frame_w_inch
     fig_h = top_pad + time_row_h + num_rows * frame_h_inch + bot_pad
 
     fig = plt.figure(figsize=(fig_w, fig_h), dpi=120)
     fig.patch.set_facecolor("white")
 
     # GridSpec: row 0 = time axis, rows 1..num_rows = video rows
-    # cols: col 0 = labels, cols 1..num_cols = frames
+    # cols: col 0 = placeholder, cols 1..num_cols = 1fps frames, col num_cols+1 = last frame
     total_rows = num_rows + 1
-    total_cols = num_cols + 1
+    total_cols = total_display_cols + 1
 
     gs = fig.add_gridspec(
         total_rows, total_cols,
@@ -171,7 +189,7 @@ def build_comparison(stem: str):
         bottom = bot_pad / fig_h,
         wspace = 0.03,
         hspace = 0.03,
-        width_ratios  = [0] + [1] * num_cols,   # col 0 placeholder (labels drawn via fig.text)
+        width_ratios  = [0] + [1] * num_cols + [1],   # last col = last frame
         height_ratios = [0.25] + [1] * num_rows,
     )
 
@@ -182,11 +200,18 @@ def build_comparison(stem: str):
         ax.axis("off")
         ax.text(0.5, 0.5, f"{c}s", ha="center", va="center",
                 fontsize=7.5, color="#333333", fontweight="bold")
-        # tick line
         ax.axvline(0.5, ymin=0, ymax=0.3, color="#888", linewidth=0.8)
 
-    # Continuous time bar
-    ax_bar = fig.add_subplot(gs[0, 1:])
+    # Last-frame column header
+    ax_last_hdr = fig.add_subplot(gs[0, num_cols + 1])
+    ax_last_hdr.set_xlim(0, 1); ax_last_hdr.set_ylim(0, 1)
+    ax_last_hdr.axis("off")
+    ax_last_hdr.text(0.5, 0.5, f"last\n({duration:.1f}s)",
+                     ha="center", va="center",
+                     fontsize=7.5, color="#8e44ad", fontweight="bold")
+
+    # Continuous time bar (only over the 1fps columns)
+    ax_bar = fig.add_subplot(gs[0, 1:num_cols + 1])
     ax_bar.set_xlim(0, num_cols); ax_bar.set_ylim(0, 1)
     ax_bar.axhline(0.15, color="#aaaaaa", linewidth=1.0, zorder=0)
     ax_bar.axis("off")
@@ -248,6 +273,27 @@ def build_comparison(stem: str):
                 spine.set_visible(True)
                 spine.set_linewidth(0.4)
                 spine.set_edgecolor("#cccccc" if not row_missing else "#aaaaaa")
+
+        # ── Last frame cell ───────────────────────────────────────────────────
+        ax_last = fig.add_subplot(gs[r + 1, num_cols + 1])
+        if row_missing:
+            ax_last.set_facecolor("#d5d8dc")
+            ax_last.axis("off")
+        else:
+            lf = last_frames[r]
+            if lf is not None:
+                ax_last.imshow(lf, aspect="auto")
+            else:
+                ph = make_placeholder(fh, fw)
+                ax_last.imshow(ph, aspect="auto")
+                ax_last.text(0.5, 0.5, "N/A", transform=ax_last.transAxes,
+                             ha="center", va="center", fontsize=6, color="#999")
+            ax_last.axis("off")
+        # Purple border to distinguish last frame column
+        for spine in ax_last.spines.values():
+            spine.set_visible(True)
+            spine.set_linewidth(1.2)
+            spine.set_edgecolor("#8e44ad")
 
     # ── Title ─────────────────────────────────────────────────────────────────
     fig.suptitle(f"Seedance Generation Comparison  |  {stem}",
