@@ -114,20 +114,28 @@ EVAL_PROMPT = """\
 
 def _extract_json(text: str) -> dict | None:
     """从模型输出中提取 JSON 块。"""
-    # 尝试 ```json ... ``` 代码块
-    m = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.DOTALL)
-    if m:
+    # 1. 先去掉 markdown 代码块标记，再直接解析
+    clean = text.strip()
+    if clean.startswith("```"):
+        lines = clean.splitlines()
+        lines = lines[1:]                              # 去掉 ```json 行
+        if lines and lines[-1].strip().startswith("```"):
+            lines = lines[:-1]                         # 去掉尾部 ``` 行
+        clean = "\n".join(lines).strip()
+    try:
+        return json.loads(clean)
+    except json.JSONDecodeError:
+        pass
+
+    # 2. fallback：找第一个 { 和最后一个 }，用 rfind 避免嵌套 JSON 截断问题
+    start = text.find("{")
+    end   = text.rfind("}")
+    if start != -1 and end > start:
         try:
-            return json.loads(m.group(1))
+            return json.loads(text[start : end + 1])
         except json.JSONDecodeError:
             pass
-    # 退而求其次：找第一个 { ... }
-    m = re.search(r"\{.*\}", text, re.DOTALL)
-    if m:
-        try:
-            return json.loads(m.group(0))
-        except json.JSONDecodeError:
-            pass
+
     return None
 
 
@@ -218,7 +226,7 @@ def score_video_pair(
     # ── 解析 JSON ────────────────────────────────────────────────────────────
     parsed = _extract_json(response)
     if parsed is None:
-        return {"error": f"Failed to parse JSON from response: {response[:200]}"}
+        return {"error": f"Failed to parse JSON from response: {response[:500]}"}
 
     scores = _compute_scores(parsed)
     scores["error"] = ""
