@@ -32,7 +32,7 @@ if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
 
 # ── editing_magic_prompt（服务器路径）────────────────────────────────────────
-_EMP_ROOT = Path("/mnt/bn/yilin4/Py_codes/editing_magic_prompt")
+_EMP_ROOT = Path("/mnt/bn/yilin4/yancheng/Py_codes/editing_magic_prompt")
 if str(_EMP_ROOT) not in sys.path:
     sys.path.insert(0, str(_EMP_ROOT))
 
