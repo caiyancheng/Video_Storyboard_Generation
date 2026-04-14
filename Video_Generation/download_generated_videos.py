@@ -20,12 +20,16 @@ from pathlib import Path
 # ═══════════════════════ CONFIG ══════════════════════════════════════════════
 
 # CSV 文件路径（从服务器拷贝到本地后放这里，或直接挂载读取）
+# CSV_PATH = Path("/Users/bytedance/Datasets/tt_template_1400k_15s_video_sample"
+#                 "/shu_inverse_label/generated_videos/generation_results.csv")
 CSV_PATH = Path("/Users/bytedance/Datasets/tt_template_1400k_15s_video_sample"
-                "/shu_inverse_label/generated_videos/generation_results.csv")
+                "/shu_inverse_label/generated_videos_first_last/generation_results_first_last.csv")
 
 # 本地保存根目录
 LOCAL_OUT_ROOT = Path("/Users/bytedance/Datasets/tt_template_1400k_15s_video_sample"
-                      "/shu_inverse_label/generated_videos")
+                      "/shu_inverse_label/generated_videos_first_last")
+# LOCAL_OUT_ROOT = Path("/Users/bytedance/Datasets/tt_template_1400k_15s_video_sample"
+#                       "/shu_inverse_label/generated_videos")
 
 # 只下载指定 level，None 表示全部
 FILTER_LEVELS: list[int] | None = None   # e.g. [1, 3] 或 None

@@ -27,9 +27,12 @@ import numpy as np
 
 GT_ROOT   = Path("/Users/bytedance/Datasets/tt_template_1400k_15s_video_sample"
                  "/filter_scored_gt_videos")
+# GEN_ROOT  = Path("/Users/bytedance/Datasets/tt_template_1400k_15s_video_sample"
+#                  "/shu_inverse_label/generated_videos")
+# OUT_DIR   = GEN_ROOT / "comparison_plevel_seedance_GenAI"
 GEN_ROOT  = Path("/Users/bytedance/Datasets/tt_template_1400k_15s_video_sample"
-                 "/shu_inverse_label/generated_videos")
-OUT_DIR   = GEN_ROOT / "comparison_plevel_seedance_GenAI"
+                 "/shu_inverse_label/generated_videos_first_last")
+OUT_DIR   = GEN_ROOT / "comparison_plevel_seedance_GenAI_first"
 
 ROW_LABELS = [
     "Ground Truth",
