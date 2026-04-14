@@ -28,13 +28,30 @@ _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
 
-# ── editing_magic_prompt（服务器路径）────────────────────────────────────────
-_EMP_ROOT = Path("/mnt/bn/yilin4/yancheng/Py_codes/editing_magic_prompt")
-if str(_EMP_ROOT) not in sys.path:
-    sys.path.insert(0, str(_EMP_ROOT))
-
-from editing_magic_prompt.modules.gpt_caller import GEMINI_MODEL, get_gpt_resp
 from Storyboard_generation.storyboard_prompt_template import STORYBOARD_SYSTEM_PROMPT
+
+# ── Gemini client（直接搭建，绕开服务器版 get_gpt_key）────────────────────────
+import openai
+
+GEMINI_MODEL = "gemini-2.5-pro"
+_GEMINI_API_KEY = "HqvkgdAdyXd5TMfhXjFLp4JncRWeEMvW"
+
+import platform
+_DOMAIN = ("https://genai-sg-og.tiktok-row.org" if platform.system() == "Darwin"
+           else "https://gpt-i18n.byteintl.net")
+
+_gemini_client: openai.AzureOpenAI | None = None
+
+def _get_client() -> openai.AzureOpenAI:
+    global _gemini_client
+    if _gemini_client is None:
+        _gemini_client = openai.AzureOpenAI(
+            azure_endpoint=f"{_DOMAIN}/gpt/openapi/online/v2/crawl",
+            api_version="2024-09-27",
+            api_key=_GEMINI_API_KEY,
+            timeout=600,
+        )
+    return _gemini_client
 
 # ═══════════════════════ CONFIG ══════════════════════════════════════════════
 
@@ -87,19 +104,37 @@ def find_first_frame(stem: str) -> Path | None:
 
 def generate_storyboard_prompt(image_path: Path) -> str | None:
     """调用 Gemini 2.5，分析首帧图片，输出 Level-4 故事板 prompt。"""
-    result = get_gpt_resp(
-        model=GEMINI_MODEL,
-        prompt=STORYBOARD_SYSTEM_PROMPT,
-        image_path=str(image_path),
-        enable_thinking=False,
-        max_tokens=8192,
-    )
-    if result is None:
+    import base64
+    with open(image_path, "rb") as f:
+        b64 = base64.b64encode(f.read()).decode("utf-8")
+
+    suffix = image_path.suffix.lower().lstrip(".")
+    mime   = f"image/{suffix}" if suffix else "image/jpeg"
+
+    messages = [{
+        "role": "user",
+        "content": [
+            {"type": "text", "text": STORYBOARD_SYSTEM_PROMPT},
+            {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{b64}"}},
+        ],
+    }]
+
+    try:
+        completion = _get_client().chat.completions.create(
+            model=GEMINI_MODEL,
+            messages=messages,
+            max_tokens=8192,
+            extra_headers={"X-TT-LOGID": ""},
+            extra_body={},
+        )
+        text = completion.choices[0].message.content
+        usage = completion.usage
+        tqdm.write(f"    tokens: prompt={usage.prompt_tokens}  "
+                   f"output={usage.completion_tokens}")
+        return text
+    except Exception as e:
+        tqdm.write(f"  [ERROR] Gemini call failed: {e}")
         return None
-    text, cot, usage = result
-    tqdm.write(f"    tokens: prompt={usage['prompt_tokens']}  "
-               f"output={usage['completion_tokens']}")
-    return text
 
 
 def clean_response(text: str) -> str:
