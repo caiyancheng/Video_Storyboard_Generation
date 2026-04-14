@@ -62,6 +62,11 @@ FIRST_FRAME_TOS_BASE = (
     "/tt_template_1400k_15s_video_sample/first_frame"
 )
 
+FIRST_FRAME_DIR = Path(
+    "/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_video_sample"
+    "/first_frame"
+)
+
 WORKFLOW_ID  = "seedance_2_0_ti2v_e2e_with_pe_test_inference_only_v2"
 ASPECT_RATIO = "9:16"
 RESOLUTION   = "480p"
@@ -118,6 +123,26 @@ def record_result(index, vid_label, video_id, idx, score,
         "generated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
     }
     save_csv_index(index)
+
+
+# ═══════════════════════ FIRST FRAME LOOKUP ══════════════════════════════════
+
+def find_first_frame_tos_url(stem: str) -> str | None:
+    """从本地 FIRST_FRAME_DIR 找到真实文件名，再拼成 TOS URL。
+    stem 中的 _idx 可能为 0000（默认值），但真实文件名含正确 idx，
+    因此通过 video_id 部分进行 glob 匹配。
+    """
+    # 先按完整 stem 直接查找
+    p = FIRST_FRAME_DIR / f"{stem}_first.png"
+    if p.exists():
+        return f"{FIRST_FRAME_TOS_BASE}/{p.name}"
+    # 取 video_id 部分（stem 格式 id_XXXX_scoreY_<video_id>）
+    parts = stem.split("_", 3)
+    video_id = parts[3] if len(parts) >= 4 else stem
+    matches = list(FIRST_FRAME_DIR.glob(f"*{video_id}_first.png"))
+    if matches:
+        return f"{FIRST_FRAME_TOS_BASE}/{matches[0].name}"
+    return None
 
 
 # ═══════════════════════ PROMPT UTILS ════════════════════════════════════════
@@ -261,8 +286,12 @@ def main():
         prompt_words = len(prompt_text.split())
         print(f"  Duration: {duration}s  Words: {prompt_words}")
 
-        # TOS 首帧 URL（与 test_storyboard... 脚本相同）
-        first_frame_url = f"{FIRST_FRAME_TOS_BASE}/{stem}_first.png"
+        # TOS 首帧 URL（通过本地目录查找真实文件名，避免 _idx 为 0 导致路径错误）
+        first_frame_url = find_first_frame_tos_url(stem)
+        if first_frame_url is None:
+            print(f"  [SKIP] 本地首帧不存在，无法构建 TOS URL: {stem}")
+            skip_no_txt += 1
+            continue
         print(f"  首帧 URL: {first_frame_url}")
 
         # Logger
