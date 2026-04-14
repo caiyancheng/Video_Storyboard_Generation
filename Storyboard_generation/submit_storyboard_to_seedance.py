@@ -123,11 +123,14 @@ def record_result(index, vid_label, video_id, idx, score,
 # ═══════════════════════ PROMPT UTILS ════════════════════════════════════════
 
 def parse_duration_from_prompt(prompt_text: str) -> float:
-    """从 [Whole-video generation | {duration}s | Level 4] 解析时长。"""
-    m = re.search(r"\|\s*([\d.]+)s\s*\|", prompt_text)
+    """从 prompt 头部解析时长，兼容两种格式：
+       旧：[Whole-video generation | 15.0s | Level 4]
+       新：[Whole-video generation | 15.0s]
+    """
+    m = re.search(r"\|\s*([\d.]+)s\s*[\|\]]", prompt_text)
     if m:
         return round(max(4.0, min(15.0, float(m.group(1)))), 3)
-    return 10.0
+    return 15.0
 
 
 # ═══════════════════════ CAIRO ═══════════════════════════════════════════════
