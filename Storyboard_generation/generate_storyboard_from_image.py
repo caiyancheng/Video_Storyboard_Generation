@@ -1,30 +1,34 @@
 """
-generate_storyboard_from_image.py  (本地运行)
+generate_storyboard_from_image.py  (服务器运行)
 
-给定一张输入图片，使用 Gemini 2.5 生成 Level-4 精度的视频故事板 prompt，
-并保存为 txt 文件。
+遍历评分 4/5 分的视频，读取其对应的首帧图片，
+使用 Gemini 2.5 分析首帧，生成 Level-4 精度的视频故事板 prompt，
+保存为 txt 文件。
 
-输出目录：
-  /Users/bytedance/Datasets/.../generated_storyboard/
-    {image_stem}.txt
+首帧来源（本地服务器路径，不走 TOS）：
+  FIRST_FRAME_DIR/{stem}_first.png
+
+输出：
+  STORYBOARD_OUT_DIR/{stem}.txt
 
 用法：
-  python generate_storyboard_from_image.py --image /path/to/image.jpg
-  python generate_storyboard_from_image.py --image /path/to/image.jpg --out-dir /custom/path
-  python generate_storyboard_from_image.py --image /path/to/image.jpg --overwrite
+  python generate_storyboard_from_image.py              # 全量
+  python generate_storyboard_from_image.py --overwrite  # 重新生成已有 txt
 """
 
-import argparse
+import json
 import sys
-from datetime import datetime
+import argparse
 from pathlib import Path
 
-# ── 加入项目根目录 ────────────────────────────────────────────────────────────
+from tqdm import tqdm
+
+# ── 项目根目录 ────────────────────────────────────────────────────────────────
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
 
-# ── 加入 editing_magic_prompt ────────────────────────────────────────────────
+# ── editing_magic_prompt（服务器路径）────────────────────────────────────────
 _EMP_ROOT = Path("/mnt/bn/yilin4/Py_codes/editing_magic_prompt")
 if str(_EMP_ROOT) not in sys.path:
     sys.path.insert(0, str(_EMP_ROOT))
@@ -34,20 +38,55 @@ from Storyboard_generation.storyboard_prompt_template import STORYBOARD_SYSTEM_P
 
 # ═══════════════════════ CONFIG ══════════════════════════════════════════════
 
-DEFAULT_OUT_DIR = Path(
+SCORED_FILE = Path(
+    "/mnt/bn/yilin4/yancheng/Datasets/"
+    "tt_template_hq_publish_data_1400k_USAU"
+    ".dedup_item_id_aesthetic_quality_v1_filtered_scored.jsonl"
+)
+
+FIRST_FRAME_DIR = Path(
+    "/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_video_sample"
+    "/first_frame"
+)
+
+STORYBOARD_OUT_DIR = Path(
     "/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_video_sample"
     "/shu_inverse_label/generated_storyboard"
 )
 
+TARGET_SCORES = {4, 5}
 
-# ═══════════════════════ GEMINI CALL ═════════════════════════════════════════
+
+# ═══════════════════════ DATA ════════════════════════════════════════════════
+
+def load_scored_records() -> list[dict]:
+    records = []
+    with SCORED_FILE.open("r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+                if rec.get("_score") in TARGET_SCORES:
+                    records.append(rec)
+            except json.JSONDecodeError:
+                continue
+    return records
+
+
+def find_first_frame(stem: str) -> Path | None:
+    """在 FIRST_FRAME_DIR 中查找 {stem}_first.png。"""
+    p = FIRST_FRAME_DIR / f"{stem}_first.png"
+    if p.exists():
+        return p
+    # fallback: glob by video_id part
+    video_id = stem.split("_", 3)[-1] if stem.count("_") >= 3 else stem
+    matches = list(FIRST_FRAME_DIR.glob(f"*{video_id}_first.png"))
+    return matches[0] if matches else None
+
+
+# ═══════════════════════ GEMINI ══════════════════════════════════════════════
 
 def generate_storyboard_prompt(image_path: Path) -> str | None:
-    """
-    调用 Gemini 2.5，分析图片并生成 Level 4 故事板 prompt 文本。
-    """
-    print(f"  → 调用 Gemini 2.5 分析图片: {image_path.name}")
-
+    """调用 Gemini 2.5，分析首帧图片，输出 Level-4 故事板 prompt。"""
     result = get_gpt_resp(
         model=GEMINI_MODEL,
         prompt=STORYBOARD_SYSTEM_PROMPT,
@@ -55,30 +94,20 @@ def generate_storyboard_prompt(image_path: Path) -> str | None:
         enable_thinking=False,
         max_tokens=8192,
     )
-
     if result is None:
-        print("  ✗ Gemini 返回 None")
         return None
-
     text, cot, usage = result
-    print(f"  ✓ Gemini 完成  tokens: prompt={usage['prompt_tokens']}  "
-          f"output={usage['completion_tokens']}")
+    tqdm.write(f"    tokens: prompt={usage['prompt_tokens']}  "
+               f"output={usage['completion_tokens']}")
     return text
 
 
-# ═══════════════════════ POST-PROCESS ════════════════════════════════════════
-
 def clean_response(text: str) -> str:
-    """
-    清理 Gemini 输出：去除多余的 markdown 代码块标记。
-    """
+    """去除 Gemini 输出中多余的 markdown 代码块标记。"""
     text = text.strip()
-    # 去掉开头的 ```...``` 包装（若有）
     if text.startswith("```"):
         lines = text.splitlines()
-        # 去掉第一行（```或```text等）
         lines = lines[1:]
-        # 去掉最后一行如果是 ```
         if lines and lines[-1].strip() == "```":
             lines = lines[:-1]
         text = "\n".join(lines).strip()
@@ -87,72 +116,59 @@ def clean_response(text: str) -> str:
 
 # ═══════════════════════ MAIN ════════════════════════════════════════════════
 
-def run(image_path: Path, out_dir: Path, overwrite: bool) -> Path | None:
-    """
-    主流程：图片 → Gemini → 保存 txt。
-    返回保存的 txt 路径（或 None 失败时）。
-    """
-    out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / f"{image_path.stem}.txt"
-
-    if out_path.exists() and not overwrite:
-        print(f"[SKIP] 已存在（使用 --overwrite 强制重新生成）: {out_path}")
-        return out_path
-
-    if not image_path.exists():
-        print(f"[ERROR] 图片文件不存在: {image_path}")
-        return None
-
-    print(f"\n{'='*60}")
-    print(f"图片  : {image_path}")
-    print(f"输出  : {out_path}")
-    print(f"时间  : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"{'='*60}")
-
-    raw_text = generate_storyboard_prompt(image_path)
-    if raw_text is None:
-        return None
-
-    prompt_text = clean_response(raw_text)
-
-    out_path.write_text(prompt_text, encoding="utf-8")
-    print(f"\n  ✓ 故事板已保存: {out_path}")
-    print(f"\n{'─'*60}")
-    print("Prompt 预览（前 500 字符）：")
-    print(prompt_text[:500])
-    print("...")
-
-    return out_path
-
-
 def main():
     parser = argparse.ArgumentParser(
-        description="使用 Gemini 2.5 从单张图片生成 Level-4 视频故事板 prompt"
+        description="批量从首帧图片生成 Level-4 视频故事板 prompt（Gemini 2.5）"
     )
-    parser.add_argument(
-        "--image", required=True,
-        help="输入图片路径（.jpg / .png / .webp 等）"
-    )
-    parser.add_argument(
-        "--out-dir", default=str(DEFAULT_OUT_DIR),
-        help=f"输出目录（默认：{DEFAULT_OUT_DIR}）"
-    )
-    parser.add_argument(
-        "--overwrite", action="store_true",
-        help="若 txt 已存在则强制重新生成"
-    )
+    parser.add_argument("--overwrite", action="store_true",
+                        help="重新生成已存在的 txt 文件")
     args = parser.parse_args()
 
-    image_path = Path(args.image).expanduser().resolve()
-    out_dir    = Path(args.out_dir).expanduser().resolve()
+    STORYBOARD_OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    result = run(image_path, out_dir, overwrite=args.overwrite)
+    records = load_scored_records()
+    print(f"找到 {len(records)} 条评分 {sorted(TARGET_SCORES)} 分记录")
+    print(f"首帧目录  : {FIRST_FRAME_DIR}")
+    print(f"输出目录  : {STORYBOARD_OUT_DIR}\n")
 
-    if result:
-        print(f"\n完成。txt 路径：{result}")
-    else:
-        print("\n失败。")
-        sys.exit(1)
+    ok = skip = fail_no_frame = fail_gemini = 0
+
+    for rec in tqdm(records, desc="生成 storyboard"):
+        video_id  = rec.get("video_id", "unknown")
+        rec_idx   = rec.get("_idx",   0)
+        rec_score = rec.get("_score", 0)
+        stem      = f"id_{rec_idx:04d}_score{rec_score}_{video_id}"
+
+        out_path = STORYBOARD_OUT_DIR / f"{stem}.txt"
+
+        if out_path.exists() and not args.overwrite:
+            skip += 1
+            continue
+
+        # 找首帧
+        frame_path = find_first_frame(stem)
+        if frame_path is None:
+            tqdm.write(f"  [SKIP] 首帧不存在: {stem}_first.png")
+            fail_no_frame += 1
+            continue
+
+        tqdm.write(f"\n[{stem}]  首帧: {frame_path.name}")
+
+        # Gemini 生成
+        raw = generate_storyboard_prompt(frame_path)
+        if raw is None:
+            tqdm.write(f"  [FAIL] Gemini 返回 None")
+            fail_gemini += 1
+            continue
+
+        prompt_text = clean_response(raw)
+        out_path.write_text(prompt_text, encoding="utf-8")
+        tqdm.write(f"  ✓ 已保存: {out_path.name}")
+        ok += 1
+
+    print(f"\n完成：生成 {ok} 个，跳过(已存在) {skip} 个，"
+          f"首帧缺失 {fail_no_frame} 个，Gemini 失败 {fail_gemini} 个")
+    print(f"输出目录: {STORYBOARD_OUT_DIR}")
 
 
 if __name__ == "__main__":
