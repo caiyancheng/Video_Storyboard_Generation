@@ -8,12 +8,19 @@ import sys
 import time
 from pathlib import Path
 
+# 项目根目录
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
 # 把 editing_magic_prompt 加入 path
 _EMP_ROOT = Path("/Users/bytedance/Py_codes/editing_magic_prompt")
 if str(_EMP_ROOT) not in sys.path:
     sys.path.insert(0, str(_EMP_ROOT))
 
 from editing_magic_prompt.modules.gpt_caller import GEMINI_MODEL, get_gpt_resp
+
+GEMINI_API_KEY = "HqvkgdAdyXd5TMfhXjFLp4JncRWeEMvW"
 
 
 def call_gemini(
@@ -41,7 +48,8 @@ def call_gemini(
             result = get_gpt_resp(
                 model=GEMINI_MODEL,
                 prompt=prompt,
-                data_list=data_list if data_list else None,
+                data_list=data_list or None,
+                api_key=GEMINI_API_KEY,
                 enable_thinking=enable_thinking,
                 max_tokens=max_tokens,
             )
