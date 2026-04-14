@@ -139,16 +139,19 @@ def build_comparison(stem: str):
 
     num_rows = len(video_paths)   # 5
 
-    # ── Extract all frames (1fps) + true last frame ───────────────────────────
+    # ── Extract all frames (1fps) + true last frame + per-row duration ───────
     all_frames: list[list[np.ndarray | None]] = []
     last_frames: list[np.ndarray | None] = []
+    row_durations: list[float | None] = []
     for vpath in video_paths:
         if vpath is None:
             all_frames.append([None] * num_cols)
             last_frames.append(None)
+            row_durations.append(None)
         else:
             all_frames.append(extract_frames_1fps(vpath, num_cols))
             last_frames.append(extract_last_frame(vpath))
+            row_durations.append(get_video_duration(vpath))
 
     # Determine canonical frame size from first valid frame
     ref_frame = next(
@@ -202,11 +205,11 @@ def build_comparison(stem: str):
                 fontsize=7.5, color="#333333", fontweight="bold")
         ax.axvline(0.5, ymin=0, ymax=0.3, color="#888", linewidth=0.8)
 
-    # Last-frame column header
+    # Last-frame column header (no time here — shown per-row in each cell)
     ax_last_hdr = fig.add_subplot(gs[0, num_cols + 1])
     ax_last_hdr.set_xlim(0, 1); ax_last_hdr.set_ylim(0, 1)
     ax_last_hdr.axis("off")
-    ax_last_hdr.text(0.5, 0.5, f"last\n({duration:.1f}s)",
+    ax_last_hdr.text(0.5, 0.5, "last",
                      ha="center", va="center",
                      fontsize=7.5, color="#8e44ad", fontweight="bold")
 
@@ -283,6 +286,15 @@ def build_comparison(stem: str):
             lf = last_frames[r]
             if lf is not None:
                 ax_last.imshow(lf, aspect="auto")
+                # 标注该行视频的真实时长
+                rdur = row_durations[r]
+                if rdur is not None:
+                    ax_last.text(0.98, 0.02, f"{rdur:.1f}s",
+                                 transform=ax_last.transAxes,
+                                 ha="right", va="bottom",
+                                 fontsize=6, color="white",
+                                 bbox=dict(boxstyle="round,pad=0.15",
+                                           fc="#8e44ad", alpha=0.75, lw=0))
             else:
                 ph = make_placeholder(fh, fw)
                 ax_last.imshow(ph, aspect="auto")
