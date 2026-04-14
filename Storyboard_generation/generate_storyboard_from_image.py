@@ -25,7 +25,7 @@ if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
 
 # ── 加入 editing_magic_prompt ────────────────────────────────────────────────
-_EMP_ROOT = Path("/Users/bytedance/Py_codes/editing_magic_prompt")
+_EMP_ROOT = Path("/mnt/bn/yilin4/Py_codes/editing_magic_prompt")
 if str(_EMP_ROOT) not in sys.path:
     sys.path.insert(0, str(_EMP_ROOT))
 
@@ -35,8 +35,8 @@ from Storyboard_generation.storyboard_prompt_template import STORYBOARD_SYSTEM_P
 # ═══════════════════════ CONFIG ══════════════════════════════════════════════
 
 DEFAULT_OUT_DIR = Path(
-    "/Users/bytedance/Datasets/tt_template_1400k_15s_video_sample"
-    "/shu_inverse_label/generated_videos/generated_storyboard"
+    "/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_video_sample"
+    "/shu_inverse_label/generated_storyboard"
 )
 
 

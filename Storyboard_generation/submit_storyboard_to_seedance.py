@@ -23,14 +23,24 @@ import sys
 import time
 from pathlib import Path
 
+# ── 项目根目录（用于 import TOS_BUCKET_VA 和 Storyboard_generation 模块）──────
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
+# ── editing_magic_prompt（服务器路径）────────────────────────────────────────
+_EMP_ROOT = Path("/mnt/bn/yilin4/Py_codes/editing_magic_prompt")
+if str(_EMP_ROOT) not in sys.path:
+    sys.path.insert(0, str(_EMP_ROOT))
+
 # ═══════════════════════ CONFIG ══════════════════════════════════════════════
 
 TOS_BUCKET   = "dm-stickers-rec-sg"
 TOS_KEY_PREFIX = "tt_template_1400k_15s_video_sample/generated_storyboard_frames"
 
 DEFAULT_CSV = Path(
-    "/Users/bytedance/Datasets/tt_template_1400k_15s_video_sample"
-    "/shu_inverse_label/generated_videos/generated_storyboard"
+    "/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_video_sample"
+    "/shu_inverse_label/generated_storyboard"
     "/seedance_results.csv"
 )
 
