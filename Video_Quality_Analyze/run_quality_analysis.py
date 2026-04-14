@@ -144,6 +144,11 @@ def run(stems: list[str], levels: list[int], overwrite: bool):
 
         scores = score_video_pair(gt_path, gen_path)
 
+        if scores.get("error"):
+            tqdm.write(f"  ✗ 评分失败（不写入 CSV）：{scores['error']}")
+            fail += 1
+            continue
+
         row = {
             "vid_label":    stem,
             "prompt_level": lv,
@@ -154,18 +159,14 @@ def run(stems: list[str], levels: list[int], overwrite: bool):
         row.update(scores)
 
         append_row(CSV_PATH, row)
-
-        if scores.get("error"):
-            tqdm.write(f"  ✗ 评分失败：{scores['error']}")
-            fail += 1
-        else:
-            tqdm.write(
-                f"  ✓  total={scores['total_score']:.2f}  "
-                f"sim={scores['sim_score']:.2f}  "
-                f"aes={scores['aes_score']:.2f}  "
-                f"aud={scores['aud_score']:.2f}"
-            )
-            ok += 1
+        tqdm.write(
+            f"  ✓  total={scores['total_score']:.2f}  "
+            f"sim={scores['sim_score']:.2f}  "
+            f"aes={scores['aes_score']:.2f}  "
+            f"aud={scores['aud_score']:.2f}  "
+            f"nar={scores['nar_score']:.2f}"
+        )
+        ok += 1
 
     print(f"\n完成：成功 {ok} 对，文件缺失跳过 {skip_no_file} 对，失败 {fail} 对")
     print(f"结果 CSV：{CSV_PATH}")
