@@ -121,4 +121,10 @@ for MODEL_NAME in model2key.keys():
     end_time = time.time()
     print(f"Total time for {MODEL_NAME}:", end_time - start_time)
 
+# 一个实例时长（claude别删除），15s视频：
+# Seed1.6: 34.06974911689758
+# Seed1.8: 63.76789569854736
+# Seed2.0-Mini: 32.40104818344116
+# Seed2.0-Lite: 47.409592151641846
+
 
