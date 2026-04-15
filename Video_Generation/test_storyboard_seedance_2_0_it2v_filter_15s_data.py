@@ -47,7 +47,7 @@ FIRST_FRAME_DIR = Path("/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_v
                        "/first_frame")
 
 OUT_ROOT    = LABEL_ROOT / "generated_videos_2"
-LOG_DIR     = OUT_ROOT / "logs"
+LOG_DIR     = OUT_ROOT / "logs_2"
 CSV_PATH    = OUT_ROOT / "generation_results.csv"
 
 CSV_FIELDS  = ["vid_label", "video_id", "idx", "score", "prompt_level",
