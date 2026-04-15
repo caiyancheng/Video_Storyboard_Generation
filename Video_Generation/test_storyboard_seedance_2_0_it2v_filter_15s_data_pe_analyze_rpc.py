@@ -290,8 +290,14 @@ def load_csv_index() -> dict[tuple, dict]:
     if not CSV_PATH.exists():
         return index
     with CSV_PATH.open("r", encoding="utf-8-sig", newline="") as f:
-        for row in csv.DictReader(f):
-            key = (row["vid_label"], row["prompt_level"])
+        reader = csv.DictReader(f)
+        for row in reader:
+            vid_label    = row.get("vid_label") or row.get("\ufeffvid_label", "")
+            prompt_level = row.get("prompt_level", "")
+            if not vid_label:
+                print(f"  [WARN] Skipping CSV row with missing vid_label, keys={list(row.keys())[:5]}")
+                continue
+            key = (vid_label, prompt_level)
             index[key] = row
     return index
 
