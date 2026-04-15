@@ -10,14 +10,14 @@ from cairo_v2.idls import CairoService, SubmitAsyncTaskRequest, Task
 import os
 from io import BytesIO
 from PIL import Image
-from utils import upload_to_imagex, download_video
+# from utils import upload_to_imagex, download_video
 
 input_dir = "/mnt/bn/ic-aip/zgjj/workspace/i2v_batch/0211_seedance/downloaded_images"
 
 if __name__ == "__main__":
 
     id = 2
-    local_path = "/Users/bytedance/Datasets/tt_template_1400k_15s_video_sample/first_frame/id_0000_score4_v09044be0000bib8k1rdjls2dbu62kug_first.png"
+    local_path = "/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_video_sample/first_frame/id_0000_score4_v09044be0000bib8k1rdjls2dbu62kug_first.png"
     media_type = "image"
     prompt = '''Scene overview: 在倒计时声中，<Subject_1 (D.Va)>驾驶她的<Prop_1 (D.Va的粉色机甲)>从<Location_1 (机甲发射舱)>发射，高速穿过<Location_2 (未来主义隧道)>，最终进入开阔的<Location_3 (云层密布的天空)>，标志着任务的开始。'''
     import requests
