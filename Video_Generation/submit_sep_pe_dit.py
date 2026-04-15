@@ -23,6 +23,43 @@ if __name__ == "__main__":
     import requests
 
     url = "https://api2.musical.ly/media/api/pic/afr"
+
+
+    # ── 方案A：不传图片，去掉 binary_var_name（T2V 模式）─────────────────────
+    print("\n=== 尝试不传图片（方案A: 去掉 binary_var_name）===")
+    payload_no_img_a = {
+        'algorithms': 'tt_seedance2_pe_test',
+        'conf': json.dumps({
+            "prompt": prompt,
+            "duration": 10,
+            "aspect_ratio": "9:16",
+            "language": "zh",
+            "with_audio": True,
+            "version": "v2.0",
+            "task_type": "T2V",   # 改为 T2V（纯文本转视频）
+        }),
+    }
+    resp_a = requests.post(url, data=payload_no_img_a, timeout=180)
+    print(f"方案A status={resp_a.status_code}  body={resp_a.text[:300]}")
+
+    # ── 方案B：不传图片，但保留 binary_var_name 为空列表 ─────────────────────
+    print("\n=== 尝试不传图片（方案B: binary_var_name=[]）===")
+    payload_no_img_b = {
+        'algorithms': 'tt_seedance2_pe_test',
+        'conf': json.dumps({
+            "prompt": prompt,
+            "duration": 10,
+            "aspect_ratio": "9:16",
+            "language": "zh",
+            "with_audio": True,
+            "version": "v2.0",
+            "binary_var_name": [],
+            "task_type": "R2V",
+        }),
+    }
+    resp_b = requests.post(url, data=payload_no_img_b, timeout=180)
+    print(f"方案B status={resp_b.status_code}  body={resp_b.text[:300]}")
+
     payload = {
         'algorithms': 'tt_seedance2_pe_test',
         'conf': json.dumps({
