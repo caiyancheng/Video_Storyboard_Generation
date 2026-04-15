@@ -46,7 +46,7 @@ PHASE1_5_DIR = LABEL_ROOT / "phase1_5_chinese_labels"
 FIRST_FRAME_DIR = Path("/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_video_sample"
                        "/first_frame")
 
-OUT_ROOT    = LABEL_ROOT / "generated_videos"
+OUT_ROOT    = LABEL_ROOT / "generated_videos_2"
 LOG_DIR     = OUT_ROOT / "logs"
 CSV_PATH    = OUT_ROOT / "generation_results.csv"
 
