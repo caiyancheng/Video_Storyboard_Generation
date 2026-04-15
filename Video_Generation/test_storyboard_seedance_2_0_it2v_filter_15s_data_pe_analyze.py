@@ -46,6 +46,7 @@ CSV_FIELDS = [
     "vid_label", "video_id", "idx", "score", "prompt_level",
     "duration", "prompt_words",
     "original_prompt", "pe_prompt_json",
+    "vivid_instruction", "vivid_instruction_chars",
     "pe_at",
 ]
 
@@ -259,22 +260,20 @@ def call_pe(
                 response = requests.post(
                     PE_URL,
                     data={
-                        "algorithms":    PE_ALGORITHMS,
-                        "conf":          json.dumps(conf, ensure_ascii=False),
+                        "algorithms":     PE_ALGORITHMS,
+                        "conf":           json.dumps(conf, ensure_ascii=False),
                         "input_img_type": "multiple_files",
                     },
                     files=[
                         ("files[]", ("image.png", img_f, "application/octet-stream"))
                     ],
-                    timeout=60,
+                    timeout=180,   # PE 处理视频较慢，允许等 3 分钟
                 )
             response.raise_for_status()
             raw = response.json()
 
-            # 解析 PE 输出
-            pe_prompt = json.loads(
-                raw["data"]["afr_data"][0]["pic_conf"]
-            )
+            # 解析 PE 输出（结构：data.afr_data[0].pic_conf → JSON string）
+            pe_prompt = json.loads(raw["data"]["afr_data"][0]["pic_conf"])
             logger.info(f"PE OK: {str(pe_prompt)[:200]}")
             return pe_prompt
 
@@ -285,6 +284,18 @@ def call_pe(
                 time.sleep(retry_delay)
 
     return None
+
+
+def extract_vivid_instruction(pe_prompt: dict) -> str:
+    """
+    从 PE 返回的 dict 中提取 vivid_instruction 文本。
+    路径：pe_prompt["mm_caption"] → JSON → r2v_caption_zh[0]["vivid_instruction"]
+    """
+    try:
+        mm = json.loads(pe_prompt.get("mm_caption", "{}"))
+        return mm.get("r2v_caption_zh", [{}])[0].get("vivid_instruction", "")
+    except Exception:
+        return ""
 
 
 # ═══════════════════════════ CSV HELPERS ═════════════════════════════════════
@@ -302,7 +313,7 @@ def load_csv_index() -> dict[tuple, dict]:
 
 def save_csv_index(index: dict) -> None:
     rows = sorted(index.values(), key=lambda r: (r["idx"], r["prompt_level"]))
-    with CSV_PATH.open("w", encoding="utf-8", newline="") as f:
+    with CSV_PATH.open("w", encoding="utf-8-sig", newline="") as f:  # BOM → Excel 中文不乱码
         writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
         writer.writeheader()
         writer.writerows(rows)
@@ -311,19 +322,22 @@ def save_csv_index(index: dict) -> None:
 def record_result(index: dict, vid_label: str, video_id: str,
                   idx: int, score: int, level: int, duration: float,
                   prompt_words: int, original_prompt: str,
-                  pe_prompt_json: str) -> None:
+                  pe_prompt_json: str, vivid_instruction: str,
+                  vivid_instruction_chars: int) -> None:
     key = (vid_label, str(level))
     index[key] = {
-        "vid_label":      vid_label,
-        "video_id":       video_id,
-        "idx":            str(idx),
-        "score":          str(score),
-        "prompt_level":   str(level),
-        "duration":       str(duration),
-        "prompt_words":   str(prompt_words),
-        "original_prompt": original_prompt,
-        "pe_prompt_json": pe_prompt_json,
-        "pe_at":          time.strftime("%Y-%m-%d %H:%M:%S"),
+        "vid_label":               vid_label,
+        "video_id":                video_id,
+        "idx":                     str(idx),
+        "score":                   str(score),
+        "prompt_level":            str(level),
+        "duration":                str(duration),
+        "prompt_words":            str(prompt_words),
+        "original_prompt":         original_prompt,
+        "pe_prompt_json":          pe_prompt_json,
+        "vivid_instruction":       vivid_instruction,
+        "vivid_instruction_chars": str(vivid_instruction_chars),
+        "pe_at":                   time.strftime("%Y-%m-%d %H:%M:%S"),
     }
     save_csv_index(index)
     print(f"  CSV updated: {CSV_PATH.name}")
@@ -404,15 +418,23 @@ if __name__ == "__main__":
                 logger.error("PE API returned None")
                 continue
 
-            pe_prompt_json = json.dumps(pe_prompt, ensure_ascii=False)
-            print(f"  PE OK: {pe_prompt_json[:120]}...")
+            pe_prompt_json          = json.dumps(pe_prompt, ensure_ascii=False)
+            vivid_instruction       = extract_vivid_instruction(pe_prompt)
+            vivid_instruction_chars = len(vivid_instruction)
+
+            print(f"  PE OK: vivid_instruction_chars={vivid_instruction_chars}")
             logger.info(f"pe_prompt_json: {pe_prompt_json}")
+            logger.info(
+                f"vivid_instruction_chars={vivid_instruction_chars}  "
+                f"vivid_instruction(preview): {vivid_instruction[:100]}"
+            )
 
             # ── 写入 CSV ──────────────────────────────────────────────────────
             record_result(
                 csv_index, vid_label, video_id,
                 rec_idx, rec_score, lv, duration,
                 prompt_words, prompt, pe_prompt_json,
+                vivid_instruction, vivid_instruction_chars,
             )
 
     print(f"\n{'='*70}")
