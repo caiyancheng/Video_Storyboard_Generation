@@ -93,20 +93,28 @@ def load_existing_keys(csv_path: Path) -> set[tuple[str, str]]:
     if not csv_path.exists():
         return set()
     keys = set()
-    with csv_path.open("r", encoding="utf-8", newline="") as f:
+    with csv_path.open("r", encoding="utf-8-sig", newline="") as f:
         for row in csv.DictReader(f):
             keys.add((row["vid_label"], str(row["prompt_level"])))
     return keys
 
 
 def append_row(csv_path: Path, row: dict):
-    """追加一行到 CSV（若文件不存在则写表头）。"""
-    write_header = not csv_path.exists()
-    with csv_path.open("a", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=ALL_COLUMNS)
-        if write_header:
+    """追加一行到 CSV。
+    - 新建文件：用 utf-8-sig（写入 BOM），Excel 打开中文不乱码。
+    - 追加行：用 utf-8，避免 utf-8-sig 在 append 模式下每次都往末尾重复写入 BOM。
+    """
+    if not csv_path.exists():
+        # 新建：写 BOM + 表头 + 第一行
+        with csv_path.open("w", encoding="utf-8-sig", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=ALL_COLUMNS)
             writer.writeheader()
-        writer.writerow({col: row.get(col, "") for col in ALL_COLUMNS})
+            writer.writerow({col: row.get(col, "") for col in ALL_COLUMNS})
+    else:
+        # 追加：不写 BOM，只追加数据行
+        with csv_path.open("a", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=ALL_COLUMNS)
+            writer.writerow({col: row.get(col, "") for col in ALL_COLUMNS})
 
 
 # ═══════════════════════ MAIN ════════════════════════════════════════════════
