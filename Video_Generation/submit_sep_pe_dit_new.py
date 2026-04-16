@@ -57,7 +57,8 @@ if __name__ == "__main__":
         "with_audio": True,
         "version": "v2.0",
         "binary_var_name": [f"{media_type}"],
-        "task_type": "R2V"
+        # "task_type": "R2V"
+        "task_type": "IT2V"
     }), [b1])
 
     pe_prompt = json.loads(resp.resp_json)

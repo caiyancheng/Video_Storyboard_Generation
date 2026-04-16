@@ -40,9 +40,9 @@ PHASE1_5_DIR = LABEL_ROOT / "phase1_5_chinese_labels"
 FIRST_FRAME_DIR = Path("/mnt/bn/yilin4/yancheng/Datasets/tt_template_1400k_15s_video_sample"
                        "/first_frame")
 
-OUT_ROOT = LABEL_ROOT / "pe_analyze_rpc"
-LOG_DIR  = OUT_ROOT / "logs"
-CSV_PATH = OUT_ROOT / "pe_results_rpc.csv"
+OUT_ROOT = LABEL_ROOT / "pe_analyze_rpc_IT2V"
+LOG_DIR  = OUT_ROOT / "logs_IT2V"
+CSV_PATH = OUT_ROOT / "pe_results_rpc_IT2V.csv"
 
 CSV_FIELDS = [
     "vid_label", "video_id", "idx", "score", "prompt_level",
@@ -251,7 +251,8 @@ def call_pe_rpc(
         "with_audio":      True,
         "version":         "v2.0",
         "binary_var_name": ["image"],
-        "task_type":       "R2V",
+        # "task_type":       "R2V",
+        "task_type":       "IT2V",
     }, ensure_ascii=False)
 
     img_bytes = first_frame_path.read_bytes()
