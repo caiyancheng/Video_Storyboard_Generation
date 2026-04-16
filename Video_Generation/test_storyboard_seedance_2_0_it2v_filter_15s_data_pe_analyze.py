@@ -25,7 +25,7 @@ import requests
 
 # ═══════════════════════════ CONFIG ══════════════════════════════════════════
 
-PROMPT_LEVELS = [1, 2, 3, 4]
+PROMPT_LEVELS = [3, 2, 1, 4]
 
 SCORED_FILE = Path("/mnt/bn/yilin4/yancheng/Datasets/tt_template_hq_publish_data_1400k_USAU"
                    ".dedup_item_id_aesthetic_quality_v1_filtered_scored.jsonl")
