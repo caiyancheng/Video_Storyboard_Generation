@@ -48,7 +48,9 @@ CSV_FIELDS = [
     "vid_label", "video_id", "idx", "score", "prompt_level",
     "duration", "prompt_words",
     "original_prompt", "pe_prompt_json",
-    "vivid_instruction", "vivid_instruction_chars",
+    "pe_task_type",                          # "r2v" 或 "ti2v"
+    "vivid_instruction", "vivid_instruction_chars",   # R2V: mm_caption.vivid_instruction
+    "dynamic_caption",   "dynamic_caption_chars",     # IT2V: rephrase_result_zh.dynamic_caption
     "pe_at",
 ]
 
@@ -272,16 +274,39 @@ def call_pe_rpc(
     return None
 
 
-def extract_vivid_instruction(pe_prompt: dict) -> str:
+def extract_pe_content(pe_prompt: dict) -> tuple[str, str, str, str]:
     """
-    从 PE 返回 dict 中提取 vivid_instruction。
-    路径：pe_prompt["mm_caption"] → JSON → r2v_caption_zh[0]["vivid_instruction"]
+    从 PE 返回 dict 中提取关键文本字段，自动适配 R2V / IT2V 两种模式。
+
+    R2V  (task="ref"):   mm_caption → r2v_caption_zh[0]["vivid_instruction"]
+    IT2V (task="ti2v"):  rephrase_result_zh["dynamic_caption"]
+
+    返回 (pe_task_type, vivid_instruction, dynamic_caption, raw)
     """
-    try:
-        mm = json.loads(pe_prompt.get("mm_caption", "{}"))
-        return mm.get("r2v_caption_zh", [{}])[0].get("vivid_instruction", "")
-    except Exception:
-        return ""
+    task_type = pe_prompt.get("task", "")
+
+    vivid_instruction = ""
+    dynamic_caption   = ""
+
+    # ── R2V 路径 ──────────────────────────────────────────────────────────────
+    if pe_prompt.get("mm_caption"):
+        try:
+            mm = json.loads(pe_prompt["mm_caption"])
+            vivid_instruction = mm.get("r2v_caption_zh", [{}])[0].get("vivid_instruction", "")
+        except Exception:
+            pass
+
+    # ── IT2V 路径 ─────────────────────────────────────────────────────────────
+    rephrase = pe_prompt.get("rephrase_result_zh", {})
+    if isinstance(rephrase, str):
+        try:
+            rephrase = json.loads(rephrase)
+        except Exception:
+            rephrase = {}
+    if rephrase:
+        dynamic_caption = rephrase.get("dynamic_caption", "")
+
+    return task_type, vivid_instruction, dynamic_caption
 
 
 # ═══════════════════════════ CSV HELPERS ═════════════════════════════════════
@@ -314,8 +339,8 @@ def save_csv_index(index: dict) -> None:
 def record_result(index: dict, vid_label: str, video_id: str,
                   idx: int, score: int, level: int, duration: float,
                   prompt_words: int, original_prompt: str,
-                  pe_prompt_json: str, vivid_instruction: str,
-                  vivid_instruction_chars: int) -> None:
+                  pe_prompt_json: str, pe_task_type: str,
+                  vivid_instruction: str, dynamic_caption: str) -> None:
     key = (vid_label, str(level))
     index[key] = {
         "vid_label":               vid_label,
@@ -327,8 +352,11 @@ def record_result(index: dict, vid_label: str, video_id: str,
         "prompt_words":            str(prompt_words),
         "original_prompt":         original_prompt,
         "pe_prompt_json":          pe_prompt_json,
+        "pe_task_type":            pe_task_type,
         "vivid_instruction":       vivid_instruction,
-        "vivid_instruction_chars": str(vivid_instruction_chars),
+        "vivid_instruction_chars": str(len(vivid_instruction)),
+        "dynamic_caption":         dynamic_caption,
+        "dynamic_caption_chars":   str(len(dynamic_caption)),
         "pe_at":                   time.strftime("%Y-%m-%d %H:%M:%S"),
     }
     save_csv_index(index)
@@ -410,15 +438,21 @@ if __name__ == "__main__":
                 logger.error("PE RPC returned None after all retries")
                 continue
 
-            pe_prompt_json          = json.dumps(pe_prompt, ensure_ascii=False)
-            vivid_instruction       = extract_vivid_instruction(pe_prompt)
-            vivid_instruction_chars = len(vivid_instruction)
+            pe_prompt_json = json.dumps(pe_prompt, ensure_ascii=False)
+            pe_task_type, vivid_instruction, dynamic_caption = extract_pe_content(pe_prompt)
 
-            print(f"  PE OK: vivid_instruction_chars={vivid_instruction_chars}")
+            print(f"  PE OK: task_type={pe_task_type}  "
+                  f"vivid_chars={len(vivid_instruction)}  "
+                  f"dynamic_chars={len(dynamic_caption)}")
             logger.info(f"pe_prompt_json: {pe_prompt_json}")
             logger.info(
-                f"vivid_instruction_chars={vivid_instruction_chars}  "
+                f"pe_task_type={pe_task_type}  "
+                f"vivid_instruction_chars={len(vivid_instruction)}  "
                 f"vivid_instruction(preview): {vivid_instruction[:100]}"
+            )
+            logger.info(
+                f"dynamic_caption_chars={len(dynamic_caption)}  "
+                f"dynamic_caption(preview): {dynamic_caption[:100]}"
             )
 
             # ── 写入 CSV ──────────────────────────────────────────────────────
@@ -426,7 +460,7 @@ if __name__ == "__main__":
                 csv_index, vid_label, video_id,
                 rec_idx, rec_score, lv, duration,
                 prompt_words, prompt, pe_prompt_json,
-                vivid_instruction, vivid_instruction_chars,
+                pe_task_type, vivid_instruction, dynamic_caption,
             )
 
     print(f"\n{'='*70}")
