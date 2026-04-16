@@ -34,12 +34,12 @@ if __name__ == "__main__":
             "duration": 10,
             "aspect_ratio": "9:16",
             "language": "zh",
-            "with_audio": True,
+            "with_audio": False,
             "version": "v2.0",
-            "task_type": "T2V",   # 改为 T2V（纯文本转视频）
+            "task_type": "TI2V",   # 改为 T2V（纯文本转视频）
         }),
     }
-    resp_a = requests.post(url, data=payload_no_img_a, timeout=180)
+    resp_a = requests.post(url, data=payload_no_img_a, timeout=60)
     print(f"方案A status={resp_a.status_code}  body={resp_a.text[:300]}")
 
     # ── 方案B：不传图片，但保留 binary_var_name 为空列表 ─────────────────────
@@ -57,7 +57,7 @@ if __name__ == "__main__":
             "task_type": "R2V",
         }),
     }
-    resp_b = requests.post(url, data=payload_no_img_b, timeout=180)
+    resp_b = requests.post(url, data=payload_no_img_b, timeout=60)
     print(f"方案B status={resp_b.status_code}  body={resp_b.text[:300]}")
 
     payload = {
