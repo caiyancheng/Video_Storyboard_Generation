@@ -1,18 +1,15 @@
 """
 test_storyboard_seedance_2_0_it2v_filter_15s_data_pe_rpc_2026_4_18.py
 
-Pipeline（每条记录 × 每个 level）：
-  1. 从 phase1_v16 构建 Lv1 / Lv2 / Lv3 故事线 prompt
-  2. 读取本地首帧 PNG → bytes，调用 PE RPC（IT2V 模式）
-  3. 解析 PE 返回的 dynamic_caption，写入 pe_results.csv
-  4. 将 dynamic_caption 作为最终 prompt，提交 Cairo 生成视频
-  5. 下载原版 + 压缩版视频，写入 generation_results.csv
+每条记录生成 6 种视频，覆盖全部对比组合：
+  Lv1_pe  / Lv2_pe  / Lv3_pe   ← 故事线 prompt 先经 PE RPC 改写，再送 Cairo
+  Lv1_nope / Lv2_nope / Lv3_nope ← 故事线 prompt 直接送 Cairo，不经 PE
 
 跳过策略：
   - v16 phase1 文件不存在 → 打印 [SKIP-NO-V16]，跳过整条记录
   - 首帧 PNG 不存在       → 打印 [SKIP-NO-FRAME]，跳过整条记录
-  - PE RPC 失败           → 打印 [SKIP-PE-FAIL]，跳过该 level
-  - Cairo 生成失败        → 打印 [SKIP-GEN-FAIL]，跳过该 level
+  - PE RPC 失败           → 打印 [SKIP-PE-FAIL]，跳过该 variant
+  - Cairo 生成失败        → 打印 [SKIP-GEN-FAIL]，跳过该 variant
 """
 
 import csv
@@ -34,7 +31,16 @@ from vproxy import VproxyClient
 
 # ═══════════════════════════ CONFIG ══════════════════════════════════════════
 
-PROMPT_LEVELS = ["Lv1", "Lv2", "Lv3"]
+# 6 种对比变体：(level, use_pe)
+# variant_key = "Lv1_pe" / "Lv1_nope" / ...
+VARIANTS: list[tuple[str, bool]] = [
+    ("Lv1", True),
+    ("Lv1", False),
+    ("Lv2", True),
+    ("Lv2", False),
+    ("Lv3", True),
+    ("Lv3", False),
+]
 
 SCORED_FILE = Path(
     "/mnt/bn/yilin4/yancheng/Datasets/tt_template_hq_publish_data_1400k_USAU"
@@ -420,6 +426,9 @@ def make_cairo_client():
     return client
 
 
+POLL_TIMEOUT_SEC = 1800   # 单个任务最长等待 30 分钟，超时视为失败
+
+
 def submit_and_poll(
     prompt: str,
     duration: float,
@@ -456,17 +465,27 @@ def submit_and_poll(
         print(f"  ERROR submit: {e}")
         return None
 
+    video_url = None
     gen_start = time.time()
     while True:
+        if time.time() - gen_start > POLL_TIMEOUT_SEC:
+            logger.error(f"Poll timeout after {POLL_TIMEOUT_SEC}s for task_id={task_id}")
+            print(f"  ERROR: poll timeout ({POLL_TIMEOUT_SEC}s) for task_id={task_id}")
+            return None
         try:
             req = GetTaskReportRequestThrift(task_id=task_id)
             resp = cairo_client.GetTaskReport(req)
             task_report = json.loads(resp.task)
-            status = task_report["status"]
+            status = task_report.get("status", "unknown")
             logger.info(f"Poll {task_id} -> {status}")
             print(f"  Polling {task_id} -> {status}")
             if status == "succeeded":
-                results = json.loads(task_report["output"])["results"]
+                output = json.loads(task_report.get("output", "{}"))
+                results = output.get("results", {})
+                if not results:
+                    logger.error(f"succeeded but results empty: {output}")
+                    print(f"  ERROR: succeeded but results empty")
+                    return None
                 key = list(results.keys())[0]
                 video_url = f"https://tosv-sg.tiktok-row.org/obj/iccv-vpipe-sg/{key}"
                 logger.info(f"Succeeded! video_url={video_url}")
@@ -613,7 +632,8 @@ if __name__ == "__main__":
     print(f"PE  CSV: {len(pe_index)} existing entries")
     print(f"Gen CSV: {len(gen_index)} existing entries")
     print(f"Records: {len(all_records)} with score {sorted(TARGET_SCORES)}")
-    print(f"Levels:  {PROMPT_LEVELS}\n")
+    variant_names = [f"{l}_{'pe' if p else 'nope'}" for l, p in VARIANTS]
+    print(f"Variants: {variant_names}\n")
 
     for rec in all_records:
         video_id  = rec.get("video_id", "unknown")
@@ -652,10 +672,11 @@ if __name__ == "__main__":
 
         first_frame_url = get_first_frame_url(vid_label)
 
-        for level in PROMPT_LEVELS:
-            gen_key = (vid_label, level)
+        for level, use_pe in VARIANTS:
+            variant = f"{level}_{'pe' if use_pe else 'nope'}"
+            gen_key = (vid_label, variant)
 
-            logger_name = f"{vid_label}_{level}"
+            logger_name = f"{vid_label}_{variant}"
             logger = logging.getLogger(logger_name)
             logger.setLevel(logging.DEBUG)
             if not logger.handlers:
@@ -664,8 +685,8 @@ if __name__ == "__main__":
                 logger.addHandler(fh)
 
             print(f"\n{'='*70}")
-            print(f"Processing {vid_label}  score={rec_score}  level={level}")
-            logger.info(f"=== Start {vid_label} score={rec_score} level={level} ===")
+            print(f"Processing {vid_label}  score={rec_score}  variant={variant}")
+            logger.info(f"=== Start {vid_label} score={rec_score} variant={variant} ===")
 
             if gen_key in gen_index:
                 print(f"  [SKIP] already generated: {gen_index[gen_key].get('video_url', '')[:80]}")
@@ -683,58 +704,62 @@ if __name__ == "__main__":
             logger.info(f"duration={duration}s  prompt_words={prompt_words}")
             print(f"  Duration: {duration}s  |  Prompt words: {prompt_words}")
 
-            # ── PE RPC ───────────────────────────────────────────────────────
-            pe_key = (vid_label, level)
-            if pe_key in pe_index and pe_index[pe_key].get("dynamic_caption"):
-                print(f"  [PE-CACHED] using existing PE result")
-                logger.info("Using cached PE result")
-                dynamic_caption = pe_index[pe_key]["dynamic_caption"]
-            else:
-                pe_result = call_pe_rpc(original_prompt, duration, first_frame_path, logger)
-                if pe_result is None:
-                    print(f"  [SKIP-PE-FAIL] {vid_label} {level}")
-                    logger.error("PE RPC failed, skipping")
+            # ── PE RPC（仅 use_pe=True 分支）────────────────────────────────
+            if use_pe:
+                pe_key = (vid_label, level)  # PE 结果按 level 共享（nope/pe 复用同一次 PE 调用）
+                if pe_key in pe_index and pe_index[pe_key].get("dynamic_caption"):
+                    print(f"  [PE-CACHED] using existing PE result")
+                    logger.info("Using cached PE result")
+                    dynamic_caption = pe_index[pe_key]["dynamic_caption"]
+                else:
+                    pe_result = call_pe_rpc(original_prompt, duration, first_frame_path, logger)
+                    if pe_result is None:
+                        print(f"  [SKIP-PE-FAIL] {vid_label} {variant}")
+                        logger.error("PE RPC failed, skipping")
+                        continue
+                    dynamic_caption = extract_dynamic_caption(pe_result)
+                    record_pe(pe_index, vid_label, video_id, rec_idx, rec_score,
+                              level, duration, prompt_words, original_prompt,
+                              pe_result, dynamic_caption)
+                    print(f"  PE OK: dynamic_caption_chars={len(dynamic_caption)}")
+                    logger.info(f"dynamic_caption (preview): {dynamic_caption[:200]}")
+
+                if not dynamic_caption:
+                    print(f"  [SKIP-PE-EMPTY] dynamic_caption is empty for {vid_label} {variant}")
+                    logger.warning("dynamic_caption is empty, skipping generation")
                     continue
 
-                dynamic_caption = extract_dynamic_caption(pe_result)
-                record_pe(pe_index, vid_label, video_id, rec_idx, rec_score,
-                          level, duration, prompt_words, original_prompt,
-                          pe_result, dynamic_caption)
-                print(f"  PE OK: dynamic_caption_chars={len(dynamic_caption)}")
-                logger.info(f"dynamic_caption (preview): {dynamic_caption[:200]}")
+                final_prompt = dynamic_caption
+            else:
+                # nope：直接用故事线 prompt
+                final_prompt = original_prompt
 
-            if not dynamic_caption:
-                print(f"  [SKIP-PE-EMPTY] dynamic_caption is empty for {vid_label} {level}")
-                logger.warning("dynamic_caption is empty, skipping generation")
-                continue
-
-            final_prompt = dynamic_caption
             final_prompt_words = len(final_prompt.split())
-            print(f"  Final prompt words: {final_prompt_words}")
+            print(f"  Final prompt words: {final_prompt_words}  (use_pe={use_pe})")
 
             # ── Cairo 视频生成 ────────────────────────────────────────────────
             video_url = submit_and_poll(final_prompt, duration, first_frame_url, logger)
             if not video_url:
-                print(f"  [SKIP-GEN-FAIL] {vid_label} {level}")
+                print(f"  [SKIP-GEN-FAIL] {vid_label} {variant}")
                 continue
 
             # ── 下载 + 压缩 ──────────────────────────────────────────────────
-            out_dir  = OUT_ROOT / level
-            comp_dir = OUT_ROOT / f"{level}_compressed"
-            filename = f"{vid_label}_{level}.mp4"
+            out_dir  = OUT_ROOT / variant
+            comp_dir = OUT_ROOT / f"{variant}_compressed"
+            filename = f"{vid_label}_{variant}.mp4"
             local_path      = out_dir  / filename
             compressed_path = comp_dir / filename
 
             dl_ok = download_video(video_url, local_path, logger)
             if not dl_ok:
                 record_gen(gen_index, vid_label, video_id, rec_idx, rec_score,
-                           level, duration, final_prompt_words,
+                           variant, duration, final_prompt_words,
                            video_url, "", "")
                 continue
 
             comp_ok = compress_video(local_path, compressed_path, logger)
             record_gen(gen_index, vid_label, video_id, rec_idx, rec_score,
-                       level, duration, final_prompt_words,
+                       variant, duration, final_prompt_words,
                        video_url, str(local_path),
                        str(compressed_path) if comp_ok else "")
 
